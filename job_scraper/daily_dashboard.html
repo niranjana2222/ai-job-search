@@ -324,20 +324,22 @@
 <header class="masthead">
   <span class="eyebrow">Daily Internship Scout &middot; Niranjana Sankar</span>
   <h1>2026-08-10</h1>
-  <p class="summary-line"><strong>5</strong> new matches &middot; <strong>372</strong> excluded (of 377 postings reviewed)</p>
+  <p class="summary-line"><strong>4</strong> new matches &middot; <strong>373</strong> excluded (of 377 postings reviewed)</p>
   <div class="stat-row">
-    <span class="stat-pill good">5 CVs drafted</span>
+    <span class="stat-pill good">4 CVs drafted</span>
     <span class="stat-pill good">git push: succeeded</span>
+    <span class="stat-pill warn">1 match corrected on same-day recheck</span>
   </div>
 </header>
 
 <section class="block">
   <h2>New Matches</h2>
   <div class="caveat">
-    Company-career-page fetches were blocked by this session's network egress policy (<code>greenhouse.io</code>,
+    Company-career-page fetches are blocked by this session's network egress policy (<code>greenhouse.io</code>,
     <code>myworkdayjobs.com</code>, <code>bytedance.com</code>, <code>ashbyhq.com</code>, <code>lifeattiktok.com</code>
-    all returned 403). Eligibility below is based on Simplify/speedyapply aggregator tags plus web-search snippets
-    where available, not a direct read of each posting. Verify details on the actual application page before submitting.
+    all return EGRESS_BLOCKED, confirmed again on a same-day recheck). Eligibility below is based on Simplify/speedyapply
+    aggregator tags plus web-search snippets where available, not a direct read of each posting. Verify details on the
+    actual application page before submitting.
   </div>
 
   <div class="cards">
@@ -397,30 +399,17 @@
       <a class="apply-link" href="https://jobs.bytedance.com/en/position/7670009669494704437/detail" target="_blank" rel="noopener">View posting &rarr;</a>
     </div>
 
-    <div class="card">
-      <div class="card-top">
-        <div>
-          <span class="card-company">Modal</span>
-          <span class="card-role"> &mdash; ML Research Intern</span>
-        </div>
-        <span class="card-location">New York City, NY</span>
-      </div>
-      <p class="card-fit">Modal is ML infra / serverless-compute focused, matching your blend of interpretability research
-        (tuned lens, causal basis extraction, ARENA curriculum) and production deployment experience.
-        <span class="caveat-inline">Public posting had thin requirements text &mdash; class-year eligibility wasn't confirmable; double-check before applying.</span></p>
-      <a class="apply-link" href="https://jobs.ashbyhq.com/modal/38888294-6bc7-4dab-b072-6d0f0c2ed79a" target="_blank" rel="noopener">View posting &rarr;</a>
-    </div>
-
   </div>
 </section>
 
 <section class="block">
   <details class="exclusions">
-    <summary>Exclusions today (372 postings)</summary>
+    <summary>Exclusions today (373 postings)</summary>
     <div class="excl-table">
       <table>
         <thead><tr><th>Company</th><th>Role</th><th class="reason">Reason</th></tr></thead>
         <tbody>
+          <tr><td>Modal</td><td>ML Research Intern</td><td class="reason">PhD-only &mdash; this morning's run listed it as a match with an "eligibility unconfirmable" caveat; a same-day recheck confirmed via search that the role is explicitly for PhD research interns, so it's moved here and no CV should be submitted for it</td></tr>
           <tr><td>Two Sigma</td><td>AI Research Scientist Intern</td><td class="reason">no explicit grad-only tag, but title/seniority strongly implies PhD-track; skipped out of caution</td></tr>
           <tr><td>Epic Games</td><td>Machine Learning Intern (x3, Special Projects/Research Group)</td><td class="reason">tagged advanced-degree-required</td></tr>
           <tr><td>ByteDance</td><td>Research Scientist Intern (several, e.g. Multimedia Streaming)</td><td class="reason">tagged advanced-degree-required</td></tr>
@@ -435,7 +424,11 @@
         those above, ~185 from speedyapply's Other/Quant/FAANG+ sections) were reviewed in bulk rather than
         line-by-line: mostly quant-trading roles, hardware/network/manufacturing engineering with no ML angle,
         or generic frontend/backend roles with no ML/agentic/production-ML relevance to this profile. None of them
-        read as a strong match that got dropped &mdash; the five above were the standout fits. Full source lists:
+        read as a strong match that got dropped &mdash; the four above were the standout fits. A same-day recheck also
+        spot-checked newly-surfaced listings (Trillium/Axon/SpaceX SWE Intern, TikTok Frontend Engineer &mdash; Ads,
+        ByteDance SDE Intern &mdash; Network Automation, TikTok Data Scientist Intern x2, Meta Research Scientist Intern x3)
+        and found no additional ML/agentic-relevant match: these are either generic SWE with no ML angle or
+        research-scientist-tier roles that typically skew advanced-degree. Full source lists:
         <a href="https://raw.githubusercontent.com/SimplifyJobs/Summer2027-Internships/dev/README.md" target="_blank" rel="noopener">SimplifyJobs/Summer2027-Internships</a>,
         <a href="https://raw.githubusercontent.com/speedyapply/2027-AI-College-Jobs/main/README.md" target="_blank" rel="noopener">speedyapply/2027-AI-College-Jobs</a>.</p>
     </div>
@@ -446,17 +439,30 @@
   <h2>Repo Status</h2>
   <div class="git-status ok"><span class="dot"></span>
     Pushed to GitHub (<code>niranjana2222/ai-job-search</code>, branch <code>master</code>). This dashboard is on
-    GitHub. The 5 tailored CV <code>.tex</code> files and <code>tracked_postings.md</code> are <strong>not</strong> on
-    GitHub &mdash; they're personal data excluded by <code>.gitignore</code> and exist only in this run's checkout.
-    lualatex/xelatex weren't available in this environment, so the CVs were written but not compiled to PDF; compile
-    and visually check the 2-page fit locally before submitting.</div>
+    GitHub. The 4 tailored CV <code>.tex</code> files drafted this morning are <strong>not</strong> on GitHub &mdash;
+    they're personal data excluded by <code>.gitignore</code>, and since each run gets a fresh container checkout they
+    no longer exist in this session either &mdash; re-run the CV drafting step locally before submitting any of the
+    four. lualatex/xelatex weren't available in either run, so no compiled-PDF page-count check has been done yet for
+    any of them.</div>
 </section>
 
 <section class="block">
   <h2>Run Log</h2>
   <div id="log-slot">
     <div class="log-entry">
-      <span class="log-date">2026-08-10</span>
+      <span class="log-date">2026-08-10 (follow-up, ~14:00 UTC)</span>
+      <span class="log-body">Same-day correction pass on this morning's run (no new day has passed, so no new
+        line-item scrape). Re-verified the 5 morning matches: Modal's ML Research Intern is confirmed PhD-only via
+        search (its own JD targets PhD research interns) and has been moved from New Matches to Exclusions &mdash;
+        the morning run under-flagged this despite it being a known miss called out in this task's own seed list.
+        Cresta, DataRobot, TikTok (Agentic Systems/AI Infra), and ByteDance (Applied ML Production Engineer) hold up
+        on recheck; direct career-page fetches remain EGRESS_BLOCKED for all of greenhouse/workday/bytedance/ashby/
+        lifeattiktok, so this is still aggregator-tag + search-snippet confidence, not a direct JD read. Also
+        spot-checked the two source READMEs for anything newly posted since the morning run; nothing additional
+        cleared the bar (see exclusions note). No new CVs drafted this pass. Dashboard pushed to GitHub.</span>
+    </div>
+    <div class="log-entry">
+      <span class="log-date">2026-08-10 (morning, ~05:44 UTC)</span>
       <span class="log-body">First run. 377 Summer 2027 SWE/ML postings reviewed (SimplifyJobs + speedyapply) &rarr;
         5 new matches (Cresta, DataRobot, TikTok, ByteDance, Modal), 372 excluded. CVs drafted for all 5 matches;
         no compiler available to verify PDF page count. Dashboard pushed to GitHub; CVs and tracker stay local-only
