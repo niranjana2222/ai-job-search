@@ -149,12 +149,15 @@
     padding: 0.6rem 0.85rem;
     margin-bottom: 1.1rem;
   }
-  .caveat code {
+  code {
     font-family: var(--mono);
-    font-size: 0.82em;
-    background: var(--surface);
+    font-size: 0.85em;
+    background: var(--surface-2);
     padding: 0.05em 0.3em;
     border-radius: 4px;
+  }
+  .caveat code {
+    background: var(--surface);
   }
 
   .cards {
@@ -324,7 +327,7 @@
   <p class="summary-line"><strong>5</strong> new matches &middot; <strong>372</strong> excluded (of 377 postings reviewed)</p>
   <div class="stat-row">
     <span class="stat-pill good">5 CVs drafted</span>
-    <span class="stat-pill warn">git push: check note below</span>
+    <span class="stat-pill good">git push: succeeded</span>
   </div>
 </header>
 
@@ -441,12 +444,25 @@
 
 <section class="block">
   <h2>Repo Status</h2>
-  <div id="git-status-slot"><!--GIT_STATUS--></div>
+  <div class="git-status ok"><span class="dot"></span>
+    Pushed to GitHub (<code>niranjana2222/ai-job-search</code>, commit <code>519f3c7</code>). This dashboard is on
+    GitHub. The 5 tailored CV <code>.tex</code> files and <code>tracked_postings.md</code> are <strong>not</strong> on
+    GitHub &mdash; they're personal data excluded by <code>.gitignore</code> and exist only in this run's checkout.
+    lualatex/xelatex weren't available in this environment, so the CVs were written but not compiled to PDF; compile
+    and visually check the 2-page fit locally before submitting.</div>
 </section>
 
 <section class="block">
   <h2>Run Log</h2>
-  <div id="log-slot"><!--LOG_ENTRIES--></div>
+  <div id="log-slot">
+    <div class="log-entry">
+      <span class="log-date">2026-08-10</span>
+      <span class="log-body">First run. 377 Summer 2027 SWE/ML postings reviewed (SimplifyJobs + speedyapply) &rarr;
+        5 new matches (Cresta, DataRobot, TikTok, ByteDance, Modal), 372 excluded. CVs drafted for all 5 matches;
+        no compiler available to verify PDF page count. Dashboard pushed to GitHub; CVs and tracker stay local-only
+        (gitignored personal data).</span>
+    </div>
+  </div>
 </section>
 
 </div>
