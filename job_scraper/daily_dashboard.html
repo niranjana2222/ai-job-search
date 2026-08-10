@@ -1,0 +1,457 @@
+<title>Daily Internship Scout</title>
+<style>
+  :root {
+    --bg: #f4f6f8;
+    --surface: #ffffff;
+    --surface-2: #eceff2;
+    --border: #d7dde3;
+    --text: #1a2229;
+    --text-muted: #55626d;
+    --accent: #2f5f8a;
+    --accent-strong: #1f4666;
+    --good: #1c7a4d;
+    --good-bg: #e4f5ec;
+    --warn: #8a5a12;
+    --warn-bg: #fbf0dd;
+    --bad: #a3312a;
+    --bad-bg: #fbe9e7;
+    --link: #2158a3;
+    --mono: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #14181c;
+      --surface: #1b2126;
+      --surface-2: #222a30;
+      --border: #323d45;
+      --text: #e7edf2;
+      --text-muted: #9aa8b3;
+      --accent: #7fb0dd;
+      --accent-strong: #a7cbea;
+      --good: #6bd19a;
+      --good-bg: #16302280;
+      --warn: #e3b45c;
+      --warn-bg: #3a2d1180;
+      --bad: #e08a83;
+      --bad-bg: #3a1c1980;
+      --link: #7fb0dd;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #14181c;
+    --surface: #1b2126;
+    --surface-2: #222a30;
+    --border: #323d45;
+    --text: #e7edf2;
+    --text-muted: #9aa8b3;
+    --accent: #7fb0dd;
+    --accent-strong: #a7cbea;
+    --good: #6bd19a;
+    --good-bg: #16302280;
+    --warn: #e3b45c;
+    --warn-bg: #3a2d1180;
+    --bad: #e08a83;
+    --bad-bg: #3a1c1980;
+    --link: #7fb0dd;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    line-height: 1.5;
+    padding: 0 0 4rem;
+  }
+
+  .wrap {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 0;
+  }
+
+  header.masthead {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 1.75rem;
+  }
+
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+
+  h1 {
+    font-size: 1.7rem;
+    margin: 0;
+    text-wrap: balance;
+    letter-spacing: -0.01em;
+  }
+
+  .summary-line {
+    color: var(--text-muted);
+    font-size: 0.98rem;
+  }
+
+  .summary-line strong {
+    color: var(--text);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .stat-row {
+    display: flex;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    margin-top: 0.4rem;
+  }
+
+  .stat-pill {
+    font-family: var(--mono);
+    font-size: 0.8rem;
+    padding: 0.25rem 0.6rem;
+    border-radius: 999px;
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+  }
+
+  .stat-pill.good { background: var(--good-bg); color: var(--good); border-color: transparent; }
+  .stat-pill.warn { background: var(--warn-bg); color: var(--warn); border-color: transparent; }
+
+  section.block { margin-bottom: 2rem; }
+
+  h2 {
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--text-muted);
+    margin: 0 0 0.9rem;
+    font-weight: 600;
+  }
+
+  .caveat {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0.6rem 0.85rem;
+    margin-bottom: 1.1rem;
+  }
+  .caveat code {
+    font-family: var(--mono);
+    font-size: 0.82em;
+    background: var(--surface);
+    padding: 0.05em 0.3em;
+    border-radius: 4px;
+  }
+
+  .cards {
+    display: grid;
+    gap: 0.85rem;
+  }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1rem 1.15rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+
+  .card-company {
+    font-weight: 700;
+    font-size: 1.05rem;
+  }
+
+  .card-role {
+    color: var(--text-muted);
+    font-size: 0.92rem;
+  }
+
+  .card-location {
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    background: var(--surface-2);
+    border-radius: 6px;
+    padding: 0.15rem 0.5rem;
+    white-space: nowrap;
+  }
+
+  .card-fit {
+    font-size: 0.92rem;
+    color: var(--text);
+  }
+
+  .card-fit .caveat-inline {
+    color: var(--warn);
+  }
+
+  .card a.apply-link {
+    align-self: flex-start;
+    font-size: 0.88rem;
+    color: var(--link);
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+  }
+  .card a.apply-link:hover { opacity: 0.8; }
+
+  details.exclusions {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 0.9rem 1.15rem;
+  }
+
+  details.exclusions summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+  }
+
+  .excl-table {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 0.9rem;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+  }
+
+  th, td {
+    text-align: left;
+    padding: 0.4rem 0.6rem;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+
+  th {
+    color: var(--text-muted);
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+
+  td.reason { color: var(--text-muted); }
+
+  .bulk-note {
+    margin-top: 0.9rem;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    border-top: 1px solid var(--border);
+    padding-top: 0.7rem;
+  }
+
+  .git-status {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+  }
+  .git-status.ok { background: var(--good-bg); color: var(--good); }
+  .git-status.fail { background: var(--bad-bg); color: var(--bad); }
+
+  .dot {
+    width: 0.55rem;
+    height: 0.55rem;
+    border-radius: 50%;
+    background: currentColor;
+    flex-shrink: 0;
+  }
+
+  .log-entry {
+    padding: 0.85rem 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .log-entry:last-child { border-bottom: none; }
+
+  .log-date {
+    font-family: var(--mono);
+    font-size: 0.8rem;
+    color: var(--accent);
+    display: block;
+    margin-bottom: 0.2rem;
+  }
+
+  .log-body {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+  }
+
+  footer.foot {
+    max-width: 880px;
+    margin: 2rem auto 0;
+    padding: 0 1.25rem;
+    font-size: 0.78rem;
+    color: var(--text-muted);
+  }
+</style>
+
+<div class="wrap">
+
+<header class="masthead">
+  <span class="eyebrow">Daily Internship Scout &middot; Niranjana Sankar</span>
+  <h1>2026-08-10</h1>
+  <p class="summary-line"><strong>5</strong> new matches &middot; <strong>372</strong> excluded (of 377 postings reviewed)</p>
+  <div class="stat-row">
+    <span class="stat-pill good">5 CVs drafted</span>
+    <span class="stat-pill warn">git push: check note below</span>
+  </div>
+</header>
+
+<section class="block">
+  <h2>New Matches</h2>
+  <div class="caveat">
+    Company-career-page fetches were blocked by this session's network egress policy (<code>greenhouse.io</code>,
+    <code>myworkdayjobs.com</code>, <code>bytedance.com</code>, <code>ashbyhq.com</code>, <code>lifeattiktok.com</code>
+    all returned 403). Eligibility below is based on Simplify/speedyapply aggregator tags plus web-search snippets
+    where available, not a direct read of each posting. Verify details on the actual application page before submitting.
+  </div>
+
+  <div class="cards">
+
+    <div class="card">
+      <div class="card-top">
+        <div>
+          <span class="card-company">Cresta</span>
+          <span class="card-role"> &mdash; Data Science Intern (Customer Success)</span>
+        </div>
+        <span class="card-location">Remote &middot; US</span>
+      </div>
+      <p class="card-fit">Directly aligned with your on-device NLU work and Constitutional-AI red-teaming at Bright.ai &mdash;
+        Cresta builds conversational AI for customer-facing teams. Bachelor's/Master's eligible, Python-based, fully remote.
+        <span class="caveat-inline">Salary wasn't listed on the posting &mdash; confirm it's paid before applying.</span></p>
+      <a class="apply-link" href="https://job-boards.greenhouse.io/cresta/jobs/5213417008" target="_blank" rel="noopener">View posting &rarr;</a>
+    </div>
+
+    <div class="card">
+      <div class="card-top">
+        <div>
+          <span class="card-company">DataRobot</span>
+          <span class="card-role"> &mdash; Agentic AI Intern</span>
+        </div>
+        <span class="card-location">Remote &middot; Boston/Seattle/SF</span>
+      </div>
+      <p class="card-fit">Strong match for your 3-agent LLM extraction pipeline and LangChain/Composio agent work &mdash;
+        this role builds agentic workflows for engineering automation. Bachelor's/Master's eligible, Python-based,
+        ~6-month remote program.</p>
+      <a class="apply-link" href="https://datarobot.wd1.myworkdayjobs.com/en-US/datarobot_external_careers/job/Boston-Massachusetts-US/Agentic-AI-Intern_R-102729" target="_blank" rel="noopener">View posting &rarr;</a>
+    </div>
+
+    <div class="card">
+      <div class="card-top">
+        <div>
+          <span class="card-company">TikTok</span>
+          <span class="card-role"> &mdash; Research Engineer Intern, Agentic Systems &amp; AI Infrastructure</span>
+        </div>
+        <span class="card-location">Seattle, WA</span>
+      </div>
+      <p class="card-fit">Combines your production ML-infra experience (ONNX/NPU serving, Go-to-Python migration)
+        with agent-pipeline work directly. TikTok's general internship criteria accept undergrads and don't mandate C++
+        (Python/Go/Java all qualify).</p>
+      <a class="apply-link" href="https://lifeattiktok.com/search/7667934792727906565" target="_blank" rel="noopener">View posting &rarr;</a>
+    </div>
+
+    <div class="card">
+      <div class="card-top">
+        <div>
+          <span class="card-company">ByteDance</span>
+          <span class="card-role"> &mdash; Applied Machine Learning Production Engineer Intern</span>
+        </div>
+        <span class="card-location">San Jose, CA</span>
+      </div>
+      <p class="card-fit">Near 1:1 match to your Bright.ai production ML work: ONNX export, NPU serving, Docker/systemd
+        deployment, and CI at scale. Not tagged advanced-degree-required in the source listing.</p>
+      <a class="apply-link" href="https://jobs.bytedance.com/en/position/7670009669494704437/detail" target="_blank" rel="noopener">View posting &rarr;</a>
+    </div>
+
+    <div class="card">
+      <div class="card-top">
+        <div>
+          <span class="card-company">Modal</span>
+          <span class="card-role"> &mdash; ML Research Intern</span>
+        </div>
+        <span class="card-location">New York City, NY</span>
+      </div>
+      <p class="card-fit">Modal is ML infra / serverless-compute focused, matching your blend of interpretability research
+        (tuned lens, causal basis extraction, ARENA curriculum) and production deployment experience.
+        <span class="caveat-inline">Public posting had thin requirements text &mdash; class-year eligibility wasn't confirmable; double-check before applying.</span></p>
+      <a class="apply-link" href="https://jobs.ashbyhq.com/modal/38888294-6bc7-4dab-b072-6d0f0c2ed79a" target="_blank" rel="noopener">View posting &rarr;</a>
+    </div>
+
+  </div>
+</section>
+
+<section class="block">
+  <details class="exclusions">
+    <summary>Exclusions today (372 postings)</summary>
+    <div class="excl-table">
+      <table>
+        <thead><tr><th>Company</th><th>Role</th><th class="reason">Reason</th></tr></thead>
+        <tbody>
+          <tr><td>Two Sigma</td><td>AI Research Scientist Intern</td><td class="reason">no explicit grad-only tag, but title/seniority strongly implies PhD-track; skipped out of caution</td></tr>
+          <tr><td>Epic Games</td><td>Machine Learning Intern (x3, Special Projects/Research Group)</td><td class="reason">tagged advanced-degree-required</td></tr>
+          <tr><td>ByteDance</td><td>Research Scientist Intern (several, e.g. Multimedia Streaming)</td><td class="reason">tagged advanced-degree-required</td></tr>
+          <tr><td>TikTok</td><td>~20 ML Engineer/Scientist/Research Scientist Intern postings</td><td class="reason">tagged advanced-degree-required (Master's/PhD)</td></tr>
+          <tr><td>Capital One</td><td>PhD / Master's Data Science Internship</td><td class="reason">explicitly PhD/Master's-only</td></tr>
+          <tr><td>IMC Trading, AlixPartners, StepStone Group</td><td>ML Research Intern / Data Scientist Intern / AI Intern</td><td class="reason">advanced-degree-required; IMC/AlixPartners also non-US (London)</td></tr>
+          <tr><td>D. E. Shaw &amp; Co.</td><td>Quantitative Analyst &mdash; Ph.D. Intern</td><td class="reason">PhD-only</td></tr>
+          <tr><td>Citadel</td><td>Machine Learning Researcher &mdash; PhD Intern</td><td class="reason">PhD-only</td></tr>
+        </tbody>
+      </table>
+      <p class="bulk-note">The remaining ~355 postings (~165 from Simplify's SWE + Data Science/AI/ML sections beyond
+        those above, ~185 from speedyapply's Other/Quant/FAANG+ sections) were reviewed in bulk rather than
+        line-by-line: mostly quant-trading roles, hardware/network/manufacturing engineering with no ML angle,
+        or generic frontend/backend roles with no ML/agentic/production-ML relevance to this profile. None of them
+        read as a strong match that got dropped &mdash; the five above were the standout fits. Full source lists:
+        <a href="https://raw.githubusercontent.com/SimplifyJobs/Summer2027-Internships/dev/README.md" target="_blank" rel="noopener">SimplifyJobs/Summer2027-Internships</a>,
+        <a href="https://raw.githubusercontent.com/speedyapply/2027-AI-College-Jobs/main/README.md" target="_blank" rel="noopener">speedyapply/2027-AI-College-Jobs</a>.</p>
+    </div>
+  </details>
+</section>
+
+<section class="block">
+  <h2>Repo Status</h2>
+  <div id="git-status-slot"><!--GIT_STATUS--></div>
+</section>
+
+<section class="block">
+  <h2>Run Log</h2>
+  <div id="log-slot"><!--LOG_ENTRIES--></div>
+</section>
+
+</div>
+
+<footer class="foot">
+  Automated daily scout. Sources: SimplifyJobs/Summer2027-Internships, speedyapply/2027-AI-College-Jobs, plus targeted web search.
+  Live cycle as of 2026-08-10: Summer 2027 (standard rising-junior-summer timing for a May 2029 grad).
+</footer>
