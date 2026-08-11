@@ -323,23 +323,26 @@
 
 <header class="masthead">
   <span class="eyebrow">Daily Internship Scout &middot; Niranjana Sankar</span>
-  <h1>2026-08-10</h1>
-  <p class="summary-line"><strong>5</strong> new matches &middot; 8 more flagged as uncertain (not built) &middot; 6 excluded outright on hard eligibility grounds &middot; rest already covered by prior runs / seed list</p>
+  <h1>2026-08-11</h1>
+  <p class="summary-line"><strong>3</strong> new matches &middot; 9 flagged as uncertain (not built) &middot; 2 excluded on hard eligibility grounds &middot; rest already covered by the seed list / prior runs</p>
   <div class="stat-row">
-    <span class="stat-pill good">5 CVs drafted</span>
-    <span class="stat-pill warn">no cover letters (none of the 5 postings requested one)</span>
-    <span class="stat-pill warn">eligibility from aggregator + search snippets, not a direct JD read</span>
+    <span class="stat-pill good">3 CVs drafted</span>
+    <span class="stat-pill warn">no cover letters (none of the 3 postings confirmed one required)</span>
+    <span class="stat-pill warn">eligibility from search snippets, not a direct JD read (ATS/board domains blocked)</span>
+    <span class="stat-pill warn">lualatex/xelatex not installed &mdash; no compiled-PDF page-count check</span>
   </div>
 </header>
 
 <section class="block">
   <h2>New Matches</h2>
   <div class="caveat">
-    Fourth run today. Company-career-page fetches are still blocked by this session's network egress policy
-    (<code>greenhouse.io</code>, <code>myworkdayjobs.com</code>, <code>ashbyhq.com</code>, <code>lever.co</code>,
-    <code>bytedance.com</code>, <code>lifeattiktok.com</code> all EGRESS_BLOCKED, same as all three earlier runs
-    today). The matches below are judged from aggregator tags plus web-search snippets, not a direct read of the
-    posting &mdash; verify everything on the actual application page before submitting.
+    Direct fetches of every ATS/job-board domain touched today &mdash; <code>workatastartup.com</code>,
+    <code>builtinnyc.com</code>, <code>builtinsf.com</code>, <code>wellfound.com</code>,
+    <code>jobs.generalcatalyst.com</code>, <code>jobs.menlovc.com</code>, <code>jobs.jobvite.com</code>,
+    <code>job-boards.greenhouse.io</code>, <code>nvidia.wd5.myworkdayjobs.com</code> &mdash; returned
+    <code>EGRESS_BLOCKED</code> from this session's network proxy. Every match and exclusion below rests on
+    WebSearch-indexed snippets/cached summaries of these postings, not a direct read of the live page. Verify
+    pay, eligibility, and open/closed status on the actual application page before submitting anything.
   </div>
 
   <div class="cards">
@@ -347,91 +350,59 @@
     <div class="card">
       <div class="card-top">
         <div>
-          <span class="card-company">Persona AI</span>
-          <span class="card-role"> &mdash; Machine Learning Intern, Manipulation</span>
-        </div>
-        <span class="card-location">Houston, TX</span>
-      </div>
-      <p class="card-fit">Strong fit: humanoid-robotics company building robotic arm/hand control and manipulation
-        learning systems. Directly overlaps with your linear-probe research on the PaliGemma vision-language-action
-        model (Berkeley ICON Lab) and RL background (ICRL/SOAR/TRPO). No PhD/Master's-only language found anywhere
-        in Persona AI's internship postings &mdash; their other listings explicitly say "current undergraduate or
-        Master's students," and Python is accepted alongside C/C++/Java/Rust. Persona AI's RL Engineering Intern
-        listing shows paid rates ($14&ndash;19/hr); this role is presumed paid on the same basis but wasn't
-        independently confirmed for this exact title.
-        <span class="caveat-inline">Confirm pay for this specific listing before applying.</span></p>
-      <a class="apply-link" href="https://jobs.ashbyhq.com/personainc.ai/6773dc35-24a5-458d-bc56-17a73ae00fb0" target="_blank" rel="noopener">View posting &rarr;</a>
-      <p class="card-fit" style="font-size:0.85rem;">CV drafted: <code>cv/main_personaai-ml-intern-manipulation.tex</code>. No cover letter drafted (not requested).</p>
-    </div>
-
-    <div class="card">
-      <div class="card-top">
-        <div>
-          <span class="card-company">Jump Trading</span>
-          <span class="card-role"> &mdash; Campus AI Research Engineer Intern <span style="font-weight:400;color:var(--text-muted);">(also covers the "Deep Learning" and "Research Automation" variants of the same posting family)</span></span>
-        </div>
-        <span class="card-location">Chicago, IL</span>
-      </div>
-      <p class="card-fit">Good fit: builds ML training/eval frameworks and pipelines for financial deep learning
-        research &mdash; overlaps with your mechanistic-interpretability and RL research experience and your
-        production ML-pipeline work at Bright.ai. This "Campus AI Research Engineer" track is confirmed separate
-        from Jump's PhD/Postdoc-only "Campus AI Researcher" listings, which are excluded below. No explicit
-        class-year restriction found (Jump also runs a distinct "Sophomore" program, but nothing excludes sophomores
-        from this listing). Paid: aggregator-listed at $138/hr. Python-centric; no hard C++ requirement surfaced.
-        <span class="caveat-inline">Verify exact class-year eligibility on the live posting &mdash; not fully confirmed.</span></p>
-      <a class="apply-link" href="https://jumptrading.com/careers" target="_blank" rel="noopener">View careers page &rarr;</a>
-      <p class="card-fit" style="font-size:0.85rem;">CV drafted: <code>cv/main_jumptrading-ai-research-engineer-deep-learning-intern.tex</code>. No cover letter drafted (not requested).</p>
-    </div>
-
-    <div class="card">
-      <div class="card-top">
-        <div>
           <span class="card-company">CTGT</span>
-          <span class="card-role"> &mdash; Software Engineering Intern, Summer 2027</span>
+          <span class="card-role"> &mdash; Research Intern: Interpretability &amp; Reliability (Summer 2027)</span>
         </div>
         <span class="card-location">San Francisco, CA</span>
       </div>
-      <p class="card-fit">Good fit: Stanford-founded, YC-backed, VC-funded ($7.2M, Gradient/Google, General Catalyst)
-        AI-governance/interpretability startup &mdash; aligns with your mechanistic-interpretability research
-        (ARENA curriculum, probing work). Listing requires only "currently pursuing a Bachelor's in CS or related
-        field," Python/JS &mdash; no PhD/Master's language found. Note: this is a Summer 2027 listing, not
-        immediate.</p>
-      <a class="apply-link" href="https://jobs.ashbyhq.com/ctgt/f657c2f5-125e-42b6-a68a-646bbea3d155" target="_blank" rel="noopener">View posting &rarr;</a>
-      <p class="card-fit" style="font-size:0.85rem;">CV drafted: <code>cv/main_ctgt-swe-intern.tex</code>. No cover letter drafted (not requested).</p>
+      <p class="card-fit">Strong fit: same company as the SWE Intern role already built in a prior run, but this
+        is a distinct role/req &mdash; a research-track interpretability internship. Listing text says "Bachelor's
+        through PhD," so undergrads are explicitly welcome; stack is Python/Rust/Node-TS/React with no C++
+        requirement. Directly overlaps with your ARENA mechanistic-interpretability curriculum and probing/tuned-lens
+        research at Berkeley. Company confirmed real: $7.2M seed backed by Google's Gradient Ventures, General
+        Catalyst, and Y Combinator.
+        <span class="caveat-inline">Pay not confirmed for this exact req &mdash; a sibling Summer 2027 SWE intern
+        listing at CTGT pays $8K&ndash;12K/month, suggesting this is paid too, but confirm directly.</span></p>
+      <a class="apply-link" href="https://www.workatastartup.com/jobs/97530" target="_blank" rel="noopener">View posting &rarr;</a>
+      <p class="card-fit" style="font-size:0.85rem;">CV drafted: <code>cv/main_ctgt-research-intern-interpretability.tex</code>. No cover letter drafted (not confirmed required).</p>
     </div>
 
     <div class="card">
       <div class="card-top">
         <div>
-          <span class="card-company">Eragon</span>
-          <span class="card-role"> &mdash; Applied AI Intern</span>
+          <span class="card-company">Jaan Health / Phamily</span>
+          <span class="card-role"> &mdash; Machine Learning Intern (R&amp;D)</span>
         </div>
-        <span class="card-location">San Francisco, CA</span>
+        <span class="card-location">New York, NY</span>
       </div>
-      <p class="card-fit">Strong fit: $12M-funded agentic-AI startup (TechCrunch-covered). Requires only "currently
-        pursuing a Bachelor's or Master's" in CS/Engineering plus Python + PyTorch/TF and LLM/agent exposure &mdash;
-        directly matches your LangChain/Composio agent work and 3-agent LLM extraction pipeline at Bright.ai. Paid:
-        $1,000&ndash;2,000/week.</p>
-      <a class="apply-link" href="https://eragon.ai/careers" target="_blank" rel="noopener">View careers page &rarr;</a>
-      <p class="card-fit" style="font-size:0.85rem;">CV drafted: <code>cv/main_eragon-applied-ai-intern.tex</code>. No cover letter drafted (not requested).</p>
+      <p class="card-fit">Good fit: healthcare AI platform for chronic-care management, real and funded (closed a
+        $25M round in 2025, including $15M from Level Structured Capital). Explicitly paid at
+        <strong>$30&ndash;35/hr</strong>, June 15&ndash;Aug 14 2026 window. No PhD/Master's-only language or
+        C++ requirement found. Overlaps with your production ML engineering experience at Bright.ai and your
+        published medical-imaging research (CT scan infection detection, AAOMR 2024).
+        <span class="caveat-inline">In-office 5 days/week in NYC &mdash; relocation required from Berkeley (you're
+        open to relocating anywhere in the US, so this is a logistics note rather than a blocker).</span></p>
+      <a class="apply-link" href="https://www.builtinnyc.com/job/machine-learning-intern-r-d/9436837" target="_blank" rel="noopener">View posting &rarr;</a>
+      <p class="card-fit" style="font-size:0.85rem;">CV drafted: <code>cv/main_jaanhealth-ml-intern-rd.tex</code>. No cover letter drafted (not confirmed required).</p>
     </div>
 
     <div class="card">
       <div class="card-top">
         <div>
-          <span class="card-company">Netic <span style="font-weight:400;color:var(--text-muted);">(aggregator name &ldquo;Cybernetic Labs&rdquo;)</span></span>
-          <span class="card-role"> &mdash; Full-Stack Software Engineer Intern, Product</span>
+          <span class="card-company">PathAI</span>
+          <span class="card-role"> &mdash; Machine Learning Intern/Co-op (Summer/Fall 2026)</span>
         </div>
-        <span class="card-location">San Francisco, CA</span>
+        <span class="card-location">Boston, MA / NYC (remote-US considered)</span>
       </div>
-      <p class="card-fit">Same company as the "Software Engineer Intern &ndash; Agent Platform" role matched in an
-        earlier run today &mdash; this is a <em>different</em> listed role at Netic, not a duplicate. 12-week,
-        2026&ndash;2027 cycle, React/TypeScript/Python. No PhD/Master's language found. Good fit for your full-stack
-        background (React/SQL at Berkeley BluePrint) plus the agentic-systems experience that's core to Netic's
-        product. Company confirmed real and well-funded ($43M, Founders Fund/Greylock/Dylan Field). Same open
-        caveat as the earlier match: no published pay data found &mdash; confirm it's paid before applying.</p>
-      <a class="apply-link" href="https://jobs.ashbyhq.com/netic/f291394a-f3c5-4f46-9b87-77aea3d487ef" target="_blank" rel="noopener">View posting &rarr;</a>
-      <p class="card-fit" style="font-size:0.85rem;">CV drafted: <code>cv/main_netic-fullstack-swe-intern-product.tex</code>. No cover letter drafted (not requested).</p>
+      <p class="card-fit">Genuine match on eligibility and pay, weaker match on domain: established computational-
+        pathology AI company (General Catalyst portfolio) with confirmed clinical/product traction. Paid
+        <strong>$30,700&ndash;43,500</strong> stipend for the internship period; eligibility is explicitly
+        full-time bachelor's students with a 3.0+ GPA &mdash; no PhD-only language, no C++.
+        <span class="caveat-inline">Your research specialty is language/speech models and interpretability, not
+        computer vision/pathology &mdash; the CV leads with your medical-imaging publication (CT scan infection
+        detection) but honestly notes the domain gap rather than overstating the fit.</span></p>
+      <a class="apply-link" href="https://jobs.generalcatalyst.com/companies/pathai/jobs/73735263-machine-learning-intern-co-op-summer-fall-2026" target="_blank" rel="noopener">View posting &rarr;</a>
+      <p class="card-fit" style="font-size:0.85rem;">CV drafted: <code>cv/main_pathai-ml-intern-coop.tex</code>. No cover letter drafted (not confirmed required).</p>
     </div>
 
   </div>
@@ -440,21 +411,22 @@
 <section class="block">
   <h2>Flagged but not built (uncertain &mdash; worth checking yourself)</h2>
   <div class="caveat" style="margin-bottom:0.9rem;">
-    These weren't excluded outright, but eligibility, pay, or skills fit couldn't be pinned down even after
-    dedicated research (all ATS domains blocked, thin aggregator coverage). No CV drafted for any of these.
+    These weren't excluded outright, but eligibility, staleness, or company viability couldn't be pinned down even
+    after dedicated research (all ATS/board domains blocked, thin aggregator coverage). No CV drafted for any of these.
   </div>
   <div class="excl-table">
     <table>
       <thead><tr><th>Company</th><th>Role</th><th class="reason">Why uncertain</th></tr></thead>
       <tbody>
-        <tr><td>Blue River Technology</td><td>2026 ML Intern &ndash; Autonomy (Remote, USA)</td><td class="reason">Posting confirmed live at this John Deere ag-robotics subsidiary; degree-year and skill requirements could not be found on any reachable source.</td></tr>
-        <tr><td>Xterra AI</td><td>Research Scientist Intern (SF/Menlo Park)</td><td class="reason">JD reportedly accepts "PhD/Master's <em>or</em> an undergraduate with significant research experience" &mdash; not a hard wall, but unclear if a rising sophomore clears that bar.</td></tr>
-        <tr><td>Eluvio</td><td>AI/ML Summer Internship &ndash; Gen AI (Berkeley, CA)</td><td class="reason">Confirmed paid, open to "MSc/PhD students or advanced undergraduates" &mdash; "advanced" may exceed rising-sophomore standing.</td></tr>
-        <tr><td>Egra</td><td>AI Researcher/Engineer/Intern (NYC)</td><td class="reason">Eligible (no PhD/Master's gate, paid $35&ndash;60/hr) but the work is EEG/brain-signal foundation models &mdash; no real skills overlap with your profile.</td></tr>
-        <tr><td>Phonic</td><td>ML Research Intern, Fall 2026 (SF)</td><td class="reason">No hard degree exclusion, but requires PyTorch/JAX fluency and a "track record of implementing papers" &mdash; competitive research bar, strictly in-person.</td></tr>
-        <tr><td>Netic</td><td>Forward Deployed Engineer Intern (SF)</td><td class="reason">Same company/program as the two matches above; no degree restriction found, but the role expects customer-facing production maturity that's harder to gauge as a fit.</td></tr>
-        <tr><td>Yotta Labs</td><td>Research Engineer Intern &ndash; AI Systems (USA)</td><td class="reason">Legitimate NSF-grant-backed GPU/AI-orchestration startup, but scope (compiler/runtime optimization, GPU kernel development) strongly implies C++/CUDA with no confirmed Python path &mdash; likely mismatch given you're not proficient in C++. Pay/eligibility also unconfirmed.</td></tr>
-        <tr><td>Plus (plus.ai)</td><td>ML Engineer Intern &ndash; Planning / Scenario Simulation (Santa Clara)</td><td class="reason">Distinct from Plus's Deep Learning Research Intern and CV Engineer Intern roles (both excluded below for requiring MS/PhD) &mdash; these two showed only "Python and PyTorch" in snippets, degree requirement unconfirmed either way.</td></tr>
+        <tr><td>DV Trading</td><td>Software Engineer Intern (NYC)</td><td class="reason">Sibling 2026 SWE intern listings at DV Trading state grad window "Winter 2026&ndash;Summer 2027," which would exclude a May 2029 grad &mdash; but this exact req couldn't be confirmed to carry the same language.</td></tr>
+        <tr><td>Altamira Technologies</td><td>Software Development Intern (Fairborn, OH)</td><td class="reason">Defense/intel contractor; multiple independent secondary sources describe Altamira roles as requiring US citizenship and willingness to obtain a security clearance &mdash; likely a hard blocker, not confirmed for this exact req.</td></tr>
+        <tr><td>The Nuclear Company</td><td>AI/ML Engineer Intern (Washington, DC)</td><td class="reason">This exact job ID never surfaced in any search index &mdash; could not confirm the posting exists as described, let alone its requirements.</td></tr>
+        <tr><td>Pulse</td><td>Machine Learning Engineer Intern (SF)</td><td class="reason">Explicitly undergrad-friendly ("second- or third-year") and paid $7&ndash;12K/month, YC S24 real company &mdash; but labeled "Summer 2026," a term that has already started/ended as of today; can't confirm it's still open or rolled to Summer 2027.</td></tr>
+        <tr><td>Novaflow</td><td>Machine Learning Engineer Intern (SF)</td><td class="reason">Strong agentic-LLM fit (YC S25, real customers at Mount Sinai/UCSF/Harvard) but same "Summer 2026" staleness concern as Pulse.</td></tr>
+        <tr><td>Inductive Bio</td><td>Machine Learning Intern (NYC)</td><td class="reason">Real, Lux Capital-backed biotech AI startup, but listing asks for "advanced undergraduate or graduate student with research experience" &mdash; unclear if a rising sophomore clears that bar.</td></tr>
+        <tr><td>DatologyAI</td><td>Software Engineer Intern, Machine Learning (Redwood City, Fall 2026)</td><td class="reason">Strong LLM-data-pipeline fit, but this is a Fall 2026, in-office-4-days/week term &mdash; unclear if compatible with full-time sophomore-year enrollment at Berkeley, and undergrad eligibility wasn't explicit in available snippets.</td></tr>
+        <tr><td>ScriptChain Health</td><td>AI Agent Engineer Intern (SF Bay/remote)</td><td class="reason">Thematic fit (GraphRAG + LLM agent pipeline) is strong, but company scale/funding is too thin to verify as a viable employer per this task's startup-verification bar (~8 people, one source lists a ~$62K pre-seed round, another lists $0 raised).</td></tr>
+        <tr><td>Lambda</td><td>ML Research Intern, Fundamental Research track (SF)</td><td class="reason">Company legitimacy/funding is solid (well-known GPU-cloud provider), but couldn't confirm whether this specific research track is undergrad-accessible or effectively PhD-leaning &mdash; worth a direct check next run.</td></tr>
       </tbody>
     </table>
   </div>
@@ -467,30 +439,19 @@
       <table>
         <thead><tr><th>Company</th><th>Role</th><th class="reason">Reason</th></tr></thead>
         <tbody>
-          <tr><td>Centific</td><td>Research Intern &mdash; Applied Reinforcement Learning</td><td class="reason">Every independent source describes this as an MS/PhD role ("MS/PhD in CS, ML, or related field, or equivalent experience") &mdash; base requirement, not just a preference.</td></tr>
-          <tr><td>Cotiviti</td><td>Intern &ndash; Generative AI Research Engineer / Generative-Agentic AI Research</td><td class="reason">Qualifications require "currently pursuing or recently completed an advanced degree," with PhD as a stated preference on top &mdash; Master's/PhD is the floor.</td></tr>
-          <tr><td>Pony.ai</td><td>Research Intern, Deep Learning</td><td class="reason">Every listing titles this role "...(Master/PhD)" explicitly &mdash; hard exclusion, also requires C++.</td></tr>
-          <tr><td>Plus (plus.ai)</td><td>Deep Learning Research Intern &ndash; Multimodal BEV Perception; Computer Vision Engineer Intern</td><td class="reason">Both require "MS or PhD in CS, EE, mathematics, statistics, or related field."</td></tr>
-          <tr><td>Institute of Foundation Models (MBZUAI Silicon Valley)</td><td>AI Research Internship</td><td class="reason">JD explicitly requires "currently pursuing or recently completed a Master's or PhD" &mdash; no undergrad path.</td></tr>
-          <tr><td>OpusClip</td><td>AI Research Intern</td><td class="reason">Aggregator text (moderate confidence) states "currently pursuing or recently completing a Master's degree" &mdash; Master's-only language.</td></tr>
-          <tr><td>Postman</td><td>AI Engineer, Internship</td><td class="reason">Carried over from an earlier run today: term is Summer/Fall 2026 (immediate), not Summer 2027, and requires on-site Berkeley 5 days/week.</td></tr>
+          <tr><td>NVIDIA</td><td>Applied Research Intern, NLP (Santa Clara)</td><td class="reason">Multiple independent sources consistently describe the requirement as "MS/PhD in CS/EE or a strong publication record" &mdash; a graduate-level research bar, treated as a hard exclusion under this task's grad-level rule even though it isn't phrased as strict "PhD-only."</td></tr>
+          <tr><td>Vilya</td><td>Intern &ndash; Machine Learning Engineer (Seattle, via Menlo Ventures board)</td><td class="reason">Requires graduating with a B.S. "in or before spring 2027" &mdash; doesn't fit a May 2029 grad.</td></tr>
         </tbody>
       </table>
-      <p class="bulk-note">All ~232 SimplifyJobs/speedyapply rows and ~30 additional postings researched today beyond
-        the items above were either: already covered by this task's seed list or an earlier run today (the bulk of
-        the ~50+ TikTok/ByteDance postings, Netic's Agent Platform role, Modal, Two Sigma, Citadel, Citadel
-        Securities, Jane Street, DRW, Akuna Capital, SIG, Optiver, Hudson River Trading, D. E. Shaw, Cresta,
-        DataRobot, Scale AI, Mistral &mdash; see prior run-log entries and this task's seed list for the full
-        accounting); explicitly PhD/Master's-only (Marvell, Netflix AIMS, several NVIDIA/Meta Research Scientist
-        Intern roles, Lila Sciences Co-Ops, Tencent Hunyuan research roles, Capital One's Master's/PhD Data Science
-        track, Jump Trading's separate PhD/Postdoc "Campus AI Researcher" listing); non-US (Bloxd London, Castleton
-        Commodities London, Marshall Wace London, Prior Labs Berlin, Hudson River Trading UK, Cohere Canada &mdash;
-        Cohere flagged here by name as a notable frontier-AI lab despite being Canada-based, in case an exception is
-        worth considering); or generic roles with no ML/agentic/robotics angle (RTX, Northrop Grumman, GE
-        Appliances/Vernova, Ameren, Vertiv, Uline, Boeing, Axon, SpaceX, Medtronic, Genworth, GoDaddy, Virtu
-        Financial, Appian, Western Digital, Belvedere Trading, Chicago Trading Company, JP Morgan Chase, HPR,
-        Melius, Heliux, Quadrillion, Circleback, Pylon, and the bulk of the "Other" section's generic
-        corporate-AI-ops internships). Full source lists:
+      <p class="bulk-note">Everything else surfaced by today's aggregator/search sweep &mdash; the ~230+ SimplifyJobs/
+        speedyapply rows, all TikTok/ByteDance postings (treated as covered per this task's seed list regardless of
+        specific title, including two new ones seen today: "SWE Intern &ndash; AML-Engine-Orchestration" and a
+        generic "Machine Learning Engineer Intern"), Axon, Belvedere Trading, SpaceX, JP Morgan Chase, Citadel
+        (Sector Data Scientist Intern), Scale AI, OpusClip (a Product Management intern role, not SWE/ML, so
+        off-target regardless of the seed list), and Plus's Computer Vision Engineer Intern (already excluded in a
+        prior run for MS/PhD) &mdash; were either already covered by this task's seed list, already reviewed in a
+        prior run (see Run Log below), or a category-level mismatch (defense-generic, quant-trading-generic,
+        wrong role type). Full source lists:
         <a href="https://raw.githubusercontent.com/SimplifyJobs/Summer2027-Internships/dev/README.md" target="_blank" rel="noopener">SimplifyJobs/Summer2027-Internships</a>,
         <a href="https://raw.githubusercontent.com/speedyapply/2027-AI-College-Jobs/main/README.md" target="_blank" rel="noopener">speedyapply/2027-AI-College-Jobs</a>.</p>
     </div>
@@ -498,19 +459,48 @@
 </section>
 
 <section class="block">
+  <h2>Sources checked this run</h2>
+  <div class="caveat" style="margin-bottom:0;">
+    Aggregator READMEs (SimplifyJobs/Summer2027-Internships, speedyapply/2027-AI-College-Jobs) &mdash; refetched
+    fresh. Startup sources: YC Work at a Startup, General Catalyst portfolio board, Menlo Ventures portfolio
+    board, Wellfound, Built In NYC/SF (5 of the suggested rotation, all via WebSearch since direct fetch was
+    blocked on every one of these domains). Targeted WebSearch eligibility verification on 4 aggregator
+    candidates (DV Trading, Altamira, The Nuclear Company, NVIDIA). Not checked this run: General Catalyst's
+    other listings beyond PathAI/Lila Sciences/Mercor, a16z/Sequoia-style boards (none discoverable), Built In
+    Chicago/Boston/Austin.
+  </div>
+</section>
+
+<section class="block">
   <h2>Repo Status</h2>
   <div class="git-status ok" id="git-status-slot"><span class="dot"></span>
-    <span id="git-status-text">Pushed to GitHub (<code>niranjana2222/ai-job-search</code>, branch <code>master</code>).
-    The 5 new CVs are <strong>not</strong> on GitHub &mdash; they're personal data excluded by <code>.gitignore</code>,
-    and since <code>cv/main_*.tex</code> files don't persist between sessions, they'll need to be regenerated if a
-    future session needs them again. lualatex/xelatex are still not available in this environment, so no
-    compiled-PDF page-count check has been done for any of the 5 CVs &mdash; compile and check page count before
-    using any of them.</span></div>
+    <span id="git-status-text">GIT_STATUS_PLACEHOLDER</span></div>
 </section>
 
 <section class="block">
   <h2>Run Log</h2>
   <div id="log-slot">
+    <div class="log-entry">
+      <span class="log-date">2026-08-11 (~14:00 UTC)</span>
+      <span class="log-body">First run of a new day. Fetched this dashboard's own last-published state (four runs
+        on 2026-08-10) plus this task's seed list to build the dedup set. Re-fetched both aggregator READMEs fresh
+        and ran three parallel research passes covering the aggregators, YC Work at a Startup + General
+        Catalyst/Menlo Ventures portfolio boards, and Wellfound + Built In NYC/SF. All ATS/job-board/portfolio-board
+        domains remained EGRESS_BLOCKED for direct fetch (same as every prior run), so all judgments rest on
+        WebSearch-indexed snippets, not a direct JD read. Found 3 new candidates worth building: CTGT (a second,
+        distinct research-track role at a company already matched for its SWE intern role in a prior run), Jaan
+        Health/Phamily (ML Intern R&amp;D, confirmed $30&ndash;35/hr), and PathAI (ML Intern/Co-op, confirmed
+        $30,700&ndash;43,500 stipend, weaker domain fit honestly acknowledged in the CV). Excluded NVIDIA's Applied
+        Research Intern (NLP) for an MS/PhD-or-publication-record bar and Vilya's ML Engineer intern for a
+        grad-year mismatch. Left 9 other candidates flagged-uncertain rather than built or excluded: DV Trading,
+        Altamira Technologies, The Nuclear Company (grad-year/clearance/verifiability concerns), Pulse and Novaflow
+        (stale "Summer 2026" labeling), Inductive Bio ("advanced undergraduate" language), DatologyAI (Fall term
+        schedule conflict), ScriptChain Health (funding too thin to verify), and Lambda (research-track
+        undergrad-accessibility unconfirmed) &mdash; see the tables above for specifics. Drafted all 3 CVs from the
+        <code>cv/main_example.tex</code> template. lualatex/xelatex are not installed in this environment, so no
+        compiled-PDF page-count check was possible for any of them &mdash; compile and verify 2 pages before using
+        any of these CVs.</span>
+    </div>
     <div class="log-entry">
       <span class="log-date">2026-08-10 (fourth run, ~18:50 UTC)</span>
       <span class="log-body">Fetched this dashboard's own last-published state (3 prior runs today) plus this
@@ -567,6 +557,7 @@
 </div>
 
 <footer class="foot">
-  Automated daily scout. Sources: SimplifyJobs/Summer2027-Internships, speedyapply/2027-AI-College-Jobs, plus targeted web search.
-  Live cycle as of 2026-08-10: Summer 2027 (standard rising-junior-summer timing for a May 2029 grad).
+  Automated daily scout. Sources: SimplifyJobs/Summer2027-Internships, speedyapply/2027-AI-College-Jobs, YC Work at
+  a Startup, VC portfolio boards, Wellfound, Built In, plus targeted web search.
+  Live cycle as of 2026-08-11: Summer 2027 (standard rising-junior-summer timing for a May 2029 grad).
 </footer>
