@@ -359,53 +359,52 @@
 
 <header class="masthead">
   <span class="eyebrow">Daily Internship Scout &middot; Niranjana Sankar</span>
-  <h1>2026-08-13 <span style="font-size:1rem;color:var(--text-muted);font-weight:400;">&middot; second run, ~14:04 UTC</span></h1>
-  <p class="summary-line"><strong>0</strong> new CVs built this run &middot; the network egress block first seen ~17:15 UTC on 2026-08-12 is still in effect, now roughly <strong>21 hours straight across 5 consecutive runs</strong> &middot; all 19 watchlist companies re-checked via WebSearch, no new hits &middot; 3 new lower/mid-confidence leads found (SpaceX, Specter Aerospace, RRS Group) but none live-verifiable</p>
+  <h1>2026-08-13 <span style="font-size:1rem;color:var(--text-muted);font-weight:400;">&middot; third run, ~21:43 UTC</span></h1>
+  <p class="summary-line"><strong>0</strong> new CVs built this run &middot; the network egress block first seen ~17:15 UTC on 2026-08-12 is still in effect, now roughly <strong>28.5 hours straight across 6 consecutive runs</strong> &middot; <strong>scope updated today: now tracking Fall 2026 AND Summer 2027 internships equally</strong> (previously Summer 2027 only) &middot; ~10 new Fall-2026-era candidates surfaced by the scope change, none live-verifiable</p>
   <div class="stat-row">
     <span class="stat-pill bad">0 CVs drafted this run &mdash; nothing could be live-verified</span>
-    <span class="stat-pill bad">Every ATS/job-board domain tried this run (jobs.ashbyhq.com, job-boards.greenhouse.io, salesforce.wd12.myworkdayjobs.com, specteraerospace.bamboohr.com, jobs.smartrecruiters.com, www.google.com, www.linkedin.com) still EGRESS_BLOCKED &mdash; only raw.githubusercontent.com and WebSearch reachable, unchanged for the 5th run in a row, ~21h and counting</span>
-    <span class="stat-pill warn">Google/Amazon/Salesforce Watchlist CVs from 2026-08-12 morning still target dead postings &mdash; see correction below</span>
+    <span class="stat-pill bad">Every ATS/job-board domain tried this run (jobs.nvidia.com, jobs.ashbyhq.com, www.google.com, jobs.lever.co, boards.greenhouse.io, job-boards.greenhouse.io, www.pathai.com, cccis.wd1.myworkdayjobs.com, www.builtinsf.com) still EGRESS_BLOCKED &mdash; only raw.githubusercontent.com and WebSearch reachable, unchanged for the 6th run in a row, ~28.5h and counting</span>
+    <span class="stat-pill warn">Candidate should verify promising leads herself given the outage &mdash; see Flagged table</span>
     <span class="stat-pill warn">lualatex/xelatex still not installed &mdash; no compiled-PDF page-count check</span>
   </div>
 </header>
 
 <section class="block">
-  <div class="correction">
-    <strong>Correction to this morning's run (~14:00 UTC today):</strong> the three postings built as
-    "Watchlist Alert" cards this morning &mdash; Google <code>Software Engineering Intern, BS, Summer 2027</code>
-    (req 85564713261245126), Amazon <code>2027 Software Dev Engineer Intern</code> (job 10418355), and Salesforce
-    <code>Summer 2027 Intern, Software Engineer</code> (job 9287543) &mdash; have all since been independently
-    verified dead: the Google and Salesforce reqs are removed/taken-down, and the Amazon req is actually located in
-    Dublin, Ireland, not the US, despite its aggregator tag. All three are now <strong>permanently excluded</strong>
-    by this exact req/job ID. The CVs drafted for them
-    (<code>cv/main_google-swe-intern-bs.tex</code>, <code>cv/main_amazon-sde-intern.tex</code>,
-    <code>cv/main_salesforce-swe-intern.tex</code>) target postings that no longer exist or aren't eligible &mdash;
-    do not use them. They are left in place locally only because they're gitignored and harmless; they will not be
-    regenerated.
+  <div class="caveat" style="border-color:var(--accent);">
+    <strong>Term scope change (effective this run):</strong> this task now tracks <strong>Fall 2026</strong> internships
+    with the same priority as <strong>Summer 2027</strong> ones (previously Summer 2027 only), plus Winter 2026/2027 if
+    found. For any Fall 2026 posting, full-time/on-site-during-the-semester requirements are noted as a scheduling
+    consideration (she is a full-time student with 5 concurrent roles this fall) rather than silently excluded &mdash;
+    see the caveat column per row below. This expands the candidate pool considerably; several rows below are
+    Fall-2026-specific postings that would not have been in scope in yesterday's runs.
   </div>
 </section>
 
 <section class="block">
   <h2>Watchlist &mdash; Priority Companies</h2>
   <div class="caveat">
-    Checked all 19 watchlist companies again this run &mdash; <strong>no new Summer 2027 SWE/ML postings found</strong>.
-    Direct fetch of every ATS/careers domain tried was still EGRESS_BLOCKED (retested independently this run), so
-    this remains a WebSearch-only pass, not a live-page read &mdash; the 5th consecutive run in this state. Per-company detail:
+    Checked all 19 watchlist companies again this run for both Fall 2026 and Summer 2027 postings &mdash;
+    <strong>NVIDIA and OpenAI have live-looking Fall 2026 reqs surfaced by WebSearch this run; nothing else new.</strong>
+    Direct fetch of every ATS/careers domain tried was still EGRESS_BLOCKED (retested independently this run, 10
+    distinct domains), so every row below is a WebSearch-only pass, not a live-page read &mdash; the 6th consecutive
+    run in this state. Per-company detail:
   </div>
 
   <div class="excl-table">
     <table>
       <thead><tr><th>Company</th><th>Status</th><th class="reason">Detail</th></tr></thead>
       <tbody>
+        <tr><td>NVIDIA</td><td><strong>New lead &mdash; Fall 2026, unverified</strong></td><td class="reason">"Software Engineering Intern, AI Tools" (Santa Clara, CA), distinct from the permanently-excluded MS/PhD-only NLP and Dynamo reqs. Ashby/careers URL: <code>jobs.nvidia.com/careers/job/893394753940-...</code>. jobs.nvidia.com is EGRESS_BLOCKED this run &mdash; not built. Verify whether the role is Python-centric or leans CUDA/GPU (NVIDIA interview loops often do) before applying.</td></tr>
+        <tr><td>OpenAI</td><td><strong>New lead &mdash; Fall 2026, unverified</strong></td><td class="reason">"SWE Internship/Co-op, Applied Emerging Talent" &mdash; 15-week paid program, San Francisco. Ashby URL: <code>jobs.ashbyhq.com/openai/1f3353ed-78eb-4a01-b783-c44b1c086711/application</code>, EGRESS_BLOCKED this run. Per WebSearch this program is explicitly <strong>in-person, SF</strong> &mdash; a real Fall-2026 scheduling conflict for a full-time student, noted rather than excluded. As a frontier lab this warrants extra eligibility scrutiny once live-verifiable (undergrad-open vs. research-track-only isn't confirmed yet).</td></tr>
         <tr><td>Google</td><td>Possible replacement reqs &mdash; still unverified</td><td class="reason">Same two leads carried since 2026-08-12/13: <code>120997883141857990</code> ("Software Engineering Intern, Summer 2027") and <code>76982475250639558</code> ("Software Developer Intern, BS, Summer 2027"). Direct fetch attempted again this run and still EGRESS_BLOCKED for both. Not built.</td></tr>
         <tr><td>Amazon</td><td>Possible replacement req &mdash; still unverified</td><td class="reason">Same lead as prior runs: job ID 10480388, "Software Development Engineer Intern &ndash; May 2027 (2 month)." Direct fetch (amazon.jobs) attempted again this run and still EGRESS_BLOCKED. Not built.</td></tr>
-        <tr><td>Salesforce</td><td>No new US replacement &mdash; resolved this run</td><td class="reason">Tracked down the job-ID confusion from prior runs: <code>JR337715</code> is Salesforce's internal code for the <em>same</em> already-excluded req &mdash; cross-referenced via WebSearch, it resolves to both the dead US posting (job 9287543, Palo Alto/Boston/Seattle mirrors, application deadline May 31 already passed, in-person event dated July 22&ndash;24 2026 already passed &mdash; consistent with "verified dead") and separately to the non-US Hyderabad/Bangalore req. No live US replacement found. Stays excluded.</td></tr>
-        <tr><td>Apple, Bloomberg, Uber, Adobe, Oracle, Pinterest, NVIDIA</td><td>Not yet posted</td><td class="reason">WebSearch consistently indicates these companies' Summer 2027 SWE/ML application windows are still listed as "expected to open" in the August&ndash;October 2026 range and haven't gone live yet (Pinterest and Adobe specifically cite Fall 2026 / late-Aug&ndash;Sept openings). Uber's only Summer-2027-tagged hit ("2027 Software Engineering Internship, Uber Career Prep") still reads as an early-career prep/pipeline program rather than a standard paid internship &mdash; not confirmed as the same thing, not built. Nothing else to flag.</td></tr>
-        <tr><td>Microsoft</td><td>No new req</td><td class="reason">Only the already-covered Redmond CoreAI Summer 2027 SWE Intern role surfaces; no second req found.</td></tr>
-        <tr><td>Infosys</td><td>No Summer 2027 SWE req found</td><td class="reason">Only the general InStep/US-internship program pages surface, no specific Summer 2027 SWE requisition.</td></tr>
-        <tr><td>Anthropic</td><td>No conventional internship</td><td class="reason">Only current early-career offering remains the Fellows Program (4-month paid research fellowship, rolling applications, next cohort January 2027) &mdash; not a SWE/ML internship in the sense this watchlist tracks. Not a match.</td></tr>
-        <tr><td>OpenAI</td><td>No confirmed live req</td><td class="reason">Same as prior runs: third-party aggregators (JobDirectly, Khosla Ventures board under "Applied Emerging Talent") reference a Summer 2027 SWE intern title, but openai.com/careers is EGRESS_BLOCKED and no independent source quotes a live, non-expired req ID. Consensus this run is that Summer 2027 applications are expected to open September&ndash;November 2026 &mdash; not yet. Not built.</td></tr>
-        <tr><td>Meta, LinkedIn, TikTok, Citadel</td><td>No new hit</td><td class="reason">Meta's only new posting is the already-excluded PhD-chemistry NMR role. TikTok continues posting Summer 2027 SWE/ML Intern titles across many teams but these fall under this task's existing company-wide TikTok exclusion. Citadel Securities' standard US SWE Intern posting is live but is the same role already covered by the seed-list exclusion. LinkedIn searches surface only already-covered or PhD-gated postings.</td></tr>
+        <tr><td>Capital One</td><td><strong>New lead &mdash; Summer 2027, unverified</strong></td><td class="reason">Technology Internship Program (SWE track), Plano/McLean/Richmond, $61&ndash;67/hr, 10 weeks Jun&ndash;Aug 2027. Unlike the already-excluded prior req (R244387-1, grad-by-Aug-2028 mismatch), WebSearch synthesis of this req's eligibility text doesn't surface an explicit grad-date cutoff &mdash; just "continuing in the same course of study" and in-person attendance for a standard summer, which isn't a conflict in the summer term. capitalonecareers.com EGRESS_BLOCKED this run; needs a live read to confirm it's a genuinely different req and not the same excluded one re-surfacing.</td></tr>
+        <tr><td>Salesforce</td><td>No new US replacement</td><td class="reason"><code>JR337715</code> still resolves to the same already-dead US req (job 9287543) and the known non-US Hyderabad/Bangalore req. No live US replacement found this run either. Stays excluded.</td></tr>
+        <tr><td>Apple, Bloomberg, Uber, Adobe, Oracle, Pinterest</td><td>Not yet posted (Summer 2027) / non-US (Fall 2026)</td><td class="reason">Summer 2027 windows still listed as "expected to open" Aug&ndash;Oct 2026. Pinterest's only concrete Fall 2026 SWE Intern req found this run is Toronto &mdash; non-US, excluded. Oracle's only Fall-2026-labeled req is the same already-permanently-excluded "Platform Software Engineer 1" mislabeled full-time-conversion role. Nothing else to flag.</td></tr>
+        <tr><td>Microsoft</td><td>No new req</td><td class="reason">Only the already-covered Redmond CoreAI Summer 2027 SWE Intern role surfaces; no second req found for either term.</td></tr>
+        <tr><td>Infosys</td><td>No SWE req found</td><td class="reason">Only the general InStep/US-internship program pages surface, no specific Fall 2026 or Summer 2027 SWE requisition.</td></tr>
+        <tr><td>Anthropic</td><td>Fellows Program, Fall 2026 cohort exists &mdash; not a match</td><td class="reason">4-month paid research fellowship ($3,850/week + $15k/mo compute), Fall 2026 cohort confirmed via WebSearch, but it's a research fellowship (scalable oversight, interpretability, AI security, etc.), not a conventional SWE/ML internship, and skews toward applicants with a research/publication track record rather than a rising sophomore. Noting it exists per the watchlist instructions, but not treating it as a match this run. Does not sponsor visas (irrelevant &mdash; she's a US Person).</td></tr>
+        <tr><td>Meta, LinkedIn, TikTok, Citadel</td><td>No new hit</td><td class="reason">Meta's only new posting is the already-excluded PhD-chemistry NMR role. TikTok continues posting many Fall 2026 and Summer 2027 SWE/ML Intern titles (ML Infra, Frontend CRM, E-commerce Search Infra, etc.) but these fall under this task's existing company-wide TikTok exclusion &mdash; not re-surfacing individually. Citadel Securities' standard US SWE Intern posting is live but already covered by the seed-list exclusion. LinkedIn searches surface only already-covered or PhD-gated postings.</td></tr>
       </tbody>
     </table>
   </div>
@@ -415,9 +414,9 @@
   <h2>New Matches</h2>
   <div class="caveat">
     <strong>None built this run.</strong> Per this task's own verification rule, a posting only gets built into a
-    CV after a fresh, live fetch of the actual posting page confirms it's real, US-based, and Summer-2027-specific.
-    That fetch was not possible for anything this run &mdash; every candidate lead found is listed in "Flagged but
-    not built" below instead of being treated as confirmed.
+    CV after a fresh, live fetch of the actual posting page confirms it's real, US-based, and term-specific. That
+    fetch was not possible for anything this run (10 distinct job-board/ATS domains all EGRESS_BLOCKED) &mdash;
+    every candidate lead found is listed in "Flagged but not built" below instead of being treated as confirmed.
   </div>
 </section>
 
@@ -425,26 +424,37 @@
   <h2>Flagged but not built (uncertain &mdash; worth checking yourself)</h2>
   <div class="caveat" style="margin-bottom:0.9rem;">
     Nothing below was live-verified this run (network egress was blocked for every job-board/ATS domain tried).
-    Confidence varies by item &mdash; noted per row. No CV drafted for any of these.
+    Confidence varies by item &mdash; noted per row, including term (Fall 2026 rows carry a scheduling caveat where
+    on-site/full-time status is unconfirmed). Deepgram, Sentry, SpaceX, and DataRobot have dropped off this table
+    this run &mdash; they're now on this task's own permanent covered-list, so they're no longer re-surfaced here.
+    No CV drafted for any of these.
   </div>
   <div class="excl-table">
     <table>
       <thead><tr><th>Company</th><th>Role</th><th class="reason">Why uncertain</th></tr></thead>
       <tbody>
-        <tr><td>Deepgram</td><td>Software Engineering Internship, Fall 2026/Summer 2027 (Remote, US) &mdash; Ashby ID <code>dc8693b5-72ce-4ca3-ab15-9c8434d35da1</code></td><td class="reason"><strong>Still the most promising lead, still unverified live.</strong> Real, well-funded company ($130M Series C, $1.3B valuation, backers include Y Combinator, BlackRock-managed funds, Twilio, ServiceNow Ventures). Paid $55&ndash;65/hr, remote US, dual Fall-2026/Summer-2027 cohort, cross-listed identically on Glassdoor/Wellfound/Built In/LinkedIn/RemoteRocketship this run &mdash; consistent enough across independent mirrors to be confident the req itself is real, but a direct fetch of <code>jobs.ashbyhq.com/deepgram/dc8693b5-...</code> is still required by this task's verification rule and is still EGRESS_BLOCKED (attempted again this run). Strong fit: her speech-model research (test-time adaptation on Whisper-Flamingo/Qwen3-Omni) maps directly onto Deepgram's voice-AI product. Posting wants "a prior internship, hackathon project, or something shipped," a competitiveness concern (not a hard exclusion) for a rising sophomore.</td></tr>
-        <tr><td>Sentry</td><td>Software Engineer Intern, Summer 2027 (SF) &mdash; Ashby ID <code>672e2a76-d8e1-49c1-b227-4a189c4e49a1</code></td><td class="reason">Confirmed this is a <em>different</em> Ashby ID from the already-excluded stale "Summer 2026" Sentry req, so it isn't a duplicate of that exclusion. Could not confirm via WebSearch that this specific Summer-2027 ID is genuinely live (searches only surface Sentry's 2026-dated postings) &mdash; jobs.ashbyhq.com blocked for direct fetch. Needs a manual/live check.</td></tr>
-        <tr><td>Quantbot Technologies</td><td>Software Engineer Intern (NYC) &mdash; req <code>4299458009</code></td><td class="reason">A third, distinct Quantbot req (separate from the already-covered Sector Data Scientist Intern and the separately-flagged Machine Learning Research Engineer Intern below). Real company/role per MIT CAPD and Quantbot's own site, but exact language/eligibility requirements not confirmed &mdash; quantbot.com blocked for direct fetch.</td></tr>
-        <tr><td>Quantbot Technologies</td><td>Machine Learning Research Engineer Intern (NYC)</td><td class="reason">Carried over from this morning, still unresolved. General Quantbot internship language (from a sibling posting) allows Bachelor's/Master's/PhD and lists Python/C/C++ as acceptable, not PhD-only or C++-mandatory &mdash; but that text isn't confirmed to be this specific req's actual language. quantbot.com blocked again this run.</td></tr>
-        <tr><td>Palantir</td><td>Privacy and Civil Liberties Software Engineer Intern (NYC)</td><td class="reason">Carried over from this morning. Leaning toward likely exclusion: search snippets describe it as intended to be "the candidate's final internship before graduating," echoing the same grad-date pattern that excluded its sibling Forward Deployed SWE Intern (Commercial) role. Not confirmed against the actual current posting text (jobs.lever.co blocked) &mdash; do not build without direct confirmation.</td></tr>
-        <tr><td>Nelnet</td><td>Intern Program &ndash; Agentic AI (Lincoln, NE)</td><td class="reason">Carried over from this morning, still unresolved and now leaning toward exclude: found under two <em>different</em> Workday req numbers (R21619 and R22904) days apart for the same title, a strong signal of a rolling/evergreen posting rather than a fixed Summer 2027 cohort. No source has surfaced an explicit Summer 2027 term for this req.</td></tr>
-        <tr><td>Kaizen Analytix</td><td>AI Engineer Internship (Dallas, TX, $25/hr)</td><td class="reason">Small AI/data consulting firm, req cross-posted on LinkedIn so it's a real listing, but no eligibility/skill detail was obtainable this run (applytojob.com blocked). Lower confidence than the items above.</td></tr>
-        <tr><td>Pear VC / Optexity</td><td>AI Research Intern (Remote/Palo Alto)</td><td class="reason">Optexity is a real Pear VC portfolio company (browser-automation AI startup, founded 2025) with an active Ashby board, but this specific listing's eligibility text couldn't be pulled (jobs.ashbyhq.com blocked). Lower confidence.</td></tr>
-        <tr><td>Mortenson</td><td>"Artificial Intelligence Intern" (aggregator-listed as "Montenson," MN)</td><td class="reason">Likely a mangled aggregator entry for M.A. Mortenson Company (construction firm); could not independently confirm this listing exists at all. Lowest confidence of anything found this run &mdash; probably not worth pursuing further without a name correction.</td></tr>
-        <tr><td>RTX</td><td>Software Engineer Intern (Huntsville, AL) and other RTX SWE reqs (Burnsville MN, Tewksbury MA, El Segundo CA)</td><td class="reason">Real, freshly-posted reqs, but RTX's defense work is reported to require US citizenship for security clearance and RTX is reported not to sponsor visas for interns &mdash; her citizenship status isn't specified in her profile, so this is flagged rather than hard-excluded. Worth a quick manual check of her own status before pursuing.</td></tr>
-        <tr><td>Booz Allen</td><td>AI RAN Telecommunications Engineer Intern (McLean, VA)</td><td class="reason">Appears in both aggregators. Requires US citizenship/clearance eligibility per WebSearch/LinkedIn corroboration, and lists Python, C++, PyTorch, TensorFlow as the stack &mdash; unclear whether C++ is mandatory or one option among several. Flagged for the same citizenship reason as RTX above, plus an unresolved skill-mandatory question.</td></tr>
-        <tr><td>SpaceX</td><td>Software Engineering Internship/Co-op, Summer 2027 (8 locations incl. Palo Alto, Brownsville TX, Cape Canaveral FL) &mdash; Greenhouse ID <code>8621757002</code></td><td class="reason"><strong>New this run.</strong> Cross-listed consistently on Greenhouse, Simplify, and Future Ventures &mdash; real, live posting. But WebSearch corroborates a hard eligibility gate: applicants must be a "U.S. Person" under ITAR (citizen, national, lawful permanent resident/green-card holder, refugee, or asylee) &mdash; explicitly no exceptions, no visa sponsorship, no F&#8209;1/OPT/CPT path. Her citizenship status isn't stated in her profile, so this is flagged (not hard-excluded) pending that check, same treatment as RTX/Booz Allen below. job-boards.greenhouse.io blocked for direct fetch this run.</td></tr>
-        <tr><td>Specter Aerospace</td><td>Full Stack Developer Co-op (Boston/Peabody, MA)</td><td class="reason"><strong>New this run.</strong> Real, DoD- and VC-backed Series A hypersonics/propulsion startup ($9.5M raised, backers include the US Department of Defense, CS Ventures, Mandala Ventures) &mdash; passes the startup-viability check. Two open questions: (1) as a defense-adjacent company doing DoD-funded propulsion work, it may carry the same US-Person/clearance gate as RTX/SpaceX &mdash; not confirmed either way; (2) "Full Stack Developer" is a broader title than a research/ML-flavored SWE role, fit is generic rather than strong. specteraerospace.bamboohr.com blocked for direct fetch this run.</td></tr>
-        <tr><td>RRS Group &amp; Co.</td><td>Software Engineer Intern &ndash; "Placement Year" (San Francisco)</td><td class="reason"><strong>New this run, lowest confidence of the three.</strong> The RRS Group is primarily an architecture/construction/facilities firm with a small tech arm, not a software-native employer &mdash; real company, but the fit rationale is weak. "Placement Year" is UK-style gap-year internship phrasing, which doesn't cleanly map to this task's Summer-2027 US-cohort model; term/dates unconfirmed. jobs.smartrecruiters.com blocked for direct fetch this run.</td></tr>
+        <tr><td>NVIDIA</td><td>Software Engineering Intern, AI Tools, Fall 2026 (Santa Clara, CA)</td><td class="reason"><strong>New this run</strong> (see Watchlist section above for detail). Distinct from permanently-excluded MS/PhD-only reqs. jobs.nvidia.com EGRESS_BLOCKED.</td></tr>
+        <tr><td>OpenAI</td><td>SWE Internship/Co-op &ndash; Applied Emerging Talent, Fall 2026 (San Francisco)</td><td class="reason"><strong>New this run</strong> (see Watchlist section above). In-person SF required &mdash; a real Fall-2026 scheduling conflict, noted not excluded. jobs.ashbyhq.com EGRESS_BLOCKED.</td></tr>
+        <tr><td>Capital One</td><td>Technology Internship Program (SWE track), Summer 2027 (Plano/McLean/Richmond)</td><td class="reason"><strong>New this run</strong> (see Watchlist section above). Different req from the already-excluded grad-date-mismatched one; no obvious mismatch found via WebSearch synthesis, but not live-confirmed. capitalonecareers.com EGRESS_BLOCKED.</td></tr>
+        <tr><td>Palantir</td><td>Forward Deployed Engineer Intern, Summer 2027 (Chicago) &mdash; distinct from the already-excluded Commercial FDE (grad-date) and the flagged Privacy/Civil Liberties (NYC) reqs below</td><td class="reason">A third, separate Palantir req family found this run. Fit and eligibility text (grad-year requirement, clearance) unconfirmed &mdash; jobs.lever.co EGRESS_BLOCKED.</td></tr>
+        <tr><td>Palantir</td><td>Privacy and Civil Liberties Software Engineer Intern (NYC)</td><td class="reason">Carried over, still unresolved. Search snippets suggest it's meant as "the candidate's final internship before graduating," echoing the grad-date pattern that excluded the sibling Commercial FDE role &mdash; leaning toward likely exclusion but not confirmed against current posting text. jobs.lever.co blocked.</td></tr>
+        <tr><td>Figma</td><td>Software Engineer Intern, Winter 2027 (SF, NYC)</td><td class="reason"><strong>New this run.</strong> Mainstream SWE stack, no obvious red flag from search snippets, but boards.greenhouse.io EGRESS_BLOCKED &mdash; qualifications and pay not independently confirmed.</td></tr>
+        <tr><td>PathAI</td><td>Software Engineer Co-op, Fall 2026 (Boston) and Machine Learning Intern/Co-op, Fall 2026</td><td class="reason"><strong>New this run</strong> for the Fall 2026 term specifically &mdash; PathAI's ML Intern/Co-op was matched and built in a prior run for a different cohort/term; unclear if this is the same standing req re-surfacing under the newly-in-scope Fall 2026 filter or a genuinely new cohort. www.pathai.com EGRESS_BLOCKED. Verify before treating as a fresh match.</td></tr>
+        <tr><td>Rivian</td><td>Data Engineering Intern &ndash; AI &amp; Analytics, Fall 2026 (Palo Alto, CA)</td><td class="reason"><strong>New this run.</strong> Good Python/SQL fit on paper. jobs.ashbyhq.com EGRESS_BLOCKED &mdash; on-site requirement for the fall term unconfirmed.</td></tr>
+        <tr><td>CCC Intelligent Solutions</td><td>R&amp;D &amp; Data Science Internship, Fall 2026 (Chicago)</td><td class="reason"><strong>New this run.</strong> cccis.wd1.myworkdayjobs.com EGRESS_BLOCKED &mdash; qualifications and on-site requirement unconfirmed.</td></tr>
+        <tr><td>Samsung Research America</td><td>Fall Intern &ndash; Digital Health Algorithms, Fall 2026 (Mountain View, CA)</td><td class="reason"><strong>New this run.</strong> job-boards.greenhouse.io EGRESS_BLOCKED &mdash; not confirmed whether MS/PhD-restricted like some Samsung Research reqs tend to be.</td></tr>
+        <tr><td>DatologyAI</td><td>Software Engineer Intern, Machine Learning, Fall 2026 (Redwood City, CA)</td><td class="reason">Carried over from 2026-08-11 (originally flagged for a Fall-term schedule conflict, now itself in-scope for that same term). ML infra startup. www.builtinsf.com EGRESS_BLOCKED &mdash; paid status and on-site requirement unconfirmed.</td></tr>
+        <tr><td>Xsolla</td><td>AI-First Engineering Intern, Fall 2026 (Raleigh, NC and Los Angeles, CA &mdash; two distinct reqs)</td><td class="reason"><strong>New this run.</strong> Real gaming/commerce-infra company. jobs.lever.co EGRESS_BLOCKED &mdash; qualifications unconfirmed.</td></tr>
+        <tr><td>Phonic</td><td>Machine Learning Research Intern, Fall 2026 (San Francisco)</td><td class="reason">Carried over from 2026-08-10, still unresolved. Small startup &mdash; jobs.ashbyhq.com EGRESS_BLOCKED, paid status unconfirmed.</td></tr>
+        <tr><td>Quantbot Technologies</td><td>Software Engineer Intern (NYC) &mdash; req <code>4299458009</code>, and Machine Learning Research Engineer Intern (NYC)</td><td class="reason">Both carried over, unresolved. quantbot.com blocked again this run.</td></tr>
+        <tr><td>Nelnet</td><td>Intern Program &ndash; Agentic AI (Lincoln, NE)</td><td class="reason">Carried over, leaning toward exclude: found under two different Workday req numbers days apart, suggesting a rolling/evergreen posting rather than a fixed cohort. No source has surfaced an explicit Fall 2026 or Summer 2027 term for this req.</td></tr>
+        <tr><td>Kaizen Analytix</td><td>AI Engineer Internship (Dallas, TX, $25/hr)</td><td class="reason">Carried over. Real cross-posted listing, no eligibility/skill detail obtainable this run (applytojob.com blocked).</td></tr>
+        <tr><td>Pear VC / Optexity</td><td>AI Research Intern (Remote/Palo Alto)</td><td class="reason">Carried over. Real Pear VC portfolio company, eligibility text not pulled this run (jobs.ashbyhq.com blocked).</td></tr>
+        <tr><td>RTX</td><td>Software Engineer Intern (Huntsville, AL) and other RTX SWE reqs (Burnsville MN, Tewksbury MA, El Segundo CA)</td><td class="reason">Carried over. <strong>Citizenship concern resolved</strong> &mdash; candidate is a confirmed U.S. Person, so RTX's citizenship/clearance-eligibility requirement no longer excludes her; this is now a live-verification-only gap, not an eligibility gap. Not built &mdash; rtx.com blocked this run.</td></tr>
+        <tr><td>Booz Allen</td><td>AI RAN Telecommunications Engineer Intern (McLean, VA)</td><td class="reason">Carried over. <strong>Citizenship concern resolved</strong> (see RTX above) &mdash; remaining open question is whether C++ is mandatory or one option among several (stack lists Python, C++, PyTorch, TensorFlow). Not built &mdash; not fetchable this run.</td></tr>
+        <tr><td>Specter Aerospace</td><td>Full Stack Developer Co-op (Boston/Peabody, MA)</td><td class="reason">Carried over. <strong>Citizenship/clearance concern resolved</strong> (see RTX above). Remaining open question is generic role fit ("Full Stack Developer" vs. a research/ML-flavored role). specteraerospace.bamboohr.com blocked this run.</td></tr>
+        <tr><td>RRS Group &amp; Co.</td><td>Software Engineer Intern &ndash; "Placement Year" (San Francisco)</td><td class="reason">Carried over, lowest confidence. Construction/facilities firm with a small tech arm; "Placement Year" is UK-style gap-year phrasing that doesn't cleanly map to this task's US-cohort model. jobs.smartrecruiters.com blocked.</td></tr>
+        <tr><td>Mortenson</td><td>"Artificial Intelligence Intern" (aggregator-listed as "Montenson," MN)</td><td class="reason">Carried over, lowest confidence overall &mdash; likely a mangled aggregator entry, existence unconfirmed.</td></tr>
       </tbody>
     </table>
   </div>
@@ -463,16 +473,21 @@
           <tr><td>Deloitte</td><td>Government &amp; Public Services Summer Scholar, AI &amp; Data Engineering (Austin, TX)</td><td class="reason">Multi-source corroboration (Jobright, The Muse, Kelley) quotes the posting's own eligibility text: "current enrollment in a full-time Bachelor's Degree with a target graduation date by Spring/Summer 2027." Her expected grad is May 2029 &mdash; excluded on the same grad-date grounds as Capital One/Palantir. Not independently direct-fetched (apply.deloitte.com blocked) but corroborated across 3 independent sources with a specific quoted requirement, so treated as confident enough to exclude rather than merely flag.</td></tr>
           <tr><td>Sony</td><td>Research Intern, Generative and Protective AI for Content Creation (Remote/NYC)</td><td class="reason">Carried over from "flagged" this morning, now resolved: WebSearch synthesis of the live posting states the minimum qualification is a Master's degree in CS/EE/Applied Math or related, with PhD enrollment preferred &mdash; no undergraduate path. Excluded on the MS/PhD-required rule. Not independently direct-fetched (ai.sony blocked) but the quoted requirement is specific enough to trust.</td></tr>
           <tr><td>Meta</td><td>Research Scientist Intern, NMR Analysis Automation (Redmond)</td><td class="reason">Carried over from "flagged" this morning, now resolved: the metacareers.com listing itself (per WebSearch synthesis) states "Currently pursuing a PhD in analytical chemistry, physical chemistry, chemical engineering, or a related field" &mdash; explicitly PhD-only and outside her CS/EECS domain. Excluded. Not independently direct-fetched (metacareers.com blocked) but the quoted requirement is specific and high-confidence.</td></tr>
+          <tr><td>Pinterest</td><td>Fall 2026 SWE Intern</td><td class="reason">Real, live req, but located in Toronto, Canada &mdash; non-US, excluded per eligibility rules.</td></tr>
+          <tr><td>Postman</td><td>AI Engineer Internship (Berkeley, CA)</td><td class="reason">Labeled Summer 2026, a term already past per this task's scope &mdash; excluded as stale/out of scope.</td></tr>
         </tbody>
       </table>
-      <p class="bulk-note">Everything else surfaced by this run's aggregator re-scan (336 SimplifyJobs rows, up from 329
-        three hours ago; 245 speedyapply rows, unchanged) was either already covered by this task's seed list / prior
-        runs, or a category-level mismatch not worth a per-row note (older 10&ndash;28-day SWE-adjacent postings with
-        no distinguishing ML/NLP angle, quant/finance shops skewing C++, etc. &mdash; GoDaddy, Medtronic, Melius,
-        Heliux, Quadrillion, Circleback, Hyannis Port Research, Castleton Commodities, Chicago Trading Company, a new
-        Jane Street "Data Engineer Summer Internship" title at an already-covered company). "Cybernetic Labs" in the
-        SimplifyJobs list resolves to the same Ashby org as the already-covered Netic &mdash; a mislabeled duplicate,
-        not new. Full source lists:
+      <p class="bulk-note">This run's aggregator re-scan (both READMEs re-fetched fresh, plus a dedicated pass over the
+        newly-in-scope Fall 2026/Off-Season list) surfaced a batch of Canada-based Fall 2026/Winter 2027 rows &mdash;
+        Terminal, InstaLILY, ShyftLabs, CMiC, ResponsiveAds, AlayaCare, Ciena, Later, Trend Micro, Amgen, Moment
+        Energy, Hitachi (Software Analyst), Revvity, Autodesk (Montreal), McKesson (Montreal), Rodan Energy &mdash;
+        all excluded for non-US location (Toronto/Montreal/Ottawa/Vancouver/Surrey). Also excluded on
+        PhD/graduate-only titles: Marvell, Canva (PhD Research Scientist), StepStone Group, Constellation Space,
+        Sony's Research Intern (GenAI, MS-minimum, carried from a prior run). Everything else was either already
+        covered by this task's seed list / prior runs, or a category-level mismatch not worth a per-row note
+        (older SWE-adjacent postings with no distinguishing ML/NLP angle, quant/finance shops skewing C++, etc.).
+        "Cybernetic Labs" in the SimplifyJobs list still resolves to the same Ashby org as the already-covered
+        Netic &mdash; a mislabeled duplicate, not new. Full source lists:
         <a href="https://raw.githubusercontent.com/SimplifyJobs/Summer2027-Internships/dev/README.md" target="_blank" rel="noopener">SimplifyJobs/Summer2027-Internships</a>,
         <a href="https://raw.githubusercontent.com/speedyapply/2027-AI-College-Jobs/main/README.md" target="_blank" rel="noopener">speedyapply/2027-AI-College-Jobs</a>.</p>
     </div>
@@ -482,38 +497,70 @@
 <section class="block">
   <h2>Sources checked this run</h2>
   <div class="caveat" style="margin-bottom:0;">
-    Fetched this dashboard's own last-published state (2026-08-13 morning run, ~05:36 UTC) first to rebuild the
-    dedup set. Both aggregator READMEs re-fetched fresh via raw GitHub (SimplifyJobs dev branch, speedyapply main
-    branch) &mdash; raw.githubusercontent.com remains the only reachable source domain; this surfaced the three new
-    leads above (SpaceX, Specter Aerospace, RRS Group). Ran a WebSearch-only pass on all 19 priority-watchlist
-    companies (Amazon, Google, Apple, Meta, Microsoft, Bloomberg, LinkedIn, TikTok, Infosys, Citadel, Uber, Adobe,
-    Salesforce, Oracle, Pinterest, Capital One, NVIDIA, Anthropic, OpenAI) &mdash; see the Watchlist section above
-    for per-company results. Independently re-tested direct WebFetch against a fresh domain sample this run
-    (jobs.ashbyhq.com, job-boards.greenhouse.io, salesforce.wd12.myworkdayjobs.com, specteraerospace.bamboohr.com,
-    jobs.smartrecruiters.com, www.google.com, www.linkedin.com) to check whether the block had lifted &mdash;
-    confirmed it has not; every domain still returns EGRESS_BLOCKED via the proxy's own status endpoint, which shows
-    zero recent relay failures logged (i.e. this reads as a standing policy denial, not an intermittent fault). Did
-    not repeat the VC-portfolio-board / Wellfound / Built In rotation this run given the block makes direct fetch of
-    any of those boards pointless without a policy change; spent the time instead on the aggregator re-scan and the
-    full watchlist pass above.
+    Fetched this dashboard's own last-published state (2026-08-13 second run, ~14:04 UTC) first to rebuild the
+    dedup set, plus the expanded seed/permanent-exclusion list that came with today's term-scope change. Both
+    aggregator READMEs re-fetched fresh via raw GitHub (SimplifyJobs dev branch <em>and</em> its Off-Season README,
+    which specifically carries Fall/Winter rows &mdash; the first run to check it now that Fall 2026 is in scope;
+    speedyapply main branch) &mdash; raw.githubusercontent.com remains the only reachable source domain. Ran a
+    dedicated general-purpose sub-agent to extract every non-deduped Fall 2026/Winter 2026-27/Summer 2027 SWE/ML row
+    from both READMEs, run the full 19-company watchlist WebSearch pass, and check two startup sources
+    (workatastartup.com &mdash; blocked, substituted jobs.generalcatalyst.com; builtinsf.com). This surfaced the ~14
+    candidates in the Flagged table above. Independently re-tested direct WebFetch against 10 distinct job-board/ATS
+    domains this run (jobs.nvidia.com, jobs.ashbyhq.com, www.google.com &times;2, jobs.lever.co &times;2,
+    boards.greenhouse.io, job-boards.greenhouse.io, www.pathai.com, cccis.wd1.myworkdayjobs.com, www.builtinsf.com)
+    to check whether the block had lifted &mdash; confirmed it has not; every domain still returns EGRESS_BLOCKED.
+    claude.ai (this dashboard's own artifact) and raw.githubusercontent.com remain reachable, as does WebSearch.
   </div>
 </section>
 
 <section class="block">
   <h2>Repo Status</h2>
   <div class="git-status ok" id="git-status-slot"><span class="dot"></span>
-    <span id="git-status-text">Local <code>master</code> was found 5 commits behind <code>origin/master</code> at
-    session start (this is a fresh container/clone each run, not the recurring detached-HEAD issue from prior runs)
-    &mdash; fetched and fast-forwarded cleanly, no conflicts. Today's dashboard update committed on top as a normal
-    commit on <code>master</code> and pushed to <code>niranjana2222/ai-job-search</code>. No new CVs drafted this
-    run &mdash; nothing else to push. cv/ and cover_letters/ contain only the tracked <code>main_example.tex</code>
-    template locally; no personal CVs from prior runs persist across containers (they're gitignored and
-    container-local). lualatex/xelatex are still not installed in this environment.</span></div>
+    <span id="git-status-text">Local <code>master</code> was found detached at the tip of the prior run's commit,
+    with the local <code>master</code> branch ref itself 16 commits behind <code>origin/master</code> &mdash; a
+    recurring container-restart artifact, not data loss (origin already had everything). Checked out
+    <code>master</code> and fast-forwarded cleanly, no conflicts. Today's dashboard update committed on top as a
+    normal commit and pushed to <code>niranjana2222/ai-job-search</code>. No new CVs drafted this run &mdash;
+    nothing else to push. cv/ and cover_letters/ contain only the tracked <code>main_example.tex</code> template
+    locally; no personal CVs from prior runs persist across containers (they're gitignored and container-local).
+    lualatex/xelatex are still not installed in this environment.</span></div>
 </section>
 
 <section class="block">
   <h2>Run Log</h2>
   <div id="log-slot">
+    <div class="log-entry">
+      <span class="log-date">2026-08-13 (third run, ~21:43 UTC)</span>
+      <span class="log-body"><strong>Task scope updated this run: now tracks Fall 2026 internships with the same
+        priority as Summer 2027 (previously Summer 2027 only), plus Winter 2026/2027 if found.</strong> Fetched this
+        dashboard's own last-published state (second run, ~14:04 UTC: 0 matches, network blocked) to rebuild the
+        dedup set, plus the expanded seed list that came with the scope change (which also formally absorbed
+        Deepgram, Sentry, SpaceX, and DataRobot into the permanent covered-list, retiring them from the Flagged
+        table). Delegated the broad research sweep to a sub-agent: re-fetched both aggregator READMEs fresh
+        (including the Off-Season README for the first time, now that Fall 2026 is in scope), ran the full
+        19-company watchlist pass, and checked two startup sources (workatastartup.com blocked; substituted
+        jobs.generalcatalyst.com; also builtinsf.com). This surfaced roughly a dozen new Fall-2026-era candidates
+        &mdash; NVIDIA (SWE Intern, AI Tools), OpenAI (SWE Internship/Co-op, Applied Emerging Talent &mdash;
+        in-person SF, a real scheduling conflict), Capital One (Technology Internship Program, Summer 2027, a
+        different req from the already-excluded one), Palantir (a third distinct FDE req family, Chicago), Figma
+        (Winter 2027), PathAI (two Fall 2026 roles, possibly the same standing req as a previously-matched cohort),
+        Rivian, CCC Intelligent Solutions, Samsung Research America, Xsolla, plus carryovers DatologyAI and Phonic.
+        Independently re-tested direct WebFetch against 10 distinct job-board/ATS domains (jobs.nvidia.com,
+        jobs.ashbyhq.com, www.google.com, jobs.lever.co, boards.greenhouse.io, job-boards.greenhouse.io,
+        www.pathai.com, cccis.wd1.myworkdayjobs.com, www.builtinsf.com) to check whether the standing egress block
+        had lifted &mdash; <strong>it had not; every single one is still EGRESS_BLOCKED. This is now the 6th
+        consecutive run in this state, spanning roughly 28.5 hours since it was first discovered at ~17:15 UTC on
+        2026-08-12.</strong> Per this task's live-verification rule, this again means <strong>zero CVs could be
+        built</strong> &mdash; every new candidate is listed under "Flagged but not built" instead. Also resolved
+        the standing citizenship-eligibility question for RTX, Booz Allen, and Specter Aerospace: the candidate
+        profile now confirms she is a U.S. Person under ITAR, so their citizenship/clearance-eligibility
+        requirements no longer exclude her &mdash; they remain unbuilt only because they still need a live fetch.
+        Excluded Pinterest's Fall 2026 SWE Intern (Toronto, non-US) and Postman's AI Engineer Internship (stale
+        Summer 2026 labeling), plus a batch of Canada-based Off-Season rows and PhD/graduate-only titles (see
+        Exclusions bulk note). Found and fixed a detached-HEAD / stale-local-<code>master</code> git issue (16
+        commits behind origin) before committing &mdash; see Repo Status. No cover letters drafted (nothing built).
+        lualatex/xelatex still not installed.</span>
+    </div>
     <div class="log-entry">
       <span class="log-date">2026-08-13 (second run, ~14:04 UTC)</span>
       <span class="log-body">Follow-up run ~8.5 hours after this morning's run. Fetched this dashboard's own
@@ -734,8 +781,8 @@
 </div>
 
 <footer class="foot">
-  Automated daily scout. Sources: SimplifyJobs/Summer2027-Internships, speedyapply/2027-AI-College-Jobs, YC Work at
+  Automated daily scout. Sources: SimplifyJobs/Summer2027-Internships (main + Off-Season), speedyapply/2027-AI-College-Jobs, YC Work at
   a Startup, VC portfolio boards, Wellfound, Built In, Index Ventures, plus targeted web search and direct
-  company career-page checks. Live cycle as of 2026-08-13: Summer 2027 (standard rising-junior-summer timing for a
-  May 2029 grad).
+  company career-page checks. Terms tracked as of 2026-08-13: Fall 2026 and Summer 2027 equally, plus Winter
+  2026/2027 if found (scope expanded today from Summer 2027 only).
 </footer>
