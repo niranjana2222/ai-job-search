@@ -529,10 +529,11 @@
   <h2>Repo Status</h2>
   <div class="git-status ok">
     <span class="dot"></span>
-    Found a stale detached HEAD on session start (a recurring container-restart artifact, same as every prior run)
-    &mdash; local HEAD was 1 commit ahead of local <code>master</code> but that commit was already on
-    <code>origin/master</code>. Fast-forwarded and checked out <code>master</code> cleanly, no data loss. This run's
-    dashboard commit pushed to <code>origin/master</code> successfully.
+    Session started in a detached HEAD at the tip of 2026-08-17's commit (same recurring container-restart artifact
+    as every prior run); local <code>master</code> was 2 commits stale. Committed this run's dashboard update on the
+    detached HEAD, fetched <code>origin/master</code> to confirm it matched the detached HEAD's parent (a clean
+    fast-forward), then force-updated local <code>master</code> to the new commit and checked it out &mdash; no data
+    loss. Pushed to <code>origin/master</code> successfully.
   </div>
 </section>
 
