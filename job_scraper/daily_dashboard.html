@@ -360,7 +360,7 @@
 <header class="masthead">
   <span class="eyebrow">Daily Internship Scout &middot; Niranjana Sankar</span>
   <h1>2026-09-03 <span style="font-size:1rem;color:var(--text-muted);font-weight:400;">&middot; run at ~14:00 UTC</span></h1>
-  <p class="summary-line"><strong>0</strong> new CVs built this run &middot; the network egress block first seen ~17:15 UTC on 2026-08-12 is <strong>still in effect, now the 27th consecutive run, roughly 525 hours straight</strong> (re-confirmed this run independently via direct WebFetch against 2 distinct ATS/careers domains &mdash; www.databricks.com and careers.medpace.com &mdash; both returned EGRESS_BLOCKED; only raw.githubusercontent.com and WebSearch reach anything) &middot; ran the full 20-company Priority Watchlist pass via WebSearch (delegated research agent): <strong>Adobe posted a new live req ("2027 Intern - Machine Learning Engineer," req R171519) but it requires a Dec 2027&ndash;June 2028 grad date &mdash; a hard mismatch for her May 2029 grad, so not a genuine hit</strong>; the other 19 companies are unchanged, and several agent-reported "new" items (Databricks' Winter req, Infosys, Citadel's hedge-fund SWE req, Anthropic Fellows, OpenAI Applied Emerging Talent) turned out on cross-check to be duplicates of standing entries already in this dashboard and were not re-added &middot; a broader aggregator diff (fresh Summer2027 + Off-Season + speedyapply READMEs) plus a startup-source sweep surfaced <strong>15 genuinely new non-watchlist candidates</strong> after dedup, most notably Medpace's Python Intern (Cincinnati, a direct language-stack match) &middot; nothing built or verified live given the outage</p>
+  <p class="summary-line"><strong>0</strong> new CVs built this run &middot; the network egress block first seen ~17:15 UTC on 2026-08-12 is <strong>still in effect, now the 27th consecutive run, roughly 525 hours straight</strong> (re-confirmed this run independently via direct WebFetch against 2 distinct ATS/careers domains &mdash; www.databricks.com and careers.medpace.com &mdash; both returned EGRESS_BLOCKED; only raw.githubusercontent.com and WebSearch reach anything) &middot; ran the full 20-company Priority Watchlist pass via WebSearch (delegated research agent): <strong>Adobe posted a new live req ("2027 Intern - Machine Learning Engineer," req R171519) but it requires a Dec 2027&ndash;June 2028 grad date &mdash; a hard mismatch for her May 2029 grad, so not a genuine hit</strong>; the other 19 companies are unchanged, and several agent-reported "new" items (Databricks' Winter req, Infosys, Citadel's hedge-fund SWE req, Anthropic Fellows, OpenAI Applied Emerging Talent) turned out on cross-check to be duplicates of standing entries already in this dashboard and were not re-added &middot; a broader aggregator diff (fresh Summer2027 + Off-Season + speedyapply READMEs) plus a startup-source sweep surfaced <strong>14 genuinely new non-watchlist candidates</strong> after dedup (one more, Postman, was caught as a duplicate of an already permanently-excluded req), most notably Medpace's Python Intern (Cincinnati, a direct language-stack match) &middot; nothing built or verified live given the outage</p>
   <div class="stat-row">
     <span class="stat-pill bad">0 CVs drafted this run &mdash; nothing could be live-verified</span>
     <span class="stat-pill bad">27th consecutive run, ~525h straight, fully egress-blocked except raw.githubusercontent.com and WebSearch</span>
@@ -458,9 +458,10 @@
     Startup expo listing, Wellfound). The raw diff against the tracked list was large (~700+ rows across all three
     READMEs); the large majority were generic Data/Business-Analytics/IT-support titles at non-tech corporates, or
     C++-heavy aerospace/quantum-hardware roles, that don't fit an EECS SWE/ML target, or were already tracked from
-    prior runs &mdash; including a few the delegated research agent flagged as "new" despite being in its own
-    dedup list (Composio, Hypercubic), both already covered further down this table and not duplicated here.
-    <strong>15 genuinely new candidates survived dedup this run</strong> (below), most notably Medpace's Python
+    prior runs &mdash; including several the delegated research agent flagged as "new" despite being already
+    covered: Composio and Hypercubic are already rows further down this table; Postman's "AI Engineer Internship"
+    is on this task's own permanent-exclusion list (bulk note below) &mdash; none duplicated or re-added.
+    <strong>14 genuinely new candidates survived dedup this run</strong> (below), most notably Medpace's Python
     Intern &mdash; a direct language-stack match, confirmed to exist via WebSearch (careers.medpace.com/jobs/12962)
     though the page itself is EGRESS_BLOCKED for a live fetch.
   </div>
@@ -745,10 +746,9 @@
         <tr><td>Dev Technology Group</td><td>AI/ML Intern; React/Node Developer Intern (Reston, VA), Summer 2027</td><td class="reason"><strong>New this run</strong> (SimplifyJobs main README). Gov-tech consultancy. JS/Node stack is a good fit; two distinct reqs. Stack/eligibility not independently confirmed beyond title.</td></tr>
         <tr><td>Corning</td><td>AI/ML Intern (Wilmington, NC), Summer 2027</td><td class="reason"><strong>New this run</strong> (SimplifyJobs main README). Large, established materials-science company. Stack/eligibility not independently confirmed.</td></tr>
         <tr><td>TWG Global</td><td>AI Engineer Intern (Santa Monica, CA), Summer 2027</td><td class="reason"><strong>New this run</strong> (SimplifyJobs main README). Diversified holding company (Guggenheim/Boehly-backed). Stack/eligibility not independently confirmed.</td></tr>
-        <tr><td>Motorola Solutions</td><td>Android Application Developer Intern (Chicago, IL), Summer 2027</td><td class="reason"><strong>New this run</strong> (SimplifyJobs main README). Large, established communications/public-safety-tech company. Java/Android is a plausible stack fit. Pay/eligibility not independently confirmed.</td></tr>
+        <tr><td>Motorola Solutions</td><td>Android Application Developer Intern (Chicago, IL), Summer 2027</td><td class="reason"><strong>New this run</strong> (SimplifyJobs main README) &mdash; a second, distinct req at a company already partly tracked (Android Platform Software Engineering Intern, Schaumburg/Plantation, above). Java/Android is a plausible stack fit. Pay/eligibility not independently confirmed.</td></tr>
         <tr><td>Snowflake</td><td>Software Engineer Intern &ndash; Infra Automation/Database/Core Engineering (Menlo Park, CA / Bellevue, WA), Fall 2026</td><td class="reason"><strong>New this run</strong> (Off-Season README). Large, well-known data-cloud company. No obvious skills mismatch surfaced; pay/eligibility and Fall-2026 on-site schedule not independently confirmed.</td></tr>
         <tr><td>Rippling</td><td>Full Stack / Backend Software Engineer Intern (Seattle, WA / San Francisco, CA / NYC), Winter 2027</td><td class="reason"><strong>New this run</strong> (Off-Season README). Well-funded HR/IT SaaS unicorn. Stack/eligibility not independently confirmed.</td></tr>
-        <tr><td>Postman</td><td>AI Engineer Intern (Berkeley, CA), Fall 2026</td><td class="reason"><strong>New this run</strong> (Off-Season README). Established API-tooling company; notable for being local to her own campus. Stack/eligibility not independently confirmed.</td></tr>
         <tr><td>Cerebras Systems</td><td>Software Engineer Intern (Sunnyvale, CA), Fall/Winter 2026-27</td><td class="reason"><strong>New this run</strong> (Off-Season README). Well-known AI-chip company. Chip-adjacent SWE roles sometimes lean C++/systems &mdash; verify language requirements before pursuing.</td></tr>
         <tr><td>Skydio</td><td>Software Engineer Intern (San Mateo, CA), Fall 2026 / Winter 2027</td><td class="reason"><strong>New this run</strong> (Off-Season README). Established drone-robotics company. Note: Skydio's AI/computer-vision research reqs are separately gated Master's/PhD-only per search snippets &mdash; this general SWE track appears distinct and undergrad-eligible, but verify directly.</td></tr>
         <tr><td>Berkshire Grey</td><td>Software Co-op/Intern (Bedford, MA), Fall 2026</td><td class="reason"><strong>New this run</strong> (Off-Season README). Established warehouse-robotics/automation company (public via SPAC). Co-op &mdash; verify it doesn't require a full semester off before pursuing.</td></tr>
@@ -875,13 +875,18 @@
         excluded 2026-08-30/31), Infosys' remote US-citizenship-gated listing, Citadel's hedge-fund SWE intern req
         (already the board's standing top lead), Anthropic's Fellows Program, and OpenAI's "Applied Emerging
         Talent" (already confirmed closed) &mdash; none re-added. The aggregator diff and startup sweep surfaced
-        <strong>15 genuinely new non-watchlist candidates</strong> after dedup (Medpace, HP IQ, Atlassian, Hadrian,
-        Dev Technology Group, Corning, TWG Global, Motorola Solutions, Snowflake, Rippling, Postman, Cerebras,
+        <strong>14 genuinely new non-watchlist candidates</strong> after dedup (Medpace, HP IQ, Atlassian, Hadrian,
+        Dev Technology Group, Corning, TWG Global, a second Motorola Solutions req, Snowflake, Rippling, Cerebras,
         Skydio, Berkshire Grey, five grouped YC startups, and Quantiq) &mdash; most notably Medpace's Python Intern
-        (Cincinnati), a direct language-stack match. Local git was 3 commits behind an already-pushed origin/master
+        (Cincinnati), a direct language-stack match. One more agent-reported candidate, Postman's "AI Engineer
+        Internship," was caught as a duplicate of a req already on this task's own permanent-exclusion list and not
+        re-added. Local git was 3 commits behind an already-pushed origin/master
         (detached HEAD) at session start &mdash; fast-forwarded onto master before making any changes, no data
         loss. No cover letters drafted (nothing built). lualatex/xelatex still not installed. Trimmed the Run Log
-        to the last 14 days (dropped the 2026-08-20 entry).</span>
+        to the last 14 days (dropped the 2026-08-20 entry). No push notification sent to the candidate this run
+        &mdash; the egress block is unchanged and already known to her, Adobe's new req doesn't qualify, and
+        nothing else found this run (a routine aggregator-diff batch) rose to the level of needing an out-of-band
+        alert.</span>
     </div>
     <div class="log-entry">
       <span class="log-date">2026-09-02 (run, ~14:00 UTC)</span>
