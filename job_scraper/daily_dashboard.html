@@ -359,12 +359,13 @@
 
 <header class="masthead">
   <span class="eyebrow">Daily Internship Scout &middot; Niranjana Sankar</span>
-  <h1>2026-09-08 <span style="font-size:1rem;color:var(--text-muted);font-weight:400;">&middot; run at ~14:00 UTC</span></h1>
-  <p class="summary-line"><strong>0</strong> new CVs built this run &middot; the network egress block first seen ~17:15 UTC on 2026-08-12 is <strong>still in effect, roughly 645 hours straight</strong> (re-confirmed this run independently via direct WebFetch against 4 distinct domains &mdash; www.citadel.com, apply.careers.microsoft.com, www.workatastartup.com, and www.databricks.com &mdash; all four returned EGRESS_BLOCKED; only raw.githubusercontent.com, the claude.ai artifact endpoint, and WebSearch reach anything) &middot; <strong>note: no run appears to have fired on 2026-09-07</strong> &mdash; there is a one-day gap in the Run Log below, so the exact consecutive-run count is uncertain; the elapsed-hours figure above is computed directly from the 2026-08-12 discovery time regardless &middot; ran the full 20-company Priority Watchlist pass via targeted WebSearch myself: <strong>no wholly new watchlist role family this run</strong>, but Adobe's previously-ambiguous req <code>R171666</code> now has a confirmed grad-year requirement (Dec 2026&ndash;June 2027) that excludes a May 2029 grad &mdash; moved to Exclusions, resolving that standing ambiguity &middot; Databricks produced a new, unresolved contradiction: search summaries this run described the grad-year window for its SWE/ML tracks extending as late as June 2029, which would fit her, but the only concrete req IDs surfaced (<code>6866534002</code>, <code>8732364002</code>) are the same two already confirmed grad-gated to fall 2026&ndash;spring 2028 &mdash; flagged as needing a live check, not treated as a hit &middot; Google surfaced two new unverified req IDs (a "Software Developer Intern, BS" and a "Software Engineering / SRE BS/MS Intern") &middot; a non-watchlist aggregator sweep (Summer2027 main + Off-Season READMEs, fresh via raw GitHub) surfaced <strong>5 genuinely new candidates</strong> after dedup, most notably Dropbox's Summer 2027 SWE Intern being fully remote &middot; nothing built or verified live given the outage</p>
+  <h1>2026-09-09 <span style="font-size:1rem;color:var(--text-muted);font-weight:400;">&middot; run at ~05:00 UTC</span></h1>
+  <p class="summary-line"><strong>0</strong> new CVs built this run &middot; the network egress block first seen ~17:15 UTC on 2026-08-12 is <strong>still in effect, roughly 660 hours straight</strong> (re-confirmed this run via direct WebFetch against 3 distinct domains &mdash; www.citadel.com, www.databricks.com, and jobs.apple.com &mdash; all three returned EGRESS_BLOCKED; only raw.githubusercontent.com, the claude.ai artifact endpoint, and WebSearch reach anything) &middot; <strong>this run was executed directly in the main session rather than delegated</strong>, after three consecutive background-agent attempts earlier today were each lost to a container restart before completing (no dashboard content was lost &mdash; the 2026-09-08 run had already published and committed successfully before those restarts began) &middot; given that, this run did a <strong>partial</strong> Watchlist pass (6 of 20 companies freshly re-checked via WebSearch: Anthropic, OpenAI, Databricks, Google, Meta, Apple; the other 14 carried forward unchanged from 2026-09-08, not re-verified today) rather than the full 20-company sweep &middot; one new item: <strong>Apple has a concrete req ID for the first time</strong> &mdash; "Software Undergrad Engineering Internships" (jobs.apple.com/en-us/details/200664785-3810), unverified (jobs.apple.com EGRESS_BLOCKED) &middot; Databricks, Google, Meta, Anthropic, OpenAI all reconfirmed unchanged &middot; a light aggregator check (Off-Season README only, main Summer2027/speedyapply not re-diffed this run) surfaced a handful of new candidates, see Flagged table &middot; startup sources not checked this run (time constraints) &middot; nothing built or verified live given the outage</p>
   <div class="stat-row">
     <span class="stat-pill bad">0 CVs drafted this run &mdash; nothing could be live-verified</span>
-    <span class="stat-pill bad">~645h straight egress-blocked (since 2026-08-12 ~17:15 UTC), except raw.githubusercontent.com, the claude.ai artifact endpoint, and WebSearch &mdash; no 2026-09-07 run logged, so the run-count tally has a gap</span>
-    <span class="stat-pill warn">Candidate should verify herself given the outage &mdash; Citadel's Summer 2027 SWE Intern (NY/Miami/Greenwich/Houston), Microsoft's "Software Engineer Intern - AI and ML" req (apply.careers.microsoft.com/careers/job/1970393556972698, Boston MA/Mountain View CA), Medpace's "Python Intern - Summer 2027" (careers.medpace.com/jobs/12962), and Dropbox's new remote Summer 2027 SWE Intern lead are the strongest unverified leads carried into this run</span>
+    <span class="stat-pill bad">~660h straight egress-blocked (since 2026-08-12 ~17:15 UTC), except raw.githubusercontent.com, the claude.ai artifact endpoint, and WebSearch</span>
+    <span class="stat-pill warn">Partial watchlist pass this run (6/20 companies) after 3 background-agent runs were lost to container restarts &mdash; see Run Log</span>
+    <span class="stat-pill warn">Candidate should verify herself given the outage &mdash; Citadel's Summer 2027 SWE Intern (NY/Miami/Greenwich/Houston), Apple's new "Software Undergrad Engineering Internships" req (jobs.apple.com/en-us/details/200664785-3810), Medpace's "Python Intern - Summer 2027" (careers.medpace.com/jobs/12962), and Dropbox's remote Summer 2027 SWE Intern lead are the strongest unverified leads carried into this run</span>
     <span class="stat-pill warn">lualatex/xelatex still not installed &mdash; no compiled-PDF page-count check</span>
   </div>
 </header>
@@ -381,46 +382,42 @@
 <section class="block">
   <h2>Watchlist Alert</h2>
   <div class="caveat">
-    <strong>No wholly new watchlist-company role family this run</strong>, but three items resolved or moved.
-    First, <strong>Adobe's req <code>R171666</code> ("2027 Intern - Software Engineer") is now resolved and
-    excluded</strong>: this run's targeted search surfaced its concrete eligibility line for the first time
-    &mdash; "expected graduation date of December 2026 &ndash; June 2027" &mdash; a hard grad-year mismatch for a
-    May 2029 grad. Moved to Exclusions below; no longer an open Adobe lead. Second, <strong>Databricks produced a
-    genuine, unresolved contradiction worth flagging rather than quietly restating.</strong> This run's search
-    described Databricks requiring candidates to "graduate AFTER the internship ends (roughly graduating December
-    2027 through June 2029 for summer 2027 roles)" for its SWE/ML tracks &mdash; a window that would actually fit
-    her. But the only two concrete req IDs anyone can point to are the same ones already confirmed grad-gated to
-    fall 2026&ndash;spring 2027 (job <code>6866534002</code>) and fall 2027&ndash;spring 2028 (job
-    <code>8732364002</code>), neither of which reaches June 2029. Either a new, broader-window Databricks req
-    exists that hasn't surfaced with its own ID yet, or the "June 2029" figure is a search-summarizer artifact
-    (as happened repeatedly with Databricks' grad-year phrasing in prior runs). Not treated as a hit either way
-    &mdash; needs a live fetch of databricks.com/company/careers/open-positions to resolve, which remains blocked.
-    Third, Google surfaced two req IDs not previously carried on this dashboard: "Software Developer Intern, BS,
-    Summer 2027" (req <code>123510626377966278</code>) and "Software Engineering, Site Reliability Engineering
-    BS/MS Intern, 2027" (req <code>100028133205254854</code>) &mdash; added to the Watchlist table as unverified,
-    neither live-fetched. Reconfirmed unchanged this run: Anthropic (Fellows Program only, no standard
-    internship), OpenAI (Summer 2027 window still not posted), Citadel (Software Engineer &ndash; Intern (US)
-    reconfirmed live), Apple and Meta (general Summer 2027 SWE tracks still not posted), Microsoft, NVIDIA,
-    Salesforce, Oracle, Pinterest, Bloomberg, LinkedIn, TikTok, Infosys, Uber, Amazon, and Capital One (see table
-    below for detail on each).
+    <strong>One new item this run: Apple has a concrete req ID for the first time</strong> &mdash;
+    "Software Undergrad Engineering Internships" (jobs.apple.com/en-us/details/200664785-3810). Surfaced via
+    WebSearch; jobs.apple.com is EGRESS_BLOCKED so location, term, and eligibility could not be live-confirmed this
+    run &mdash; not built, added to the Watchlist table below as unverified. This run only freshly re-checked 6 of
+    the 20 watchlist companies via WebSearch (Anthropic, OpenAI, Databricks, Google, Meta, Apple) rather than the
+    full sweep, given time spent recovering from three lost background-agent attempts earlier today (see header
+    and Run Log). Databricks: reconfirmed no genuine hit &mdash; the only concrete req IDs anyone can point to
+    remain <code>6866534002</code> (grad fall 2026&ndash;spring 2027) and <code>8732364002</code> (grad fall
+    2027&ndash;spring 2028), both already excluded; the "graduate through June 2029" window search summaries have
+    described since 2026-09-08 still hasn't attached to any concrete req, so still not treated as a hit. Google:
+    the two req IDs already carried since 2026-09-08 (<code>123510626377966278</code>,
+    <code>100028133205254854</code>) reconfirmed, nothing further new. Meta: search now describes its Summer 2027
+    grad-year window as "December 2027 through June 2029" &mdash; consistent with, not different from, the
+    standing "not yet posted" status. Anthropic and OpenAI unchanged (Fellows Program only; Summer 2027 window not
+    yet open). The other 14 watchlist companies (Microsoft, NVIDIA, Salesforce, Oracle, Pinterest, Bloomberg,
+    LinkedIn, TikTok, Infosys, Citadel, Uber, Adobe, Capital One, Amazon) were <strong>not</strong> re-checked this
+    run &mdash; carried forward unchanged from 2026-09-08, see table below.
   </div>
 </section>
 
 <section class="block">
   <h2>Watchlist &mdash; Priority Companies</h2>
   <div class="caveat">
-    Checked all 20 watchlist companies again this run via targeted WebSearch per company, done directly rather than
-    delegated. Direct WebFetch verification remains blocked (4 distinct domains independently re-tested this run,
-    all four EGRESS_BLOCKED; see header). No wholly new role family this run; Adobe resolved to an exclusion,
-    Databricks and Google got new detail worth a closer look (see Watchlist Alert above). Everything else
-    reconfirmed unchanged (see prior entries below for detail on each standing lead).
+    <strong>Partial pass this run</strong> &mdash; only 6 of 20 watchlist companies freshly re-checked via targeted
+    WebSearch (Anthropic, OpenAI, Databricks, Google, Meta, Apple; see Watchlist Alert above for what changed).
+    Direct WebFetch verification remains blocked (3 distinct domains re-tested this run, all three
+    EGRESS_BLOCKED; see header). The other 14 rows below are carried forward unchanged from the 2026-09-08 run,
+    not independently re-verified today.
   </div>
 
   <div class="excl-table">
     <table>
       <thead><tr><th>Company</th><th>Status</th><th class="reason">Detail</th></tr></thead>
       <tbody>
-        <tr><td>Databricks</td><td>Unresolved contradiction, not a hit</td><td class="reason">This run's search described a grad-year window through June 2029 for SWE/ML tracks, but the only concrete req IDs found remain <code>6866534002</code> (grad fall 2026&ndash;spring 2027) and <code>8732364002</code> (grad fall 2027&ndash;spring 2028) &mdash; both already excluded, neither reaching June 2029. See Watchlist Alert above; needs a live fetch to resolve, not treated as a hit.</td></tr>
+        <tr><td>Apple</td><td>New unverified req</td><td class="reason"><strong>New this run.</strong> "Software Undergrad Engineering Internships" (jobs.apple.com/en-us/details/200664785-3810) &mdash; first concrete req ID found for Apple on this task. jobs.apple.com EGRESS_BLOCKED; location/term/eligibility not confirmed. Not built.</td></tr>
+        <tr><td>Databricks</td><td>Unresolved contradiction, not a hit</td><td class="reason">Reconfirmed this run: the only concrete req IDs found remain <code>6866534002</code> (grad fall 2026&ndash;spring 2027) and <code>8732364002</code> (grad fall 2027&ndash;spring 2028) &mdash; both already excluded, neither reaching the "June 2029" window search summaries keep describing. See Watchlist Alert above; needs a live fetch to resolve, not treated as a hit.</td></tr>
         <tr><td>Amazon</td><td>No change</td><td class="reason">Standing leads unchanged (job <code>10529525</code> Robotics SDE, <code>10400153</code>/<code>10517567</code> Annapurna Labs, <code>3144153</code> Amazon Leo, <code>10412530</code> AWS Data Services, <code>3116030</code> Fall 2026 SDE), all still unverified live. Two generic "SDE I Intern" job IDs (10506481, 10490515) turned up this run but read as part of Amazon's large ordinary SDE-intern req pool rather than a distinct new program &mdash; not added as a separate lead.</td></tr>
         <tr><td>NVIDIA</td><td>No change</td><td class="reason">Standing reqs (<code>JR2023495</code>, <code>JR2023492</code>, <code>JR2023497</code>, <code>JR2023491</code>, <code>JR2023489</code>, <code>JR2018652</code>, job <code>893395109072</code>, job <code>893394373322</code>) unchanged, still unverified. No new req IDs found this run.</td></tr>
         <tr><td>Google</td><td>Two new req IDs, unverified</td><td class="reason">New this run: "Software Developer Intern, BS, Summer 2027" (req <code>123510626377966278</code>) and "Software Engineering, Site Reliability Engineering BS/MS Intern, 2027" (req <code>100028133205254854</code>), alongside the standing carried reqs (<code>120997883141857990</code>, <code>76982475250639558</code>, <code>100648618540573382</code>). None directly fetched (careers.google.com not tested this run, but the domain has a standing block history).</td></tr>
@@ -437,8 +434,7 @@
         <tr><td>LinkedIn</td><td>No change</td><td class="reason">"First Play" still not live for the 2027 cycle; expected late Sept/early Oct 2026.</td></tr>
         <tr><td>Anthropic</td><td>No change</td><td class="reason">Only the Fellows Program (4-month research fellowship) and Claude Corps &mdash; neither is a standard SWE/ML internship.</td></tr>
         <tr><td>OpenAI</td><td>No change &mdash; window closed</td><td class="reason">"Applied Emerging Talent (Fall 2026)" confirmed closed. No Summer/Winter 2027 successor posted yet on openai.com itself; a third-party aggregator listing titled "Software Engineer Internship/Co-op, Applied Emerging Talent (Sep 2026)" surfaced this run but is not a first-party OpenAI source and was not treated as a new opening.</td></tr>
-        <tr><td>Apple</td><td>Not yet posted</td><td class="reason">Only evergreen "rolling" reqs and a separate "Applied Data Solutions Program" (Austin/Cupertino, Summer 2027, not general SWE/ML) found; no dedicated general Summer 2027 SWE req yet.</td></tr>
-        <tr><td>Meta</td><td>Not yet posted</td><td class="reason">Summer 2027 general SWE track not yet open; this run's search still estimates an August&ndash;October 2026 opening.</td></tr>
+        <tr><td>Meta</td><td>Not yet posted</td><td class="reason">Summer 2027 general SWE track not yet open. This run's search described the eligibility window as "graduating December 2027 through June 2029" once posted &mdash; consistent with, not a change from, standing status.</td></tr>
         <tr><td>TikTok</td><td>No change; blanket coverage</td><td class="reason">Category remains very active (Shoot Experience Optimization, Agentic Creation Effect Platform, Social-Friending, Global Live Foundation, AI Platform, Relational Database reqs all surfaced this run); individual sub-family reqs not enumerated per standing blanket-coverage policy.</td></tr>
       </tbody>
     </table>
@@ -450,7 +446,7 @@
   <div class="caveat">
     <strong>None built this run.</strong> Per this task's verification rule, a posting only gets built into a CV
     after a fresh, live fetch of the actual posting page confirms it's real, US-based, and term-specific. Direct
-    fetch was independently re-tested this run against 4 distinct domains (see header) &mdash; all four
+    fetch was independently re-tested this run against 3 distinct domains (see header) &mdash; all three
     returned EGRESS_BLOCKED. Every candidate lead found is listed in "Flagged but
     not built" below (or the Watchlist table above) instead of being treated as confirmed.
   </div>
@@ -461,22 +457,20 @@
   <div class="caveat" style="margin-bottom:0.9rem;">
     Nothing below was live-verified (network egress blocked for every ATS/careers domain tried, every run since
     2026-08-12). Watchlist-company leads are detailed in the Watchlist table above, not repeated here.
-    This run pulled the main Summer2027 SimplifyJobs README and the Off-Season README fresh via raw GitHub,
-    specifically targeting each README's newest-dated rows and excluding everything already listed below from the
-    result &mdash; the speedyapply README was not separately re-diffed this run, given the size of the
-    already-tracked list (~330+ rows) &mdash; next run should prioritize it. <strong>5 genuinely new candidates
-    survived dedup this run</strong> (added at the top of the table below, marked "New 2026-09-08"): Dropbox
-    (Summer 2027 SWE Intern, fully remote in the USA &mdash; notable for that alone), Xcel Energy (two distinct
-    AI-focused intern reqs), Micron Technology (a role and location distinct from the already-tracked "AI Agentic
-    Systems Engineer" Micron req), Merck (an agentic-AI-authoring co-op), and Zions Bank (a process-automation
-    intern). RTX's Summer 2027 SWE Intern (Richardson, TX) also resurfaced via the aggregator this run but is
-    already covered under this task's permanent dedup list (the candidate has already built and delivered a CV
-    for RTX herself) &mdash; not re-added.
+    <strong>Only the Off-Season README was fresh-pulled this run</strong> (main Summer2027 and speedyapply were
+    not re-diffed today, given time spent recovering from three lost background-agent attempts &mdash; see
+    header). <strong>3 genuinely new candidates survived dedup this run</strong> (added at the top of the table
+    below, marked "New 2026-09-09"): Rockwell Automation (Content IDE dev intern), a fifth distinct Tesla req
+    (Core AI Compiler &amp; Runtime, Spring 2027 &mdash; out-of-core-term, flagging for visibility), and Garmin
+    (various engineering internships, scope unclear). Startup sources were not checked this run.
   </div>
   <div class="excl-table">
     <table>
       <thead><tr><th>Company</th><th>Role</th><th class="reason">Why uncertain</th></tr></thead>
       <tbody>
+        <tr><td>Rockwell Automation</td><td>Content IDE Development Intern (Mayfield Heights, OH), Winter 2026</td><td class="reason"><strong>New 2026-09-09</strong> (Off-Season README). Large, established industrial-automation company. Stack/eligibility not independently confirmed.</td></tr>
+        <tr><td>Tesla</td><td>Software Engineer Intern &ndash; Core AI Compiler &amp; Runtime (Palo Alto, CA), Spring 2027</td><td class="reason"><strong>New 2026-09-09</strong> (Off-Season README) &mdash; a fifth distinct Tesla req beyond the four already tracked. Term note: Spring 2027 is outside this task's core tracked terms, flagging for visibility, lower priority. Strong compiler/ML-tooling fit if term were in scope.</td></tr>
+        <tr><td>Garmin</td><td>Various engineering internships (multiple US locations), Winter 2026</td><td class="reason"><strong>New 2026-09-09</strong> (Off-Season README). Large, established consumer-electronics company. Aggregator listing too vague to confirm which reqs are genuinely SWE/ML &mdash; verify scope directly before pursuing.</td></tr>
         <tr><td>Dropbox</td><td>Software Engineer Intern (Remote, USA), Summer 2027</td><td class="reason"><strong>New 2026-09-08</strong> (Summer2027 README). Well-known, established company. Fully remote &mdash; a real plus, removes any relocation/on-site friction. Stack/eligibility not independently confirmed; page is greenhouse.io-hosted, not directly fetchable (EGRESS_BLOCKED).</td></tr>
         <tr><td>Xcel Energy</td><td>AI Solutions Development Intern (Minneapolis, MN / Denver, CO) + AI &amp; Automation Intern, Regulatory (Denver, CO)</td><td class="reason"><strong>New 2026-09-08</strong> (Summer2027 README). Large, established utility company, two distinct AI-titled reqs. Term not independently confirmed (aggregator listed as recent, exact cycle unclear). Stack/eligibility not independently confirmed.</td></tr>
         <tr><td>Micron Technology</td><td>Software Engineer Intern &ndash; Mask Technology Center (Boise, ID), Winter 2026/2027</td><td class="reason"><strong>New 2026-09-08</strong> (Off-Season README) &mdash; distinct role and location from the already-tracked "Intern &ndash; AI Agentic Systems Engineer" Micron req (Folsom, CA). Large, established semiconductor company; "Mask Technology Center" framing may lean toward semiconductor-process/hardware tooling rather than pure software &mdash; verify scope directly.</td></tr>
@@ -915,14 +909,47 @@
   <h2>Repo Status</h2>
   <div class="git-status ok">
     <span class="dot"></span>
-    Committed this run's dashboard update and pushed cleanly to <code>origin/master</code>.
-    No CV or cover letter files to commit (nothing built this run; those paths are gitignored regardless).
+    Found local checkout in a detached HEAD, 9 commits behind <code>origin/master</code> (the 2026-09-08 run's
+    commit had landed on the remote successfully; the local clone's cached ref was just stale) &mdash; checked out
+    <code>master</code> and fast-forwarded cleanly, no data loss, no divergence. Committing and pushing this run's
+    dashboard update now.
   </div>
 </section>
 
 <section class="block">
   <h2>Run Log</h2>
   <div id="log-slot">
+    <div class="log-entry">
+      <span class="log-date">2026-09-09 (run, ~05:00 UTC)</span>
+      <span class="log-body">Scheduled as a background agent three times this run; each attempt was killed by a
+        container restart before completing (no dashboard content was lost &mdash; the 2026-09-08 run had already
+        published and committed successfully before the restarts began). Sent the candidate two push
+        notifications flagging the disruption. Switched to executing directly in the main session for the fourth
+        attempt. Fetched this dashboard's own last-published state via the Artifact read tool, reading the
+        complete saved 1,377-line HTML to rebuild the dedup set from its full Watchlist, Flagged, Exclusions, and
+        Run Log content. Found local git in a detached HEAD 9 commits behind <code>origin/master</code> (a stale
+        cached ref, not unpushed work &mdash; the 2026-09-08 commit was already safely on the remote); fast-forwarded
+        cleanly, no data loss. Independently re-tested direct WebFetch against <strong>3 distinct domains</strong>
+        &mdash; www.citadel.com, www.databricks.com, and jobs.apple.com &mdash; <strong>all three still
+        EGRESS_BLOCKED</strong>, consistent with every run since first discovered ~17:15 UTC on 2026-08-12
+        (roughly 660 hours elapsed). raw.githubusercontent.com and WebSearch remain reachable. Per this task's
+        live-verification rule, <strong>zero CVs could be built again.</strong> Given time already spent recovering
+        from the lost background-agent attempts, ran a <strong>partial</strong> Watchlist pass this run (6 of 20
+        companies via targeted WebSearch: Anthropic, OpenAI, Databricks, Google, Meta, Apple) rather than the full
+        sweep. <strong>One genuine new Watchlist finding: Apple has a concrete req ID for the first time</strong>
+        &mdash; "Software Undergrad Engineering Internships" (jobs.apple.com/en-us/details/200664785-3810), not
+        live-verifiable (EGRESS_BLOCKED), given its own Watchlist Alert card. Databricks, Google, Meta, Anthropic,
+        and OpenAI all reconfirmed unchanged. The other 14 watchlist companies were <strong>not</strong> re-checked
+        this run &mdash; carried forward unchanged from 2026-09-08, flagged for a full sweep next run. Pulled only
+        the Off-Season README fresh via raw GitHub (main Summer2027 and speedyapply not re-diffed this run, time
+        constraints). <strong>3 genuinely new non-watchlist candidates survived dedup</strong>: Rockwell Automation,
+        a fifth distinct Tesla req (Core AI Compiler &amp; Runtime, Spring 2027 &mdash; out-of-core-term), and Garmin
+        (vague scope). Startup sources not checked this run. No cover letters drafted (nothing built).
+        lualatex/xelatex still not installed. Trimmed the Run Log to the last 14 days (dropped the 2026-08-25
+        entry). Sent the candidate push notifications about the repeated background-agent failures this run
+        &mdash; not about any dashboard finding, since nothing found today (one unverified Apple req ID, three
+        low-priority non-watchlist candidates) clears the bar for an out-of-band alert on its own.</span>
+    </div>
     <div class="log-entry">
       <span class="log-date">2026-09-08 (run, ~14:00 UTC)</span>
       <span class="log-body">Fetched this dashboard's own last-published state (2026-09-06 run &mdash; <strong>no
@@ -1327,48 +1354,20 @@
         lost. Trimmed the Run Log to the last 14 days (dropped the three 2026-08-12 entries). No cover letters
         drafted (nothing built). lualatex/xelatex still not installed.</span>
     </div>
-    <div class="log-entry">
-      <span class="log-date">2026-08-25 (run, ~14:01 UTC)</span>
-      <span class="log-body">Fetched this dashboard's own last-published state (2026-08-24 run) via the Artifact
-        read tool, plus the full saved HTML for the Run Log tail, to rebuild the dedup set from its Watchlist,
-        Flagged, Exclusions, and Run Log content. Independently re-tested direct WebFetch myself against the proxy
-        status endpoint, www.databricks.com, www.amazon.jobs (on a brand-new job ID), and example.com as a plain
-        control &mdash; <strong>all still EGRESS_BLOCKED, the 18th consecutive run in this state, roughly 309 hours
-        since first discovered ~17:15 UTC on 2026-08-12.</strong> Per this task's live-verification rule, <strong>zero
-        CVs could be built again.</strong> Re-fetched all three aggregator READMEs fresh via raw GitHub and ran the
-        full 20-company watchlist pass via three targeted WebSearch queries. Found one genuine new Watchlist
-        first-sighting: Amazon job <code>10412530</code> ("AWS Data Services," Fall 2026, US), distinct from the
-        long-carried job <code>3144153</code> &mdash; both still unverifiable live. Two already-known role families
-        got concrete new req IDs for the first time (Microsoft's "AI Software Engineer Intern" &mdash; Edge variant
-        <code>1970393556979054</code> and general variant <code>1970393556962891</code>; Oracle's "Platform Software
-        Engineer 1 Intern" <code>342415</code>, a different job ID from the already permanently-excluded
-        Intern-Conversion req of a similar name) &mdash; neither changes status, both noted in the Watchlist table.
-        The aggregator sweep surfaced 4 new non-watchlist candidates (Abundant, Kodiak Robotics, Monolithic Power
-        Systems, By Light Professional IT Services) and one new exclusion (Capital One's Toronto-based Backend/
-        Mobile/Full Stack Winter 2027 reqs, non-US location, distinct from the still-carried US <code>R244387</code>
-        lead). Databricks' standing grad-year exclusion was reconfirmed with no new phrasing discrepancy this time.
-        Confirmed Google's dead req <code>85564713261245126</code> is still resurfacing via stale aggregator
-        re-indexing and did not re-open it. Found a detached local <code>master</code> at session start that
-        exactly matched <code>origin/master</code> (no divergence, no fast-forward needed, same recurring
-        container-restart artifact as most prior runs) and reattached it cleanly before committing. Trimmed the Run
-        Log to the last 14 days (dropped the 2026-08-11 entry). No cover letters drafted (nothing built).
-        lualatex/xelatex still not installed.</span>
-    </div>
   </div>
 </section>
 
 </div>
 
 <footer class="foot">
-  Automated daily scout. Sources checked this run: the SimplifyJobs Summer2027-Internships main README and
-  Off-Season README both fetched fresh via raw GitHub, targeted at newest-dated rows
-  (speedyapply/2027-AI-College-Jobs was not separately re-diffed this run given the size of the already-tracked
-  list &mdash; prioritize next run); the full 20-company Priority Watchlist via a dedicated per-company WebSearch
-  pass done directly (not delegated); an attempted startup-source check (workatastartup.com, databricks.com),
-  EGRESS_BLOCKED; and direct WebFetch verification against 4 distinct domains (www.citadel.com,
-  apply.careers.microsoft.com, www.workatastartup.com, www.databricks.com) &mdash; all four EGRESS_BLOCKED,
-  consistent with every domain tried since the block was first discovered on 2026-08-12; only
-  raw.githubusercontent.com, the claude.ai artifact endpoint, and WebSearch reach anything.
-  Terms tracked: Fall 2026 and Summer 2027 equally, plus Winter 2026/2027 if found. Last updated 2026-09-08. Run log
-  trimmed to the last 14 days. Note: no run entry exists for 2026-09-07.
+  Automated daily scout. Sources checked this run: the SimplifyJobs Off-Season README fetched fresh via raw
+  GitHub (main Summer2027 and speedyapply READMEs NOT re-diffed this run &mdash; prioritize next run); a partial
+  Priority Watchlist pass (6 of 20 companies via targeted WebSearch: Anthropic, OpenAI, Databricks, Google, Meta,
+  Apple &mdash; the other 14 not re-checked this run); no startup-source check this run; and direct WebFetch
+  verification against 3 distinct domains (www.citadel.com, www.databricks.com, jobs.apple.com) &mdash; all three
+  EGRESS_BLOCKED, consistent with every domain tried since the block was first discovered on 2026-08-12; only
+  raw.githubusercontent.com, the claude.ai artifact endpoint, and WebSearch reach anything. This run was executed
+  directly in the main session after three background-agent attempts were each lost to a container restart.
+  Terms tracked: Fall 2026 and Summer 2027 equally, plus Winter 2026/2027 if found. Last updated 2026-09-09. Run log
+  trimmed to the last 14 days.
 </footer>
