@@ -1,3 +1,4 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <title>Daily Internship Scout</title>
 <style>
   :root {
@@ -359,16 +360,17 @@
 
 <header class="masthead">
   <span class="eyebrow">Daily Internship Scout &middot; Niranjana Sankar</span>
-  <h1>2026-10-29 <span style="font-size:1rem;color:var(--text-muted);font-weight:400;">&middot; run at ~14:32 UTC</span></h1>
-  <p class="summary-line"><strong>0</strong> new CVs built this run &mdash; the network egress block first seen ~17:15 UTC on 2026-08-12 is <strong>still in effect, now ~77 days 21 hours straight (~1869 hours)</strong>. Independently re-confirmed today: direct curl against <code>boards.greenhouse.io</code>, <code>www.databricks.com</code>, <code>jobs.ashbyhq.com</code>, <code>www.amazon.jobs</code>, <code>nvidia.wd5.myworkdayjobs.com</code>, <code>jobs.smartrecruiters.com</code>, <code>www.tesla.com</code>, and <code>salesforce.wd12.myworkdayjobs.com</code> all failed with <code>CONNECT tunnel failed, response 403</code> (<code>connect_rejected</code>); a direct WebFetch to <code>www.amazon.jobs</code> returned <code>ENOTFOUND</code>; <code>raw.githubusercontent.com</code> returned 200 and WebSearch continues to work normally. No new exceptions found. Done directly this run (no subagents/forks): fetched both SimplifyJobs READMEs (first ~100K characters of each) and speedyapply's README over <code>raw.githubusercontent.com</code>, plus targeted WebSearch for Databricks, Anthropic, OpenAI, Capital One, LinkedIn, Salesforce, and 1Password. <strong>Watchlist hits today (all unverified):</strong> <strong>LinkedIn</strong> &mdash; its first concrete, named job requisitions in 70+ days of this task (two Mountain View Summer 2027 SWE Intern reqs, including the "First Play" underclassman track) surfaced via the SimplifyJobs README. <strong>Amazon</strong> &mdash; one more new Summer 2027 req beyond its already-large tracked cluster (Database Engineer Intern, Seattle/East Palo Alto, job <code>10590290</code>). <strong>Salesforce</strong> &mdash; a new Forward Deployed Engineer Intern, Global Public Sector req (<code>JR366026</code>, Arkansas/Ohio remote); the previously-contested <code>JR364911</code> SWE Intern req (SF/Bellevue) is still listed today, so that long-running JR364911/JR340771 discrepancy remains open rather than resolved. <strong>NVIDIA</strong> &mdash; one more new Summer 2027 (not Fall 2026) req, Systems Software Intern &ndash; Aerial PHY (Santa Clara, <code>JR2026530</code>), a different term from its already-tracked Fall 2026 non-PhD cluster. <strong>Capital One</strong> &mdash; reconfirmed via WebSearch: same Technology Internship Program (McLean/Richmond/Plano, Summer 2027) as prior runs, sources disagree on whether the window has already closed; no new non-gated req, no change. <strong>Anthropic, OpenAI, Databricks</strong> &mdash; reaffirmed no change (no internship at the first two; Databricks' Summer/Winter 2027 SWE reqs still carry the Fall2027/Spring2028 grad gate). Other watchlist companies not individually searched today beyond the aggregator pass; Microsoft's visible README rows today were Research/MSR-flavored only, no new non-gated SWE finding. <strong>New non-watchlist leads:</strong> 1Password &mdash; a cluster of 7 distinct Developer Intern reqs (Remote US/Canada, Winter 2027), flagged with an eligibility caveat (a same-company Fall 2026 posting reportedly states a strong preference for candidates graduating by January 2027, which may extend to this cohort and functionally exclude her May 2029 grad even without a hard gate); Tesla &ndash; 5 distinct Energy Engineering SWE Intern roles (Palo Alto, Winter/Spring 2027), distinct from the already-excluded AI Inference Co-Design role, eligibility not yet checked; Docusign Agentic AI Engineer Intern (SF, term unstated); Intel AI Hardware Engineering Intern (Santa Clara, term unstated); Micron AI Engineer Platform Intern (Boise, term unstated). None of today's finds were live-fetched (every ATS/company domain tried failed identically); every candidate is WebSearch/README-snippet-level only. No cover letters built.</p>
+  <h1>2026-10-30 <span style="font-size:1rem;color:var(--text-muted);font-weight:400;">&middot; run at ~14:06 UTC</span></h1>
+  <p class="summary-line"><strong>0</strong> new CVs built this run &mdash; the network egress block first seen ~17:15 UTC on 2026-08-12 is <strong>still in effect, now ~78 days straight (~1893 hours)</strong>. Independently re-tested today against a wider domain set than usual: direct curl against <code>boards.greenhouse.io</code>, <code>www.databricks.com</code>, <code>jobs.ashbyhq.com</code>, <code>www.amazon.jobs</code>, <code>nvidia.wd5.myworkdayjobs.com</code>, <code>jobs.smartrecruiters.com</code>, <code>www.tesla.com</code>, <code>salesforce.wd12.myworkdayjobs.com</code>, Google/Meta careers, <code>careers.microsoft.com</code>, <code>capitalonecareers.com</code>, <code>jobs.lever.co</code>, and <code>job-boards.greenhouse.io</code> all failed identically with <code>CONNECT tunnel failed, response 403</code>; WebFetch to <code>amazon.jobs</code> and <code>jobs.smartrecruiters.com</code> returned <code>ENOTFOUND</code>. <strong>One genuine exception found today:</strong> <code>anthropic.com</code> itself was reachable (HTTP 200, and via WebFetch) &mdash; the first non-GitHub domain to respond in 78 days &mdash; and its own FAQ confirms directly, not just via WebSearch, that it offers no internships. <code>raw.githubusercontent.com</code> and WebSearch continue to work normally. Found a detached <code>HEAD</code> again at session start; fixed via <code>git fetch origin master</code> + <code>git checkout -B master origin/master</code> (confirmed in sync). Did the initial aggregator pass directly (both SimplifyJobs READMEs + speedyapply, first ~100K characters each), then used one background research agent for deeper paging (offset 100K&ndash;200K on all three READMEs) plus targeted WebSearch on Databricks, Apple, Bloomberg, Citadel, Infosys, Google, and OpenAI (Anthropic re-verified directly, see above), plus a source-#5 recheck of Cohere's board (no new distinct req) and two startup sources (workatastartup.com, wellfound.com &mdash; both <code>ENOTFOUND</code>). <strong>Watchlist hits today (all unverified unless noted):</strong> <strong>Microsoft</strong> &mdash; 2 new Winter 2026 Software Engineer Intern reqs (Redmond, WA / Reston, VA), no PhD tag seen. <strong>NVIDIA</strong> &mdash; 1 new Summer 2027 req, Sparse Linear Algebra Libraries Intern (Santa Clara), eligibility read as uncertain (possible advanced-degree lean, not confirmed). <strong>Adobe</strong> &mdash; 2 more distinct req IDs surfaced (R172998 "AI &amp; Architecture"; R172064 "Applied and Research Scientist/Engineer," the latter eligibility-uncertain). <strong>Salesforce</strong> &mdash; 1 more distinct req (Summer 2027 Intern &ndash; AI Research, <code>JR365111-1</code>, Palo Alto, eligibility unchecked). <strong>Apple, Bloomberg, Citadel, Infosys, OpenAI, Databricks</strong> &mdash; all reconfirmed unchanged via dedicated WebSearch today (Databricks: only non-US SWE/ML reqs found, London/Berlin/Amsterdam). <strong>LinkedIn, Amazon's Database Engineer Intern, Salesforce's JR366026/JR364911 saga, NVIDIA's Aerial PHY req</strong> (all 2026-10-29 finds) carried forward unchanged, not re-verified today; one new Amazon UK-based SDE Intern req found today, excluded as non-US. <strong>8 new non-watchlist leads</strong> (a possibly-distinct Pinterest SF/Remote row, Axon, Overland AI, Golden Analytics, Boston Scientific, Schonfeld, FUTO, Visa) &mdash; none live-fetched, every candidate WebSearch/README-snippet-level only. No cover letters built.</p>
   <div class="stat-row">
     <span class="stat-pill bad">0 CVs drafted &mdash; nothing could be live-verified</span>
-    <span class="stat-pill bad">~1869h (~77d 21h) straight egress-blocked for actual posting pages</span>
-    <span class="stat-pill warn">Detached HEAD at session start, fixed via checkout -B master origin/master</span>
-    <span class="stat-pill good">No subagents/forks used this run; aggregator + WebSearch done directly</span>
-    <span class="stat-pill warn">New watchlist hits: LinkedIn (first-ever concrete reqs), Amazon (+1), Salesforce (+1, JR364911 still unresolved), NVIDIA (+1, new term) &mdash; all unverified</span>
-    <span class="stat-pill good">Anthropic, OpenAI, Databricks, Capital One re-confirmed unchanged (still excluded/no internship)</span>
-    <span class="stat-pill warn">5 new non-watchlist leads (1Password cluster, Tesla Energy cluster, Docusign, Intel, Micron), none live-verified</span>
+    <span class="stat-pill bad">~1893h (~78d) straight egress-blocked for job-board/ATS pages</span>
+    <span class="stat-pill warn">Exception: anthropic.com itself reachable today &mdash; first non-GitHub domain in 78 days</span>
+    <span class="stat-pill warn">Detached HEAD at session start again, fixed via fetch + checkout -B master origin/master</span>
+    <span class="stat-pill good">One background research agent used for deep aggregator paging + WebSearch</span>
+    <span class="stat-pill warn">New watchlist hits: Microsoft (+2), NVIDIA (+1), Adobe (+2), Salesforce (+1) &mdash; all unverified</span>
+    <span class="stat-pill good">Apple, Bloomberg, Citadel, Infosys, OpenAI, Databricks reconfirmed unchanged</span>
+    <span class="stat-pill warn">8 new non-watchlist leads, none live-verified</span>
   </div>
 </header>
 
@@ -384,81 +386,80 @@
 <section class="block">
   <h2>Watchlist Alert</h2>
   <div class="caveat" style="border:1.5px solid var(--alert-border);background:var(--alert-bg);">
-    <strong>LinkedIn &mdash; first concrete sighting in 70+ days of this task.</strong> Two Mountain View, Summer
-    2027 SWE Intern requisitions surfaced via SimplifyJobs today: "Software Engineer Intern &ndash; First Play"
-    (job <code>744000158394370</code>, 0d old, underclassman-targeted per LinkedIn's own program page) and a
-    standard "Software Engineer Intern" (job <code>744000156616169</code>, 8d old). No grad-year gate visible in
-    the aggregator text. Prior runs could never pin down a SmartRecruiters URL for LinkedIn at all &mdash; this is
-    the first time one has. <code>jobs.smartrecruiters.com</code> is blocked (confirmed again today), so neither
-    req could be live-verified.
+    <strong>Microsoft &mdash; 2 new Winter 2026 reqs, distinct from the CoreAI cluster.</strong> Software Engineer
+    Intern (Winter 2026/2027, Redmond, WA and Reston, VA) &mdash; a general SWE track, no PhD/advanced-degree tag
+    seen. Winter 2026/2027 is in scope per this task's term rules. Not live-verified (<code>careers.microsoft.com</code>
+    still blocked); whether a full-time on-site requirement applies hasn't been confirmed either way yet.
   </div>
   <div class="caveat" style="border:1.5px solid var(--alert-border);background:var(--alert-bg);">
-    <strong>Amazon &mdash; one more new req.</strong> Beyond its already-large tracked Summer/Winter 2027 cluster,
-    today surfaced a Database Engineer Intern req (Seattle, WA / East Palo Alto, CA, Summer 2027, job
-    <code>10590290</code>, 1d old), no grad-year gate seen. Not live-verified.
-  </div>
-  <div class="caveat" style="border:1.5px solid var(--alert-border);background:var(--alert-bg);">
-    <strong>Salesforce &mdash; new req, and the JR364911 saga continues.</strong> A new Forward Deployed Engineer
-    Intern &ndash; Global Public Sector req surfaced (<code>JR366026</code>, Arkansas / Ohio remote, Summer 2027,
-    2d old). Separately, the long-contested SWE Intern req <code>JR364911</code> (SF / Bellevue, "Security
-    Government" team, Summer 2027) is still listed today (10d old per SimplifyJobs) &mdash; prior runs have gone
-    back and forth on whether this ID or <code>JR340771</code> is the live one; today's fetch didn't resolve the
-    discrepancy, just confirms JR364911 is still circulating. Neither req live-verified (Workday domain blocked).
-  </div>
-  <div class="caveat" style="border:1.5px solid var(--alert-border);background:var(--alert-bg);">
-    <strong>NVIDIA &mdash; one more new req, different term.</strong> Systems Software Intern &ndash; Aerial PHY
-    (Santa Clara, CA, Summer 2027, job <code>JR2026530</code>, 9d old) &mdash; a Summer 2027 req, distinct from the
-    already-tracked Fall 2026 non-PhD Santa Clara cluster. No PhD tag seen. Not live-verified.
+    <strong>NVIDIA &mdash; one more new req.</strong> Sparse Linear Algebra Libraries Intern (Santa Clara, CA, Summer
+    2027) &mdash; title doesn't carry the usual PhD tag, but "libraries" + numerical-systems framing makes an
+    advanced-degree preference plausible; eligibility read as uncertain, not confirmed either way. Distinct from
+    2026-10-29's Aerial PHY req (<code>JR2026530</code>), which is carried forward unchanged below. Not
+    live-verified.
   </div>
   <div class="caveat">
-    <strong>Capital One, Anthropic, OpenAI, Databricks &mdash; no material change.</strong> Capital One's Technology
-    Internship Program (Summer 2027, McLean VA / Richmond VA / Plano TX) reconfirmed via WebSearch &mdash; same
-    program as prior runs; sources disagree on whether its application window has already closed, but no new
-    non-gated req beyond the standing PhD/Master's-gated Data Science tracks. Anthropic and OpenAI reaffirmed via
-    WebSearch: still no traditional internship at either (Anthropic's closest option is the paid 4-month Fellows
-    program / occasional PhD-track research roles; OpenAI's only 2027-dated posting is a full-time "Applied Emerging
-    Talent" role, not an internship). Databricks' Summer 2027 and Winter 2027 SWE Intern reqs reconfirmed still
-    carrying the Fall2027/Spring2028 grad-year gate &mdash; standing exclusion holds. Google, Microsoft, Adobe,
-    Oracle, Citadel, TikTok, Meta, Apple, Bloomberg, Infosys, Pinterest, and Uber were not individually re-searched
-    today beyond the aggregator README pass; Microsoft's visible rows today were MSR/Research-Intern-flavored only
-    (no new non-gated SWE finding), and the rest showed no new rows in the ~100K-character portion of each README
-    read this run.
+    <strong>Anthropic &mdash; directly confirmed today, not just via WebSearch.</strong> <code>anthropic.com</code>
+    itself was reachable this run (a first in 78 days &mdash; every other career-page/ATS domain tried, including
+    <code>careers.microsoft.com</code>, Google/Meta careers, <code>capitalonecareers.com</code>, and
+    <code>jobs.lever.co</code>, still failed identically). Its own FAQ states plainly: "We don't currently offer
+    internships." Only early-career options listed are the Research Resident role and the paid 4-month Fellows
+    Program (AI Safety &amp; Security / ML Systems &amp; RL / Economics &amp; Policy tracks) &mdash; none labeled as
+    internships. No change to the standing exclusion, but this is the strongest confirmation yet.
+  </div>
+  <div class="caveat">
+    <strong>Apple, Bloomberg, Citadel, Infosys, OpenAI, Databricks &mdash; reconfirmed unchanged via dedicated
+    WebSearch today.</strong> Apple: no confirmed Fall 2026/Summer 2027 US SWE req found; hiring appears rolling,
+    team-by-team, nothing posted yet. Bloomberg: 2027 cycle reportedly open per third-party guides only, no
+    official req pinned down &mdash; still unconfirmed, not a hit. Citadel (standard, non-Securities): guides say
+    applications are "active" but no specific Summer 2027 US req found; the Launch early-ID track isn't publicly
+    posted yet. Infosys: InStep grad-window exclusion (Dec 2026&ndash;June 2027) reconfirmed, standing exclusion
+    holds. OpenAI: reconfirmed no student internship &mdash; only "Student Collective" (a non-internship leadership
+    program) and Residency (post-grad), no change. Databricks: only non-US SWE/ML reqs found (London, Berlin,
+    Amsterdam), the London one explicitly carrying the same Fall2027/Spring2028 grad gate as the already-excluded US
+    req &mdash; standing US exclusion holds. (Cohere, not a formal watchlist company but re-checked per source #5:
+    only Winter 2027 reqs found, same already-tracked pattern, no new distinct req.)
+  </div>
+  <div class="caveat">
+    <strong>LinkedIn, Amazon, Salesforce's JR366026/JR364911, NVIDIA's Aerial PHY &mdash; 2026-10-29's new reqs,
+    carried forward, not re-verified today.</strong> See the Watchlist table below and yesterday's run log entry
+    for full detail. One new Amazon req surfaced today (UK-based SDE Intern) &mdash; excluded as non-US.
   </div>
 </section>
 
 <section class="block">
   <h2>Watchlist &mdash; Priority Companies</h2>
   <div class="caveat">
-    <strong>20 of 20 checked this run (2026-10-29)</strong>, 7 via dedicated fresh WebSearch (Databricks, Anthropic,
-    OpenAI, Capital One, LinkedIn, Salesforce, 1Password-as-aggregator-adjacent), the rest via the first ~100K
-    characters of each of the three aggregator READMEs fetched directly over <code>raw.githubusercontent.com</code>
-    (no subagent/fork used this run). Every claim below is WebSearch/aggregator-snippet-level confidence unless
-    stated otherwise &mdash; no ATS/company-career domain was reachable this run (consistent with every run since
-    2026-08-12).
+    <strong>20 of 20 checked this run (2026-10-30)</strong>: 7 via dedicated fresh WebSearch (Databricks, Apple,
+    Bloomberg, Citadel, Infosys, Google, OpenAI &mdash; run by a background research agent), Anthropic re-verified
+    by a direct live WebFetch (see Watchlist Alert), the rest via aggregator paging (initial ~100K characters read
+    directly, then offset 100K&ndash;200K read by the same background agent across all three READMEs). Every claim
+    below is WebSearch/aggregator-snippet-level confidence unless stated otherwise &mdash; no ATS/company-career
+    domain besides <code>anthropic.com</code> was reachable this run.
   </div>
   <div class="excl-table">
     <table>
       <thead><tr><th>Company</th><th>Status</th><th class="reason">Detail</th></tr></thead>
       <tbody>
-        <tr><td>LinkedIn</td><td class="reason" style="color:var(--alert-border);font-weight:600;">New &mdash; first-ever concrete reqs</td><td class="reason">2 Mountain View Summer 2027 SWE Intern reqs (incl. "First Play"), no grad gate seen. See Watchlist Alert.</td></tr>
-        <tr><td>Amazon</td><td class="reason" style="color:var(--alert-border);font-weight:600;">New &mdash; 1 more req</td><td class="reason">Database Engineer Intern, Seattle/East Palo Alto, Summer 2027, job 10590290. See Watchlist Alert.</td></tr>
-        <tr><td>Salesforce</td><td class="reason" style="color:var(--alert-border);font-weight:600;">New req + unresolved discrepancy continues</td><td class="reason">New FDE Intern Global Public Sector (JR366026); JR364911 still listed today. See Watchlist Alert.</td></tr>
-        <tr><td>NVIDIA</td><td class="reason" style="color:var(--alert-border);font-weight:600;">New &mdash; 1 more req, different term</td><td class="reason">Systems Software Intern &ndash; Aerial PHY (Santa Clara, Summer 2027, JR2026530). See Watchlist Alert.</td></tr>
-        <tr><td>Capital One</td><td class="reason" style="color:var(--bad);font-weight:600;">No change &mdash; excluded</td><td class="reason">Technology Internship Program (Summer 2027) reconfirmed via WebSearch, same PhD/Master's-gated Data Science tracks, no new non-gated req.</td></tr>
-        <tr><td>Anthropic</td><td class="reason" style="color:var(--bad);font-weight:600;">No change &mdash; extra scrutiny applied</td><td class="reason">Reaffirmed via WebSearch: only a paid 4-month Fellows program and occasional PhD-track research roles; no traditional internship found.</td></tr>
-        <tr><td>OpenAI</td><td class="reason" style="color:var(--bad);font-weight:600;">No change &mdash; extra scrutiny applied</td><td class="reason">Reaffirmed via WebSearch: no internship found. Closest match is a full-time "Applied Emerging Talent (2027)" role, not an internship.</td></tr>
-        <tr><td>Databricks</td><td class="reason" style="color:var(--bad);font-weight:600;">No change &mdash; excluded</td><td class="reason">Summer 2027 US SWE Intern reqs reconfirmed via WebSearch, same Fall2027/Spring2028 grad gate.</td></tr>
-        <tr><td>Microsoft</td><td>No change (aggregator pass only)</td><td class="reason">Today's visible README rows were MSR/Research-Intern-flavored only; no new non-gated SWE finding beyond the already-tracked CoreAI + general-SWE clusters.</td></tr>
-        <tr><td>Google</td><td>No change (aggregator pass only)</td><td class="reason">FDE req and three "Software Engineering Intern, BS" job IDs from prior runs carried forward unchanged; not individually re-searched today.</td></tr>
-        <tr><td>Adobe</td><td>No change (aggregator pass only)</td><td class="reason">Already-tracked cluster (R171666, R172997, ML Engineer R171519) carried forward; no clearly-new req distinguished from the existing cluster in today's pass.</td></tr>
+        <tr><td>Microsoft</td><td class="reason" style="color:var(--alert-border);font-weight:600;">New &mdash; 2 reqs</td><td class="reason">Software Engineer Intern, Winter 2026/2027, Redmond WA + Reston VA, no PhD tag. See Watchlist Alert.</td></tr>
+        <tr><td>NVIDIA</td><td class="reason" style="color:var(--alert-border);font-weight:600;">New &mdash; 1 more req</td><td class="reason">Sparse Linear Algebra Libraries Intern (Santa Clara, Summer 2027, eligibility uncertain). Aerial PHY (JR2026530, 10-29) carried forward. See Watchlist Alert.</td></tr>
+        <tr><td>Adobe</td><td class="reason" style="color:var(--alert-border);font-weight:600;">New &mdash; 2 more req IDs</td><td class="reason">R172998 "AI &amp; Architecture" (San Jose) and R172064 "Applied and Research Scientist/Engineer" (eligibility uncertain). See Flagged table.</td></tr>
+        <tr><td>Salesforce</td><td class="reason" style="color:var(--alert-border);font-weight:600;">New &mdash; 1 more req + unresolved discrepancy continues</td><td class="reason">Summer 2027 Intern &ndash; AI Research (JR365111-1, Palo Alto, eligibility unchecked). JR366026 + JR364911 saga (10-29) carried forward.</td></tr>
+        <tr><td>LinkedIn</td><td>Carried forward, not re-verified today</td><td class="reason">2 Mountain View Summer 2027 SWE Intern reqs from 10-29 (incl. "First Play"). <code>jobs.smartrecruiters.com</code> still blocked.</td></tr>
+        <tr><td>Amazon</td><td>Carried forward + 1 new exclusion</td><td class="reason">Database Engineer Intern (job 10590290, 10-29) carried forward. A UK-based SDE Intern req found today, excluded (non-US).</td></tr>
+        <tr><td>Capital One</td><td class="reason" style="color:var(--bad);font-weight:600;">No change &mdash; excluded</td><td class="reason">Not individually re-searched today; standing Technology Internship Program exclusion (PhD/Master's-gated Data Science tracks) holds.</td></tr>
+        <tr><td>Anthropic</td><td class="reason" style="color:var(--bad);font-weight:600;">No change &mdash; directly confirmed today</td><td class="reason"><code>anthropic.com</code> itself reachable (first non-GitHub domain in 78 days); its own FAQ states no internships offered. See Watchlist Alert.</td></tr>
+        <tr><td>OpenAI</td><td class="reason" style="color:var(--bad);font-weight:600;">No change &mdash; reconfirmed via WebSearch</td><td class="reason">Only "Student Collective" (non-internship leadership program) and Residency (post-grad); no internship found.</td></tr>
+        <tr><td>Databricks</td><td class="reason" style="color:var(--bad);font-weight:600;">No change &mdash; excluded</td><td class="reason">Only non-US SWE/ML reqs found today (London, Berlin, Amsterdam); London explicitly carries the same Fall2027/Spring2028 grad gate as the excluded US req.</td></tr>
+        <tr><td>Google</td><td>No change &mdash; reconfirmed via WebSearch</td><td class="reason">No new non-PhD SWE/ML internship found. FDE req (75665705386549958) and 3 "Software Engineering Intern, BS" job IDs carried forward, eligibility still unresolved.</td></tr>
+        <tr><td>Apple</td><td>No change &mdash; reconfirmed via WebSearch</td><td class="reason">No confirmed Fall 2026/Summer 2027 US SWE req found; hiring appears rolling, team-by-team.</td></tr>
+        <tr><td>Bloomberg</td><td>No change &mdash; reconfirmed via WebSearch</td><td class="reason">2027 cycle reportedly open per third-party guides only; no official req pinned down.</td></tr>
+        <tr><td>Citadel</td><td>No change &mdash; reconfirmed via WebSearch</td><td class="reason">Guides say applications "active," no specific Summer 2027 US req found; Citadel Securities SWE tracked separately.</td></tr>
+        <tr><td>Infosys</td><td>No change &mdash; reconfirmed via WebSearch</td><td class="reason">InStep grad-window exclusion (Dec 2026&ndash;June 2027) still holds.</td></tr>
+        <tr><td>TikTok/ByteDance</td><td>No change (aggregator pass only)</td><td class="reason">No new row distinguished from the already-tracked ~19+6-req cluster.</td></tr>
         <tr><td>Oracle</td><td>No change (aggregator pass only)</td><td class="reason">Already-tracked AI Agent Intern Logistics + SWE Intern NetSuite carried forward; nothing new surfaced today.</td></tr>
-        <tr><td>TikTok/ByteDance</td><td>No change (aggregator pass only)</td><td class="reason">Several MLE/research rows seen, mostly PhD-leaning or within the already-tracked cluster.</td></tr>
-        <tr><td>Citadel</td><td>No change (aggregator pass only)</td><td class="reason">A PhD-gated ML Researcher Intern row seen (excluded); Citadel Securities SWE already tracked separately.</td></tr>
-        <tr><td>Infosys</td><td>No change</td><td class="reason">Not individually re-searched today; standing InStep grad-window exclusion holds.</td></tr>
-        <tr><td>Pinterest</td><td>No change (not individually re-searched)</td><td class="reason">Carried forward from prior runs' README confirmation.</td></tr>
-        <tr><td>Meta</td><td>No change (aggregator pass only)</td><td class="reason">Rows seen today (Systems/Infrastructure PhD Intern, AI Alignment Research Scientist Intern) are PhD-gated; no live general SWE Intern req found.</td></tr>
-        <tr><td>Apple</td><td>No change</td><td class="reason">Not individually re-searched today; no confirmed Summer 2027/Fall 2026 US SWE internship in prior runs.</td></tr>
-        <tr><td>Bloomberg</td><td>No change</td><td class="reason">Not individually re-searched today; no confirmed US Summer 2027 SWE posting in prior runs.</td></tr>
+        <tr><td>Pinterest</td><td>Possible new req, uncertain</td><td class="reason">An extra SF/Remote-USA SWE Intern row (gh_jid=7838577, term unstated) may be distinct from the tracked "2027 USA" req. See Flagged table. PhD/Master's-gated cluster unchanged (excluded).</td></tr>
+        <tr><td>Meta</td><td>No change (aggregator pass only)</td><td class="reason">Same PhD-gated Systems/Infrastructure Intern row recurring; no live general SWE Intern req found.</td></tr>
         <tr><td>Uber</td><td>No change (aggregator pass only)</td><td class="reason">Already-tracked Fall 2026 SF SWE Intern req carried forward; nothing new surfaced today.</td></tr>
       </tbody>
     </table>
@@ -470,8 +471,9 @@
   <div class="caveat">
     <strong>None built this run.</strong> Per this task's verification rule, a posting only gets built into a CV
     after a fresh, live fetch of the actual posting page confirms it's real, US-based, and term-specific. Every
-    ATS/company domain touched today failed identically to every run since 2026-08-12 (~77 days 21 hours straight).
-    Every candidate lead below is listed as flagged rather than confirmed.
+    ATS/company domain touched today failed identically to every run since 2026-08-12 (~78 days straight), except
+    <code>anthropic.com</code> itself (no internship found there either). Every candidate lead below is listed as
+    flagged rather than confirmed.
   </div>
 </section>
 
@@ -481,13 +483,26 @@
     <table>
       <thead><tr><th>Company</th><th>Role</th><th class="reason">Notes</th></tr></thead>
       <tbody>
-        <tr><td>1Password</td><td>Developer Intern cluster (Vault Team, Credential Brokering, Developer Interfaces, Extension Excellence, Provisioning, Machine Identity, Front-End Platform), Remote US/Canada, Winter 2027</td><td class="reason">Well-known password manager, real. <strong>Eligibility caveat:</strong> a same-company Fall 2026 posting reportedly states a strong preference for candidates graduating by January 2027 &mdash; if that preference carries to Winter 2027, it may functionally exclude her May 2029 grad even without a hard gate. Not live-verified.</td></tr>
-        <tr><td>Tesla</td><td>5 distinct Energy Engineering SWE Intern roles (general, Mobile App, Residential Energy Device, Data Transformations, Commercial UI), Palo Alto, Winter/Spring 2027</td><td class="reason">Distinct team from the already-excluded AI Inference Co-Design role (which failed on CUDA + grad-year + full-time-fall). Eligibility not yet checked for these. Not live-verified.</td></tr>
-        <tr><td>Docusign</td><td>Agentic AI Engineer Intern, San Francisco, term unstated</td><td class="reason">Public company, real. Term and eligibility unchecked. Not live-verified.</td></tr>
-        <tr><td>Intel</td><td>AI Hardware Engineering Intern, Santa Clara CA +1, term unstated</td><td class="reason">Public company, real. Term and eligibility unchecked. Not live-verified.</td></tr>
-        <tr><td>Micron</td><td>Intern &ndash; AI Engineer Platform, Boise ID, term unstated</td><td class="reason">Public company, real. Term and eligibility unchecked. Not live-verified.</td></tr>
+        <tr><td>Adobe</td><td>2027 Intern &ndash; AI &amp; Architecture (R172998), San Jose, CA</td><td class="reason">Watchlist company, general title, no PhD tag seen. Not live-verified.</td></tr>
+        <tr><td>Adobe</td><td>2027 Intern &ndash; Applied and Research Scientist/Engineer (R172064)</td><td class="reason">Watchlist company; "Research Scientist" phrasing suggests a possible advanced-degree lean, not confirmed. Not live-verified.</td></tr>
+        <tr><td>Salesforce</td><td>Summer 2027 Intern &ndash; AI Research (JR365111-1), Palo Alto, CA</td><td class="reason">Watchlist company, distinct from the two already-tracked Salesforce reqs; eligibility/gating unchecked, "AI Research" title raises a mild PhD-lean concern. Not live-verified.</td></tr>
+        <tr><td>Pinterest</td><td>Software Engineer Intern (gh_jid=7838577), SF / Remote USA, term unstated</td><td class="reason">Watchlist company; possibly distinct from the already-tracked "Software Engineer Intern 2027 (USA)" req. Not live-verified.</td></tr>
+        <tr><td>Axon</td><td>Software Engineer Intern, Seattle, WA / Arlington, VA</td><td class="reason">Real, public company (law-enforcement tech). Term and eligibility unchecked. Not live-verified.</td></tr>
+        <tr><td>Overland AI</td><td>Software Engineering Intern, Seattle, WA</td><td class="reason">Defense-robotics startup; funding/stage unverified. Not live-verified.</td></tr>
+        <tr><td>Golden Analytics</td><td>Software Engineer Intern, Bellevue, WA</td><td class="reason">Smaller company; legitimacy/funding unverified. Not live-verified.</td></tr>
+        <tr><td>Boston Scientific</td><td>AI Solutions Engineering Intern, Arden Hills, MN</td><td class="reason">Large public medtech company, real. Term and eligibility unchecked. Not live-verified.</td></tr>
+        <tr><td>Schonfeld</td><td>AI Enablement Intern, New York, NY</td><td class="reason">Hedge fund, real. Term and eligibility unchecked. Not live-verified.</td></tr>
+        <tr><td>FUTO</td><td>Software Engineer Intern, Austin, TX</td><td class="reason">Smaller company; legitimacy/funding unverified. Not live-verified.</td></tr>
+        <tr><td>Visa</td><td>Software Engineer Intern, Denver, CO / Austin, TX</td><td class="reason">Large public company, real. Term and eligibility unchecked. Not live-verified.</td></tr>
       </tbody>
     </table>
+  </div>
+  <div class="bulk-note" style="margin-bottom:0.9rem;">
+    2026-10-29's additions (1Password Developer Intern cluster of 7 distinct reqs, Remote US/Canada, Winter 2027,
+    eligibility caveat re: a same-company Fall 2026 grad-by-January-2027 preference that may carry over; 5 distinct
+    Tesla Energy Engineering SWE Intern roles, Palo Alto, Winter/Spring 2027, distinct team from the excluded AI
+    Inference Co-Design role; Docusign Agentic AI Engineer Intern; Intel AI Hardware Engineering Intern; Micron AI
+    Engineer Platform Intern) were not individually re-verified this run; carried forward unchanged.
   </div>
   <div class="bulk-note" style="margin-bottom:0.9rem;">
     2026-10-28's batch (~27 real-looking leads: Snowflake, Mercury, Cockroach Labs, The Trade Desk, Veeva Systems,
@@ -577,16 +592,62 @@
   <h2>Repo Status</h2>
   <div class="git-status ok" id="repo-status-slot">
     <span class="dot"></span>
-    Found local <code>master</code> detached from <code>origin/master</code> at session start this run &mdash;
-    fixed via <code>git checkout -B master origin/master</code> (confirmed in sync, no divergent local commits
-    lost). No subagents/forks used this run &mdash; the aggregator fetch and watchlist research were done directly.
-    This run's commit pushed cleanly to <code>origin/master</code> (<code>3287308</code>).
+    Found local <code>master</code> detached from <code>origin/master</code> again at session start this run
+    &mdash; fixed via <code>git fetch origin master</code> + <code>git checkout -B master origin/master</code>
+    (confirmed in sync, no divergent local commits lost). Used one background research agent for deeper aggregator
+    paging and watchlist WebSearch this run. Commit/push status for this run recorded below once attempted.
   </div>
 </section>
 
 <section class="block">
   <h2>Run Log</h2>
   <div id="log-slot">
+    <div class="log-entry">
+      <span class="log-date">2026-10-30 (run, ~14:06 UTC)</span>
+      <span class="log-body">Fetched this dashboard's own 2026-10-29 published state via the Artifact read tool
+        (full read, saved to disk) to rebuild the dedup set from its Watchlist, Flagged, Exclusions, and Run Log
+        content, plus the task's standing seed/exclusion list. Found local <code>master</code> detached from
+        <code>origin/master</code> again at session start; fixed via <code>git fetch origin master</code> +
+        <code>git checkout -B master origin/master</code> (confirmed in sync). Independently re-tested egress
+        against a wider domain set than usual: direct curl against <code>boards.greenhouse.io</code>,
+        <code>www.databricks.com</code>, <code>jobs.ashbyhq.com</code>, <code>www.amazon.jobs</code>,
+        <code>nvidia.wd5.myworkdayjobs.com</code>, <code>jobs.smartrecruiters.com</code>, <code>www.tesla.com</code>,
+        <code>salesforce.wd12.myworkdayjobs.com</code>, Google/Meta careers, <code>careers.microsoft.com</code>,
+        <code>capitalonecareers.com</code>, <code>jobs.lever.co</code>, and <code>job-boards.greenhouse.io</code> all
+        failed identically with <code>CONNECT tunnel failed, response 403</code>. ~78 days (~1893 hours) straight
+        since 2026-08-12 17:15 UTC. <strong>New this run:</strong> <code>anthropic.com</code> itself was reachable
+        (HTTP 200 via both curl and WebFetch) &mdash; the first non-GitHub domain to respond in 78 days. Used this to
+        directly confirm (not just via WebSearch) that Anthropic's own FAQ states "We don't currently offer
+        internships" &mdash; only the Research Resident role and the paid 4-month Fellows Program are listed,
+        neither labeled an internship. Per the live-verification rule, <strong>zero CVs could be built again</strong>.
+        Did the initial aggregator pass directly (first ~100K characters of each of the three READMEs), then used
+        one background research fork for deeper paging (offset 100K&ndash;200K on all three) plus targeted
+        WebSearch on <strong>Databricks</strong> (only non-US SWE/ML reqs found today: London/Berlin/Amsterdam, the
+        London one explicitly Fall2027/Spring2028-gated &mdash; standing US exclusion holds), <strong>Apple</strong>
+        (no confirmed US req, rolling team-by-team hiring), <strong>Bloomberg</strong> (2027 cycle reportedly open
+        per third-party guides only, no official req pinned down), <strong>Citadel</strong> (standard,
+        non-Securities: "active" per guides but no specific Summer 2027 US req found), <strong>Infosys</strong>
+        (InStep grad-window exclusion reconfirmed, Dec 2026&ndash;June 2027), <strong>Google</strong> (no new
+        non-PhD SWE/ML internship; FDE req and 3 "Software Engineering Intern, BS" IDs carried forward,
+        eligibility still unresolved), and <strong>OpenAI</strong> (reconfirmed no student internship &mdash; only
+        "Student Collective," a non-internship leadership program, and post-grad Residency). Also re-checked
+        <strong>Cohere's</strong> full board per source #5 (only Winter 2027 reqs, same already-tracked pattern, no
+        new distinct req) and tried two startup sources (workatastartup.com, wellfound.com &mdash; both
+        <code>ENOTFOUND</code>). New watchlist hits (all unverified): <strong>Microsoft</strong> &mdash; 2 new
+        Winter 2026/2027 Software Engineer Intern reqs (Redmond WA, Reston VA), no PhD tag. <strong>NVIDIA</strong>
+        &mdash; 1 new Summer 2027 req (Sparse Linear Algebra Libraries Intern, Santa Clara), eligibility read as
+        uncertain. <strong>Adobe</strong> &mdash; 2 more distinct req IDs (R172998 "AI &amp; Architecture," R172064
+        "Applied and Research Scientist/Engineer," the latter eligibility-uncertain). <strong>Salesforce</strong>
+        &mdash; 1 more distinct req (Summer 2027 Intern &ndash; AI Research, JR365111-1, Palo Alto, eligibility
+        unchecked). <strong>LinkedIn</strong>, Amazon's Database Engineer Intern, Salesforce's JR366026/JR364911
+        saga, and NVIDIA's Aerial PHY req (all 2026-10-29 finds) were carried forward unchanged, not re-verified
+        today; one new Amazon req (UK-based SDE Intern) was found and excluded as non-US. General aggregator
+        passes surfaced 8 new non-watchlist leads: a possibly-distinct Pinterest SF/Remote-USA SWE Intern row
+        (gh_jid=7838577), Axon, Overland AI, Golden Analytics, Boston Scientific, Schonfeld, FUTO, and Visa &mdash;
+        none live-fetched. 2026-10-29's own new leads (1Password Developer Intern cluster, Tesla Energy Engineering
+        cluster, Docusign, Intel, Micron) were not re-verified this run; carried forward unchanged. No cover
+        letters drafted, no CVs built.</span>
+    </div>
     <div class="log-entry">
       <span class="log-date">2026-10-29 (run, ~14:32 UTC)</span>
       <span class="log-body">Fetched this dashboard's own 2026-10-28 published state via the Artifact read tool
@@ -1015,17 +1076,24 @@
 </div>
 
 <footer class="foot">
-  Automated daily scout. Sources checked this run (~14:32 UTC, 2026-10-29): the first ~100K characters of both
-  SimplifyJobs READMEs (main + Off-Season, both oversized, not fully reachable within one pass) and speedyapply's
-  README, fetched directly over raw.githubusercontent.com (no subagent/fork used this run); targeted WebSearch for
-  Databricks, Anthropic, OpenAI, Capital One, LinkedIn, Salesforce, and 1Password (the other 13 watchlist companies
-  covered only via the aggregator pass, not individually re-searched). Egress re-verification via direct curl
-  against boards.greenhouse.io, www.databricks.com, jobs.ashbyhq.com, www.amazon.jobs, nvidia.wd5.myworkdayjobs.com,
-  jobs.smartrecruiters.com, www.tesla.com, and salesforce.wd12.myworkdayjobs.com &mdash; all failed with
-  <code>CONNECT tunnel failed, response 403</code>, identical to every run since 2026-08-12 (~77 days 21 hours
-  straight). A direct WebFetch to www.amazon.jobs returned ENOTFOUND. Only raw.githubusercontent.com and WebSearch
-  reach anything reliably this run; no ATS/career-page or company-careers domain was reachable. lualatex/xelatex not
-  installed in this container; not reinstalled (nothing live-verified enough to need compiling). Terms tracked: Fall
-  2026 and Summer 2027 equally, plus Winter 2026/2027 if found. Last updated 2026-10-29. Run log kept to the last 14
-  days. "Flagged but not built" shows only new finds per run (see git commit log for full history).
+  Automated daily scout. Sources checked this run (~14:06 UTC, 2026-10-30): the first ~100K characters of both
+  SimplifyJobs READMEs (main + Off-Season) and speedyapply's README fetched directly over
+  raw.githubusercontent.com, then offset 100K&ndash;200K on all three read by one background research agent;
+  targeted WebSearch for Databricks, Apple, Bloomberg, Citadel, Infosys, Google, and OpenAI (via the same agent),
+  plus Anthropic re-verified by a direct live WebFetch (the only ATS/career domain reachable this run); Cohere's
+  full board re-checked per source #5; two startup sources (workatastartup.com, wellfound.com) tried and blocked.
+  The other 12 watchlist companies (Amazon, LinkedIn, Salesforce, NVIDIA, Microsoft, Adobe, Oracle, TikTok,
+  Pinterest, Meta, Uber, Capital One) covered only via the aggregator pass or carried forward from 2026-10-29, not
+  individually re-searched today. Egress re-verification via direct curl against boards.greenhouse.io,
+  www.databricks.com, jobs.ashbyhq.com, www.amazon.jobs, nvidia.wd5.myworkdayjobs.com, jobs.smartrecruiters.com,
+  www.tesla.com, salesforce.wd12.myworkdayjobs.com, Google/Meta careers, careers.microsoft.com,
+  capitalonecareers.com, jobs.lever.co, and job-boards.greenhouse.io &mdash; all failed with
+  <code>CONNECT tunnel failed, response 403</code>, identical to every run since 2026-08-12 (~78 days straight),
+  except anthropic.com which returned HTTP 200 for the first time in 78 days. WebFetch to amazon.jobs and
+  jobs.smartrecruiters.com returned ENOTFOUND. lualatex/xelatex not installed in this container; not reinstalled
+  (nothing live-verified enough to need compiling). Terms tracked: Fall 2026 and Summer 2027 equally, plus Winter
+  2026/2027 if found. Last updated 2026-10-30. Run log kept to the last 14 days. "Flagged but not built" shows only
+  new finds per run (see git commit log for full history).
 </footer>
+
+</body></html>
