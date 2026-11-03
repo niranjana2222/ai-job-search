@@ -678,8 +678,9 @@
     non-fast-forward, which prompted a fresh <code>git fetch</code> that showed all three days' commits (through
     <code>6eed579</code>, "Record push status: 2026-11-02 run") were on <code>origin</code> all along &mdash;
     the earlier checkout had simply used a stale local ref instead of fetching first. Corrected by rebuilding this
-    run's commit on top of the real <code>origin/master</code> tip before pushing. This run's commit will be
-    recorded as pushed only once confirmed; see the commit log for the actual result.
+    run's commit on top of the real <code>origin/master</code> tip and pushed &mdash; confirmed a clean
+    fast-forward via <code>git push</code>'s own output (<code>6eed579..88d8382 master -&gt; master</code>), not
+    just asserted.
   </div>
 </section>
 
@@ -698,8 +699,8 @@
         (the pre-existing local ref just hadn't been fetched), caught when this run's own push was rejected as
         non-fast-forward; a fresh <code>git fetch</code> showed all three days' commits were on <code>origin</code>
         all along, through <code>6eed579</code> (2026-11-02). Rebuilt this run's commit on the real
-        <code>origin/master</code> tip before pushing; see Repo Status for detail and a correction of this entry's
-        own initial (wrong) read on the situation. Independently re-tested egress fresh: direct curl against
+        <code>origin/master</code> tip and pushed cleanly (<code>88d8382</code>, fast-forward, confirmed via
+        <code>git push</code>'s own output rather than just asserted). Independently re-tested egress fresh: direct curl against
         <code>boards.greenhouse.io</code>, <code>www.databricks.com</code>, <code>jobs.ashbyhq.com</code>,
         <code>www.amazon.jobs</code>, <code>jobs.careers.microsoft.com</code>, <code>nvidia.wd5.myworkdayjobs.com</code>,
         <code>salesforce.wd12.myworkdayjobs.com</code>, <code>capitalonecareers.com</code>,
