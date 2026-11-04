@@ -361,13 +361,13 @@
 <header class="masthead">
   <span class="eyebrow">Daily Internship Scout &middot; Niranjana Sankar</span>
   <h1>2026-11-04 <span style="font-size:1rem;color:var(--text-muted);font-weight:400;">&middot; run at ~14:05 UTC</span></h1>
-  <p class="summary-line"><strong>0</strong> new CVs built this run &mdash; the network egress block first seen ~17:15 UTC on 2026-08-12 is <strong>still in effect, now ~84 days straight (~2013 hours)</strong>. This run's re-test was broader and the result is worse than previously characterized: direct <code>curl</code> failed not just for ATS/job-board domains but for <strong>every external host tried, including example.com and www.wikipedia.org</strong> (all <code>connect_rejected</code>/403 via the proxy). WebFetch against <code>boards.greenhouse.io</code> and <code>www.mongodb.com</code> failed with <code>ENOTFOUND</code>, which the tool itself reports as the host being "outside the session's allowed network domains" &mdash; this looks like a narrow allowlist rather than a wide blocklist. <code>raw.githubusercontent.com</code> and WebSearch continue to work normally, and a direct WebFetch to <code>anthropic.com/careers</code> succeeded again, reconfirming "We don't currently offer internships." Local <code>master</code> was found detached from <code>origin/master</code> again at session start &mdash; same recurring pattern as prior runs; a fresh <code>git fetch origin master</code> showed <code>origin/master</code> was actually already up to date through 11-03's push (<code>303c9d1</code>), so this was a stale local ref, not a real gap; fixed via <code>git checkout -B master origin/master</code>. Ran one background fork for the watchlist WebSearch sweep (all 20 companies, nothing new) and did the aggregator-README parsing directly this run. The aggregator parse surfaced a large batch of new non-watchlist leads (Northrop Grumman, CACI, American Express, Barclays, DataRobot's "MCP & Memory Intern," HeyGen, Keysight Technologies, QuEra Computing, Sierra Nevada Corporation, Johnson &amp; Johnson, Marvell's Data Science Intern, and a confirmed-term update on General Motors) plus a long tail of thinner/lower-confidence leads &mdash; see Flagged. None could be live-verified (every career/ATS domain tried is outside this session's allowed network), so <strong>nothing was built into a CV this run</strong>.</p>
+  <p class="summary-line"><strong>0</strong> new CVs built this run &mdash; the network egress block first seen ~17:15 UTC on 2026-08-12 is <strong>still in effect, now ~84 days straight (~2013 hours)</strong>. This run's re-test was broader and the result is worse than previously characterized: direct <code>curl</code> failed not just for ATS/job-board domains but for <strong>every external host tried, including example.com and www.wikipedia.org</strong> (all <code>connect_rejected</code>/403 via the proxy). WebFetch against <code>boards.greenhouse.io</code> and <code>www.mongodb.com</code> failed with <code>ENOTFOUND</code>, which the tool itself reports as the host being "outside the session's allowed network domains" &mdash; this looks like a narrow allowlist rather than a wide blocklist. <code>raw.githubusercontent.com</code> and WebSearch continue to work normally, and a direct WebFetch to <code>anthropic.com/careers</code> succeeded again, reconfirming "We don't currently offer internships." Local <code>master</code> was found detached from <code>origin/master</code> again at session start &mdash; same recurring pattern as prior runs; a fresh <code>git fetch origin master</code> showed <code>origin/master</code> was actually already up to date through 11-03's push (<code>303c9d1</code>), so this was a stale local ref, not a real gap; fixed via <code>git checkout -B master origin/master</code>. Ran one background fork for the watchlist WebSearch sweep (all 20 companies, nothing new) and did the aggregator-README parsing directly this run. The aggregator parse surfaced a large batch of new non-watchlist leads (Northrop Grumman, CACI, American Express, Barclays, DataRobot's "MCP & Memory Intern," HeyGen, Keysight Technologies, QuEra Computing, Sierra Nevada Corporation, Johnson &amp; Johnson, Marvell's Data Science Intern, and a confirmed-term update on General Motors) plus a long tail of thinner/lower-confidence leads &mdash; see Flagged. A second, independent aggregator pass (run in parallel over different sampled sections of the same oversized READMEs) added a further batch, most notably <strong>Wikimedia Foundation</strong>'s remote Software Engineering Intern (Winter 2027) &mdash; a strong schedule fit given her concurrent roles &mdash; plus Inversion Space, Courier Health, GenMD, Apriori Bio, Quantum Signal AI, State Affairs, Arc, American Family Insurance, VSP Vision, WoodmenLife, Pure Storage, Hearst, Trane Technologies, and F5; two of that pass's leads (an Amazon Detroit "Jr. Developer Program" req and a Nissan cluster) turned out to duplicate items already carried from earlier runs and were not re-added. None could be live-verified (every career/ATS domain tried is outside this session's allowed network), so <strong>nothing was built into a CV this run</strong>.</p>
   <div class="stat-row">
     <span class="stat-pill bad">0 CVs drafted &mdash; nothing could be live-verified</span>
     <span class="stat-pill bad">~2013h (~84d) straight egress-blocked for job-board/ATS/general external pages</span>
     <span class="stat-pill warn">Detached HEAD found again at session start &mdash; fixed (false alarm, origin was current)</span>
     <span class="stat-pill good">20 of 20 watchlist companies checked &mdash; nothing structurally new via WebSearch sweep</span>
-    <span class="stat-pill warn">~12 new non-watchlist leads from aggregator parse, none live-verifiable &mdash; see Flagged</span>
+    <span class="stat-pill warn">~30 new non-watchlist leads from two parallel aggregator passes, none live-verifiable &mdash; see Flagged</span>
   </div>
 </header>
 
@@ -467,8 +467,32 @@
         <tr><td>Johnson &amp; Johnson</td><td>Software Engineer Co-op &ndash; Engineering, Danvers MA</td><td class="reason">Winter 2026, no PhD tag. Co-op structure &mdash; same scheduling-conflict caveat as Specter Aerospace applies if it requires a full semester off; not yet confirmed either way. Not live-verified.</td></tr>
         <tr><td>Marvell</td><td>Data Science Intern, BS, Summer 2027, Boise ID</td><td class="reason">Summer 2027 explicit, BS-gated (not PhD). Marvell was already named in the 2026-10-28 batch without this specific req &mdash; this is an additional distinct posting. Not live-verified.</td></tr>
         <tr><td>General Motors</td><td>Summer 2027 Intern, AI/ML Engineer, Autonomous Vehicles (Sunnyvale CA) + Summer 2027 Intern, R&amp;D, Vehicle Aerodynamics and ML (Warren MI)</td><td class="reason">Updates 11-03's "term unstated" GM flag: today's aggregator read confirms Summer 2027 explicitly on the Sunnyvale role and surfaces a second, distinct Summer 2027 role at Warren MI. No PhD tag on either. Not live-verified.</td></tr>
+        <tr><td>Wikimedia Foundation</td><td>Software Engineering Intern, Remote in USA (job 8268853)</td><td class="reason">Winter 2027, no PhD tag. Fully remote &mdash; a notably good schedule fit given her 5 concurrent roles this fall/winter. Nonprofit (real, established). Not live-verified.</td></tr>
       </tbody>
     </table>
+  </div>
+  <div class="bulk-note" style="margin-bottom:0.9rem;">
+    A second, independent aggregator-README pass run in parallel this session (different sampled sections of the
+    same huge READMEs) surfaced a further batch not yet individually verified: Intuitive &ndash; possible 3rd
+    distinct req, "AI/ML Engineer Intern" (Sunnyvale CA, job 744000159218439), beyond the Reinforcement Learning
+    Intern and AI Research Intern already tracked &ndash; title suggests genuinely distinct but could overlap with
+    one of the two, unconfirmed; Trane Technologies &ndash; 2027 AI &amp; Analytics Intern (Davidson NC, JR-7591-1,
+    more data-analytics-flavored, lower SWE/ML centrality); F5 &ndash; 2 distinct Software Developer/Development
+    Engineer Intern reqs (San Jose CA, Seattle WA, general SWE not AI/ML-specific). Smaller startups, legitimacy/
+    funding/term unverified: Inversion Space (AI &amp; Internal Tools SWE Intern, Playa Vista CA), Courier Health
+    (Software Engineer Intern, NYC), GenMD (Member of Technical Staff Intern, Applied AI, Palo Alto CA), Apriori
+    Bio/Flagship Pioneering (ML Internship, Cambridge MA), Quantum Signal AI (SWE Intern, Tools and Prototypes,
+    Saline MI), State Affairs (Software Engineer Intern, Washington DC), Arc (Software Engineer Intern, Torrance
+    CA &mdash; name-collision risk, unclear which "Arc"). Lower-fit real companies: American Family Insurance
+    Group (AI Platform Engineering Intern, Madison WI), VSP Vision (AI, Agentic &amp; ML Development Intern,
+    Remote USA, R-10072), WoodmenLife (2027 Summer AI Engineer Intern, Omaha NE, req 2929), Pure Storage (Software
+    Engineer Intern, Santa Clara CA, general SWE), Hearst (Editorial AI Development Intern, SF, Winter 2027, more
+    editorial/product-flavored). An Amazon "Jr. Developer Program" SDE Intern, Detroit MI, Winter 2027 (job
+    10586548) and a 3-req Nissan cluster (Financial AI Engineer Intern, AI Agent Architect Intern, EA &amp; Cloud
+    Intern) were also surfaced by this pass but appear to duplicate items already carried in this dashboard's
+    history (Amazon's Detroit Jr. Developer Program and Nissan at company-level were both flagged in earlier runs)
+    &mdash; not re-added as new to avoid double-counting, though the specific Nissan req titles are new detail if
+    the candidate wants to look them up herself.
   </div>
   <div class="bulk-note" style="margin-bottom:0.9rem;">
     2026-11-04's lower-confidence/thin-info additions (not individually verified, term often unstated): Roku
@@ -663,7 +687,16 @@
         thin-info leads (Roku, Commonwealth Fusion Systems, Zebra Technologies, MongoDB, Cohesity, Intercontinental
         Exchange, Hive Financial Systems, Mayo Clinic, Garda Capital Partners, Infleqtion, Apache Industrial). None
         of today's finds could be live-fetch-verified (every career/ATS domain tried is outside this session's
-        allowed network), so none were built into a CV. No cover letters drafted.</span>
+        allowed network), so none were built into a CV. No cover letters drafted.
+        <strong>Addendum:</strong> a second background fork, launched in parallel for the watchlist sweep, was
+        found afterward to have also run its own independent aggregator-README pass and to have committed/pushed
+        the above dashboard content and published it to this artifact itself &mdash; both forks shared the same
+        starting context and worked from the same source READMEs but sampled different sections, so the two
+        aggregator passes turned up partly different (and in two cases duplicate) leads. This pass merged in the
+        first fork's additional finds (notably Wikimedia Foundation's remote Winter 2027 SWE intern role, a good
+        schedule fit) and dropped the two duplicates (Amazon's Detroit "Jr. Developer Program" and a Nissan
+        cluster, both already carried from earlier runs) before republishing &mdash; see the updated Flagged
+        section above for the merged result.</span>
     </div>
     <div class="log-entry">
       <span class="log-date">2026-11-03 (run, ~14:06 UTC)</span>
