@@ -615,7 +615,8 @@
     <code>git fetch origin master</code> was run <em>before</em> trusting the local ref (the lesson from
     yesterday's false alarm): it showed <code>origin/master</code> was already at <code>303c9d1</code>
     ("Record push status: 2026-11-03 run"), i.e. genuinely up to date, not behind. Fixed cleanly via
-    <code>git checkout -B master origin/master</code> with no discrepancy to resolve this time.
+    <code>git checkout -B master origin/master</code> with no discrepancy to resolve this time. This run's own
+    commit pushed cleanly as a fast-forward: <code>303c9d1..39c2fc4 master -&gt; master</code>.
   </div>
 </section>
 
