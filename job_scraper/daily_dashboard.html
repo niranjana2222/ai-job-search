@@ -360,14 +360,14 @@
 
 <header class="masthead">
   <span class="eyebrow">Daily Internship Scout &middot; Niranjana Sankar</span>
-  <h1>2026-11-04 <span style="font-size:1rem;color:var(--text-muted);font-weight:400;">&middot; run at ~14:05 UTC</span></h1>
-  <p class="summary-line"><strong>0</strong> new CVs built this run &mdash; the network egress block first seen ~17:15 UTC on 2026-08-12 is <strong>still in effect, now ~84 days straight (~2013 hours)</strong>. This run's re-test was broader and the result is worse than previously characterized: direct <code>curl</code> failed not just for ATS/job-board domains but for <strong>every external host tried, including example.com and www.wikipedia.org</strong> (all <code>connect_rejected</code>/403 via the proxy). WebFetch against <code>boards.greenhouse.io</code> and <code>www.mongodb.com</code> failed with <code>ENOTFOUND</code>, which the tool itself reports as the host being "outside the session's allowed network domains" &mdash; this looks like a narrow allowlist rather than a wide blocklist. <code>raw.githubusercontent.com</code> and WebSearch continue to work normally, and a direct WebFetch to <code>anthropic.com/careers</code> succeeded again, reconfirming "We don't currently offer internships." Local <code>master</code> was found detached from <code>origin/master</code> again at session start &mdash; same recurring pattern as prior runs; a fresh <code>git fetch origin master</code> showed <code>origin/master</code> was actually already up to date through 11-03's push (<code>303c9d1</code>), so this was a stale local ref, not a real gap; fixed via <code>git checkout -B master origin/master</code>. Ran one background fork for the watchlist WebSearch sweep (all 20 companies, nothing new) and did the aggregator-README parsing directly this run. The aggregator parse surfaced a large batch of new non-watchlist leads (Northrop Grumman, CACI, American Express, Barclays, DataRobot's "MCP & Memory Intern," HeyGen, Keysight Technologies, QuEra Computing, Sierra Nevada Corporation, Johnson &amp; Johnson, Marvell's Data Science Intern, and a confirmed-term update on General Motors) plus a long tail of thinner/lower-confidence leads &mdash; see Flagged. A second, independent aggregator pass (run in parallel over different sampled sections of the same oversized READMEs) added a further batch, most notably <strong>Wikimedia Foundation</strong>'s remote Software Engineering Intern (Winter 2027) &mdash; a strong schedule fit given her concurrent roles &mdash; plus Inversion Space, Courier Health, GenMD, Apriori Bio, Quantum Signal AI, State Affairs, Arc, American Family Insurance, VSP Vision, WoodmenLife, Pure Storage, Hearst, Trane Technologies, and F5; two of that pass's leads (an Amazon Detroit "Jr. Developer Program" req and a Nissan cluster) turned out to duplicate items already carried from earlier runs and were not re-added. None could be live-verified (every career/ATS domain tried is outside this session's allowed network), so <strong>nothing was built into a CV this run</strong>.</p>
+  <h1>2026-11-05 <span style="font-size:1rem;color:var(--text-muted);font-weight:400;">&middot; run at ~14:04 UTC</span></h1>
+  <p class="summary-line"><strong>0</strong> new CVs built this run &mdash; the network egress block first seen ~17:15 UTC on 2026-08-12 is <strong>still in effect, now ~85 days straight (~2037 hours)</strong>. Re-confirmed directly this run: <code>curl</code> to <code>boards.greenhouse.io</code> and <code>example.com</code> both failed with <code>connect_rejected</code>/403 via the proxy, and WebFetch to <code>boards.greenhouse.io</code> and <code>www.databricks.com</code> failed with <code>ENOTFOUND</code> (host outside this session's allowed network domains). <code>raw.githubusercontent.com</code> and WebSearch continue to work normally, and a direct WebFetch to <code>anthropic.com/careers</code> again succeeded, reconfirming "We don't currently offer internships" (an Anthropic Fellows Program &mdash; a paid 4-month research residency, not an internship &mdash; was also surfaced this run; its Jan 2027 cohort deadline has already passed). Local <code>master</code> was again found detached from <code>origin/master</code> at session start; <code>git fetch origin master</code> showed <code>origin/master</code> was already current at <code>bbf403c</code> (11-04's push), so this was a stale local ref, fixed cleanly via <code>git checkout -B master origin/master</code> with nothing to reconcile. Ran two background forks in parallel: one for the mandatory 20-company watchlist WebSearch sweep (nothing new), one to continue the aggregator-README reads past where 11-04 left off plus a startup-source pass (workatastartup.com unreachable, substituted WebSearch). After dedup against this dashboard's full carried-forward history, 14 new non-watchlist leads survived: Netflix, Workday, Zillow, GlobalFoundries (a 2nd, distinct Summer 2027 SWE req), Wellmark, Rubrik, SingleStore, Klaviyo (2 distinct new reqs beyond its 10-28 company-level mention), Allen Institute for AI, Maxar, DataRobot (a 3rd distinct req), XPENG, Upstart, and OnePay &mdash; plus a specific Bot Auto req (Fall 2026/Winter 2027) upgrading its earlier company-level-only mention. Point72 and DriveWealth leads from the aggregator pass turned out to duplicate items already carried from earlier runs and were not re-added. Relay was checked and excluded (grad-window mismatch). None of today's finds could be live-verified (every career/ATS domain tried is outside this session's allowed network), so <strong>nothing was built into a CV this run</strong>.</p>
   <div class="stat-row">
     <span class="stat-pill bad">0 CVs drafted &mdash; nothing could be live-verified</span>
-    <span class="stat-pill bad">~2013h (~84d) straight egress-blocked for job-board/ATS/general external pages</span>
+    <span class="stat-pill bad">~2037h (~85d) straight egress-blocked for job-board/ATS/general external pages</span>
     <span class="stat-pill warn">Detached HEAD found again at session start &mdash; fixed (false alarm, origin was current)</span>
     <span class="stat-pill good">20 of 20 watchlist companies checked &mdash; nothing structurally new via WebSearch sweep</span>
-    <span class="stat-pill warn">~30 new non-watchlist leads from two parallel aggregator passes, none live-verifiable &mdash; see Flagged</span>
+    <span class="stat-pill warn">14 new non-watchlist leads from aggregator + startup sweep, none live-verifiable &mdash; see Flagged</span>
   </div>
 </header>
 
@@ -387,7 +387,9 @@
     WebSearch this run; every result matched an already-tracked req or a standing exclusion &mdash; see the
     Priority Companies table below for the per-company breakdown. <strong>Anthropic</strong> was additionally
     reconfirmed via a direct WebFetch to anthropic.com/careers (one of the only non-GitHub domains this session
-    can reach): "We don't currently offer internships" &mdash; unchanged.
+    can reach): "We don't currently offer internships" &mdash; unchanged. A standing Anthropic Fellows Program was
+    also surfaced this run (paid 4-month research residency, open to any career stage) &mdash; noted for awareness
+    but it is explicitly not an internship, and its Jan 2027 cohort deadline has already passed.
   </div>
   <div class="caveat">
     <strong>2026-11-03's Watchlist Alert items (NVIDIA's 3 new Summer 2027 reqs &ndash; AI Compiler and Kernel
@@ -403,7 +405,7 @@
 <section class="block">
   <h2>Watchlist &mdash; Priority Companies</h2>
   <div class="caveat">
-    <strong>20 of 20 checked this run (2026-11-04)</strong>, each via an individual fresh WebSearch (not a
+    <strong>20 of 20 checked this run (2026-11-05)</strong>, each via an individual fresh WebSearch (not a
     consolidated multi-company query). Every claim below is WebSearch/aggregator-snippet-level confidence unless
     stated otherwise &mdash; no ATS/company-career domain was reachable this run (direct curl failed for every
     external host tried, and WebFetch reports these domains as outside this session's allowed network &mdash; see
@@ -430,8 +432,8 @@
         <tr><td>Pinterest</td><td>No change</td><td class="reason">Same gh_jid=7838577-pattern US listing already tracked; Dublin/Toronto/Zurich reqs are non-US.</td></tr>
         <tr><td>Capital One</td><td>No change</td><td class="reason">Technology Internship Program reconfirmed live (McLean/Richmond/Plano) but the standing Aug-2028 grad-window exclusion still applies.</td></tr>
         <tr><td>NVIDIA</td><td>No change</td><td class="reason">Only already-tracked-pattern reqs and PhD-tagged listings surfaced; 11-03's 3 new reqs (see Flagged) stand unchanged.</td></tr>
-        <tr><td>Anthropic</td><td class="reason" style="color:var(--bad);font-weight:600;">No change &mdash; reconfirmed via direct WebFetch</td><td class="reason">anthropic.com/careers directly confirms "We don't currently offer internships" again. No internship track exists.</td></tr>
-        <tr><td>OpenAI</td><td>No change</td><td class="reason">Fall 2026 req still closed; no Summer 2027 internship found (only a full-time "Applied Emerging Talent (2027)" role, not an internship).</td></tr>
+        <tr><td>Anthropic</td><td class="reason" style="color:var(--bad);font-weight:600;">No change &mdash; reconfirmed via direct WebFetch</td><td class="reason">anthropic.com/careers directly confirms "We don't currently offer internships" again. Only a Fellows Program exists (paid 4-month research residency, any career stage) &mdash; explicitly not an internship, and its Jan 2027 deadline has passed.</td></tr>
+        <tr><td>OpenAI</td><td>No change</td><td class="reason">No Summer 2027 internship found; next cycle postings not expected until later.</td></tr>
         <tr><td>Databricks</td><td>No change</td><td class="reason">Same Summer 2027 US req (SF/Mountain View/Bellevue/Vancouver) reconfirmed, still carrying the Fall2027/Spring2028 grad gate.</td></tr>
       </tbody>
     </table>
@@ -444,7 +446,7 @@
     <strong>None built this run.</strong> Per this task's verification rule, a posting only gets built into a CV
     after a fresh, live fetch of the actual posting page confirms it's real, US-based, and term-specific. Every
     career/ATS domain touched today was outside this session's allowed network (see summary above) &mdash; the
-    same standing block, now ~84 days straight. Every candidate lead below is listed as flagged rather than
+    same standing block, now ~85 days straight. Every candidate lead below is listed as flagged rather than
     confirmed.
   </div>
 </section>
@@ -468,8 +470,32 @@
         <tr><td>Marvell</td><td>Data Science Intern, BS, Summer 2027, Boise ID</td><td class="reason">Summer 2027 explicit, BS-gated (not PhD). Marvell was already named in the 2026-10-28 batch without this specific req &mdash; this is an additional distinct posting. Not live-verified.</td></tr>
         <tr><td>General Motors</td><td>Summer 2027 Intern, AI/ML Engineer, Autonomous Vehicles (Sunnyvale CA) + Summer 2027 Intern, R&amp;D, Vehicle Aerodynamics and ML (Warren MI)</td><td class="reason">Updates 11-03's "term unstated" GM flag: today's aggregator read confirms Summer 2027 explicitly on the Sunnyvale role and surfaces a second, distinct Summer 2027 role at Warren MI. No PhD tag on either. Not live-verified.</td></tr>
         <tr><td>Wikimedia Foundation</td><td>Software Engineering Intern, Remote in USA (job 8268853)</td><td class="reason">Winter 2027, no PhD tag. Fully remote &mdash; a notably good schedule fit given her 5 concurrent roles this fall/winter. Nonprofit (real, established). Not live-verified.</td></tr>
+        <tr><td>Netflix</td><td>Software Engineer Intern, Los Angeles CA / Los Gatos CA</td><td class="reason">Term unstated per aggregator, no PhD tag. Established company, not previously tracked. Not live-verified.</td></tr>
+        <tr><td>Workday</td><td>Software Engineer Intern, Pleasanton CA</td><td class="reason">Term unstated, no PhD tag. Not live-verified.</td></tr>
+        <tr><td>Zillow</td><td>Software Development Engineer Intern, Seattle WA / Remote USA</td><td class="reason">Term unstated, no PhD tag. Not live-verified.</td></tr>
+        <tr><td>GlobalFoundries</td><td>Software Engineer Intern, Austin TX / Santa Clara CA</td><td class="reason">Summer 2027 explicit, no PhD tag. Distinct from the already-flagged "AI Software Intern" req (10-22). Not live-verified.</td></tr>
+        <tr><td>Wellmark</td><td>Software Engineer Intern &ndash; AI Platform Team, Des Moines IA</td><td class="reason">Term unstated, no PhD tag. Seen directly in this run's own speedyapply README read. Not live-verified.</td></tr>
+        <tr><td>Rubrik</td><td>Software Engineer Intern, Palo Alto CA</td><td class="reason">Winter 2027, no PhD tag. Established data-security company. Not live-verified.</td></tr>
+        <tr><td>SingleStore</td><td>Software Engineer Intern, Remote USA</td><td class="reason">Winter 2026, no PhD tag. Not live-verified.</td></tr>
+        <tr><td>Klaviyo</td><td>AI Engineer Intern (Boston MA) + ML Engineer Internship (Palo Alto CA)</td><td class="reason">Summer 2027, no PhD tag. 2 distinct new reqs at an already-matched company (Klaviyo named at company level only in the 10-28 batch) &mdash; per the "re-check full boards" source instruction. Not live-verified.</td></tr>
+        <tr><td>Allen Institute for AI (AI2)</td><td>Research Internship, AI for Science, Seattle WA</td><td class="reason">Term unstated, no PhD tag seen. Real, established nonprofit AI research org. Not live-verified.</td></tr>
+        <tr><td>Maxar</td><td>AI Engineer Intern, Remote USA</td><td class="reason">Term unstated, no PhD tag. Defense/satellite-imagery contractor &mdash; no ITAR issue for her. Not live-verified.</td></tr>
+        <tr><td>DataRobot</td><td>Deep Learning Research Engineer Intern, Remote (DC area)</td><td class="reason">Term unstated, no PhD tag. 3rd distinct req at an already-matched company (beyond Agentic AI Intern and MCP &amp; Memory Intern). Not live-verified.</td></tr>
+        <tr><td>XPENG</td><td>AI Research Intern, Predictive World Model, Santa Clara CA</td><td class="reason">Term unstated, no PhD tag. US R&amp;D arm of a Chinese EV company &mdash; same foreign-parent-structure caveat as Pony.ai/Tencent Hunyuan (no ITAR/citizenship issue for her personally). Not live-verified.</td></tr>
+        <tr><td>Upstart</td><td>Applied Scientist Intern, Remote USA</td><td class="reason">Term unstated, no PhD tag. Public fintech/AI lending company. Not live-verified.</td></tr>
+        <tr><td>OnePay</td><td>AI Research Intern, Remote USA</td><td class="reason">Term unstated, no PhD tag. Walmart-backed fintech startup. Not live-verified.</td></tr>
+        <tr><td>Bot Auto</td><td>Software Engineer Intern, AI Agents, Houston TX</td><td class="reason">Fall 2026/Winter 2027, no PhD tag. Upgrades the earlier company-level-only "Bot Auto" mention with a specific req; autonomous-trucking startup. If Fall 2026 portion requires full-time on-site presence during the semester, that's a scheduling conflict given her 5 concurrent roles &mdash; not yet confirmed either way. Not live-verified.</td></tr>
       </tbody>
     </table>
+  </div>
+  <div class="bulk-note" style="margin-bottom:0.9rem;">
+    <strong>2026-11-05's additions</strong> (table rows above): sourced from continued reads of the SimplifyJobs
+    main README, the Off-Season README, and the speedyapply README past where 11-04's reads left off, plus a
+    startup-source pass (workatastartup.com was unreachable &mdash; ENOTFOUND &mdash; substituted with WebSearch,
+    which surfaced only already-tracked or ineligible leads). Excluded as duplicates of existing carryover: Point72
+    SWE Intern (already tracked at company level since 10-27) and a DriveWealth "AI Engineer Intern" req
+    (DriveWealth already carried since 11-03/11-04 without this specific title). Excluded for eligibility: Relay
+    (Raleigh, NC) &mdash; grad-window of Dec 2027/Spring 2028, mismatches her May 2029 grad.
   </div>
   <div class="bulk-note" style="margin-bottom:0.9rem;">
     A second, independent aggregator-README pass run in parallel this session (different sampled sections of the
@@ -618,6 +644,7 @@
           <tr><td>NVIDIA</td><td>Research Intern cluster (World Models, Spatial Intelligence, Robotic Perception, Embodied/Agentic AI, Generative AI, Circuits, etc.)</td><td class="reason">Explicitly grad/PhD-tagged. Standing exclusion.</td></tr>
           <tr><td>NVIDIA</td><td>Sparse Linear Algebra Libraries Intern (JR2027429, Santa Clara)</td><td class="reason">Confirmed advanced-degree-gated this run: the SimplifyJobs README's own emoji legend marks this req's tag as "Master's, PhD, or MBA required." Resolves a Watchlist carryover open since 2026-10-30.</td></tr>
           <tr><td>Pinterest</td><td>ML/DS Intern row cluster (separate from "Software Engineer Intern 2027")</td><td class="reason">Confirmed grad/PhD-tagged in a prior run. Does not affect the still-open, still-promising "Software Engineer Intern 2027 (USA)" req tracked separately in the Watchlist.</td></tr>
+          <tr><td>Relay</td><td>Software Engineer Intern, Raleigh NC</td><td class="reason">Grad-window of Dec 2027/Spring 2028 per aggregator &mdash; mismatches her May 2029 grad.</td></tr>
         </tbody>
       </table>
       <div class="bulk-note">
@@ -635,18 +662,49 @@
   <div class="git-status ok" id="repo-status-slot">
     <span class="dot"></span>
     Local <code>master</code> was found detached from <code>origin/master</code> again at session start this run
-    &mdash; the same recurring pattern as 10-21, 10-22, 11-02, and 11-03. This time a fresh
-    <code>git fetch origin master</code> was run <em>before</em> trusting the local ref (the lesson from
-    yesterday's false alarm): it showed <code>origin/master</code> was already at <code>303c9d1</code>
-    ("Record push status: 2026-11-03 run"), i.e. genuinely up to date, not behind. Fixed cleanly via
-    <code>git checkout -B master origin/master</code> with no discrepancy to resolve this time. This run's own
-    commit pushed cleanly as a fast-forward: <code>303c9d1..39c2fc4 master -&gt; master</code>.
+    &mdash; the same recurring pattern as several prior runs. A fresh <code>git fetch origin master</code> was run
+    before trusting the local ref: it showed <code>origin/master</code> was already at <code>bbf403c</code>
+    (11-04's merge commit), i.e. genuinely up to date, not behind. Fixed cleanly via
+    <code>git checkout -B master origin/master</code> with no discrepancy to resolve. This run's commit push
+    status is recorded below once attempted.
   </div>
 </section>
 
 <section class="block">
   <h2>Run Log</h2>
   <div id="log-slot">
+    <div class="log-entry">
+      <span class="log-date">2026-11-05 (run, ~14:04 UTC)</span>
+      <span class="log-body">Read this dashboard's own 2026-11-04 published state via the Artifact read tool (full
+        HTML saved to disk) to rebuild the dedup set from its Watchlist, Flagged, Exclusions, and Run Log content,
+        plus the task's standing seed/exclusion list. Found local <code>master</code> detached from
+        <code>origin/master</code> again at session start; a fresh <code>git fetch origin master</code> showed
+        <code>origin/master</code> was already current at <code>bbf403c</code> (11-04's merge commit), so this was
+        a clean stale-ref fix via <code>git checkout -B master origin/master</code> with nothing to reconcile.
+        Re-tested egress directly: <code>curl</code> to <code>boards.greenhouse.io</code> and
+        <code>example.com</code> both failed with <code>connect_rejected</code>/403 via the proxy; WebFetch to
+        <code>boards.greenhouse.io</code> and <code>www.databricks.com</code> both failed with
+        <code>ENOTFOUND</code> (host outside this session's allowed network domains). <code>raw.githubusercontent.com</code>
+        and WebSearch continue to work normally, and a direct WebFetch to <code>anthropic.com/careers</code>
+        succeeded again, reconfirming "We don't currently offer internships" (its separate Fellows Program, a paid
+        4-month research residency, is explicitly not an internship and its Jan 2027 deadline has passed). ~85
+        days (~2037 hours) straight since 2026-08-12 17:15 UTC. Per the live-verification rule, <strong>zero CVs
+        could be built again</strong>. Ran two background forks in parallel: one for the mandatory 20-company
+        watchlist WebSearch sweep (individual searches per company; result: no new leads, every result matched an
+        already-tracked req or standing exclusion), one to continue the 3 aggregator READMEs past 11-04's read
+        offset plus a startup-source pass (workatastartup.com unreachable &mdash; ENOTFOUND &mdash; substituted
+        with WebSearch, which surfaced only already-tracked or ineligible leads; General Catalyst/Menlo/Index
+        Ventures boards not separately checked this pass, time-boxed out). After dedup against the full carried-
+        forward history, 14 new non-watchlist leads survived: Netflix, Workday, Zillow, GlobalFoundries (a 2nd
+        distinct Summer 2027 SWE req beyond its already-tracked AI Software Intern), Wellmark, Rubrik, SingleStore,
+        Klaviyo (2 distinct new reqs beyond its 10-28 company-level mention), Allen Institute for AI, Maxar,
+        DataRobot (a 3rd distinct req), XPENG, Upstart, and OnePay &mdash; plus a specific Bot Auto req (Fall
+        2026/Winter 2027, Houston TX) upgrading its earlier company-level-only mention with a scheduling-conflict
+        caveat if the Fall portion requires full-time on-site presence. Point72 and a DriveWealth lead were
+        excluded as duplicates of existing carryover; Relay was checked and excluded for a grad-window mismatch.
+        None of today's finds could be live-fetch-verified (every career/ATS domain tried is outside this
+        session's allowed network), so none were built into a CV. No cover letters drafted.</span>
+    </div>
     <div class="log-entry">
       <span class="log-date">2026-11-04 (run, ~14:05 UTC)</span>
       <span class="log-body">Fetched this dashboard's own 2026-11-03 published state via the Artifact read tool
@@ -1228,57 +1286,26 @@
         portfolio boards (no software engineering intern listings surfaced for either firm directly). No cover
         letters drafted, no CVs built.</span>
     </div>
-    <div class="log-entry">
-      <span class="log-date">2026-10-22 (run, ~14:08 UTC)</span>
-      <span class="log-body">Fetched this dashboard's own 2026-10-21 published state via the Artifact read tool to
-        rebuild the dedup set from its Watchlist, Flagged, Exclusions, and Run Log content, plus the task's standing
-        seed/exclusion list. Found local <code>master</code> detached from <code>origin/master</code> again at session
-        start; <code>git fetch origin master</code> confirmed <code>origin/master</code> matched the detached commit
-        exactly, fixed via a clean <code>checkout -B master origin/master</code>. Re-tested egress: direct curl
-        against <code>boards.greenhouse.io</code>, <code>www.google.com</code>, <code>www.databricks.com</code>,
-        <code>jobs.ashbyhq.com</code>, and <code>openai.com</code> all failed with the same
-        <code>connect_rejected</code>/403 "policy denial" as every run since 2026-08-12 (~70 days, ~1700 hours
-        straight); a further batch against <code>jobs.smartrecruiters.com</code>, <code>apply.careers.microsoft.com</code>,
-        and <code>globalfoundries.wd1.myworkdayjobs.com</code> failed identically, and a separate WebFetch attempt at
-        <code>jobs.smartrecruiters.com</code> returned <code>ENOTFOUND</code>. <code>raw.githubusercontent.com</code>
-        and WebSearch both work normally. Confirmed lualatex/xelatex still not installed. Per the live-verification
-        rule, <strong>zero CVs could be built again</strong>. No subagents or forks used this run, per the standing
-        lesson from 10/19's orchestration incident. Downloaded all three aggregator READMEs via
-        <code>raw.githubusercontent.com</code> (13,195 + 41,290 + 821 raw lines) and wrote a fresh HTML-table parser
-        (company/role/location/terms/application/age, handling the &#8627; same-company-as-above convention and
-        per-row &#128274; closed markers). Watchlist pass (all 20): Anthropic, OpenAI, Databricks, and Pinterest via
-        individual fresh WebSearches, the remaining 16 via two consolidated WebSearches &mdash; plus, for the first
-        time, a direct grep of both SimplifyJobs trackers' Software Engineering section (not just the AI/ML section
-        every prior run's parser filtered) for all 20 watchlist company names by name. That grep surfaced
-        <strong>LinkedIn's first-ever sighting in 70+ days of this task's runs</strong>, plus two open Microsoft
-        Winter 2026 Software Engineer Intern reqs (Redmond, Reston) distinct from the already-tracked CoreAI Summer
-        2027 req. Aggregator pass otherwise added an Age-column freshness filter (0&ndash;2 days since posting),
-        which surfaced one new non-watchlist lead, GlobalFoundries' "AI Software Intern" (Santa Clara, CA /
-        Richardson, TX, Summer 2027). None of today's finds could be live-fetch-verified, so none built. One
-        candidate (Metamorphic, Palo Alto) was dropped rather than flagged &mdash; WebSearch found no evidence the
-        company exists. No cover letters built.</span>
-    </div>
   </div>
 </section>
 
 </div>
 
 <footer class="foot">
-  Automated daily scout. Sources checked this run (~14:05 UTC, 2026-11-04): SimplifyJobs main README,
-  Off-Season README, and speedyapply README parsed directly over raw.githubusercontent.com (each fetch covers the
-  first ~100K characters; real coverage gaps remain on the larger files); one background fork ran dedicated fresh
-  WebSearch for all 20 watchlist companies individually; Anthropic separately reconfirmed via direct WebFetch.
-  Egress re-verification this run was broader than before: direct curl failed identically for every external host
-  tried, including non-career sites (example.com, www.wikipedia.org, www.nytimes.com), not just ATS/job-board
-  domains &mdash; all connect_rejected/403 via the proxy; a WebFetch attempt against boards.greenhouse.io and
-  www.mongodb.com both failed with <code>ENOTFOUND</code>, which the tool reports as the host being outside this
-  session's allowed network domains. raw.githubusercontent.com and WebSearch continue to work normally, and a
-  direct WebFetch to anthropic.com/careers succeeded again, reconfirming its no-internships stance. Identical
-  practical effect to every run since 2026-08-12 (~84 days straight). This run found (then quickly resolved) a
-  recurring detached-HEAD issue by fetching origin before trusting the local ref &mdash; see Repo Status.
-  lualatex/xelatex not checked this run (nothing live-verified enough to need compiling). Terms tracked: Fall 2026
-  and Summer 2027 equally, plus Winter 2026/2027 if found. Last updated 2026-11-04. Run log kept to the last 14
-  days. "Flagged but not built" shows only new finds per run (see git commit log for full history).
+  Automated daily scout. Sources checked this run (~14:04 UTC, 2026-11-05): SimplifyJobs main README,
+  Off-Season README, and speedyapply README parsed directly over raw.githubusercontent.com, continuing past
+  11-04's read offsets; two background forks ran in parallel &mdash; one for the dedicated 20-company watchlist
+  WebSearch sweep, one for the continued aggregator reads plus a startup-source pass (workatastartup.com
+  unreachable, substituted with WebSearch); Anthropic separately reconfirmed via direct WebFetch. Egress
+  re-verification this run: direct curl to boards.greenhouse.io and example.com both failed connect_rejected/403
+  via the proxy; WebFetch to boards.greenhouse.io and www.databricks.com both failed with <code>ENOTFOUND</code>,
+  which the tool reports as the host being outside this session's allowed network domains. raw.githubusercontent.com
+  and WebSearch continue to work normally. Identical practical effect to every run since 2026-08-12 (~85 days
+  straight). This run found (then quickly resolved) a recurring detached-HEAD issue by fetching origin before
+  trusting the local ref &mdash; see Repo Status. lualatex/xelatex not checked this run (nothing live-verified
+  enough to need compiling). Terms tracked: Fall 2026 and Summer 2027 equally, plus Winter 2026/2027 if found.
+  Last updated 2026-11-05. Run log kept to the last 14 days. "Flagged but not built" shows only new finds per run
+  (see git commit log for full history).
 </footer>
 
 </body></html>
