@@ -360,14 +360,14 @@
 
 <header class="masthead">
   <span class="eyebrow">Daily Internship Scout &middot; Niranjana Sankar</span>
-  <h1>2026-11-16 <span style="font-size:1rem;color:var(--text-muted);font-weight:400;">&middot; run at ~14:06 UTC</span></h1>
-  <p class="summary-line"><strong>0</strong> new CVs built this run &mdash; the network egress block first seen ~17:15 UTC on 2026-08-12 is <strong>still in effect, now 96 days straight</strong>. Re-tested via <code>curl</code> across the standing 20-domain list: all failed (connection-level, code <code>000</code>) except <code>oracle.com</code> (301 at the bare domain; <code>www.oracle.com</code> itself still 403) and <code>anthropic.com</code> / <code>raw.githubusercontent.com</code> (both 301, both still usable via WebFetch). Did this run's rotation-2 startup-source pass (VC portfolio boards + Wellfound, the two sources not covered in yesterday's Work-at-a-Startup/Built-In pass): both <code>jobs.generalcatalyst.com</code> and <code>wellfound.com</code> failed outright with ENOTFOUND, so neither could be read directly this run. No new watchlist hit. Today's deeper read of the Off-Season README's Winter 2026/2027 section (not previously read this thoroughly) surfaced a large batch (&gt;20) of new small-company Winter leads &mdash; none live-verifiable, see Flagged table. NVIDIA posted two new Summer 2027 SWE reqs (Redmond Compiler Intern, explicit "strong C++" requirement &mdash; a likely skills mismatch; Austin "AI Systems Software Engineering Intern," BS/MS/PhD, AI-agents-for-compilers theme, good thematic fit but C++ requirement unclear). Google's Forward Deployed Engineer Intern deadline is now <strong>4 days out (Nov 20)</strong>, still unverified. A Salesforce "Summer 2027 Intern - Software Engineer" req with the exact same job ID (9287543) already verified dead on 2026-08-12 resurfaced via a Built In mirror &mdash; per this task's own dedup rule, a repeat of the same ID is not a new lead, so it was not re-flagged.</p>
+  <h1>2026-11-17 <span style="font-size:1rem;color:var(--text-muted);font-weight:400;">&middot; run at ~14:05 UTC</span></h1>
+  <p class="summary-line"><strong>0</strong> new CVs built this run &mdash; the network egress block first seen ~17:15 UTC on 2026-08-12 is <strong>still in effect, now 97 days straight</strong>. This run used WebFetch directly (a <code>curl</code> call to the proxy status endpoint was itself denied by this session's permission layer, so curl wasn't used for diagnostics today) against 11 ATS/career/startup domains: <code>apply.careers.microsoft.com</code>, <code>nvidia.wd5.myworkdayjobs.com</code>, <code>datarobot.wd1.myworkdayjobs.com</code>, <code>oregonstate.wd501.myworkdayjobs.com</code>, <code>cmu.wd115.myworkdayjobs.com</code>, <code>jobs.ashbyhq.com</code>, <code>job-boards.greenhouse.io</code>, <code>www.databricks.com</code>, <code>www.citadel.com</code>, <code>www.workatastartup.com</code>, <code>www.builtinsf.com</code> &mdash; all failed with <code>ENOTFOUND</code>. <code>raw.githubusercontent.com</code> and <code>anthropic.com/careers</code> remain the exceptions (both fetched successfully). No new watchlist hit confirmed live. Three leads worth a closer look surfaced via WebSearch (not live-verifiable): a likely-distinct third <strong>LinkedIn</strong> "Software Engineer Intern, Undergraduate, Summer 2027" req (Mountain View, $45&ndash;55/hr, grad Dec 2027+ required &mdash; compatible with her May 2029 grad), a <strong>Google</strong> "Software Engineering Intern, BS, Summer 2027" US req with a <em>different</em> job ID than the one permanently excluded on 2026-08-12 as dead (so not covered by that exclusion, needs fresh eval), and two <strong>Apple</strong> reqs explicitly titled "Undergrad" ("Machine Learning and Artificial Intelligence Undergrad Intern" and "Hardware Technologies Undergrad Engineering Intern") &mdash; term/location unconfirmed. Google's Forward Deployed Engineer Intern deadline is now <strong>3 days out (Nov 20)</strong>, still unverified. Capital One's Technology Internship Program may have quietly closed (a third-party guide says only 3 reqs remained open as of mid-August; that was 3 months ago).</p>
   <div class="stat-row">
     <span class="stat-pill bad">0 CVs drafted &mdash; nothing could be live-verified</span>
-    <span class="stat-pill bad">96 days straight egress-blocked for job-board/ATS/career-page domains</span>
+    <span class="stat-pill bad">97 days straight egress-blocked for job-board/ATS/career-page domains</span>
     <span class="stat-pill warn">20 of 20 watchlist companies checked &mdash; no new confirmed hit</span>
-    <span class="stat-pill warn">&gt;20 new small-company Winter 2026/2027 leads flagged, none verifiable</span>
-    <span class="stat-pill good">Startup-source rotation 2 of 2 attempted (both ENOTFOUND)</span>
+    <span class="stat-pill warn">3 new unverified leads: LinkedIn (3rd distinct req), Google (fresh req ID), Apple (2 Undergrad-titled reqs)</span>
+    <span class="stat-pill bad">Google FDE Intern deadline 3 days out (Nov 20) &mdash; still unverified</span>
   </div>
 </header>
 
@@ -383,69 +383,70 @@
 <section class="block">
   <h2>Watchlist Alert</h2>
   <div class="caveat">
-    <strong>No new watchlist hit confirmed live today.</strong> Google's Forward Deployed Engineer Intern
-    (Sunnyvale/NYC, BS/MS, Summer 2027) remains unverified, deadline now <strong>4 days away (Nov 20, 2026)</strong>
-    if still live. <strong>NVIDIA</strong> posted two new Summer 2027 reqs this run: "Compiler Software Engineering
-    Intern" (Redmond, explicitly wants "strong coding skills with C++" &mdash; likely excluded, she is not
-    C++-proficient and no Python/Java alternative is stated) and "AI Systems Software Engineering Intern" (Austin,
-    open to BS/MS/PhD, applying AI agents to compilers/developer tooling &mdash; good thematic fit for her
-    agentic-systems background, but the posting doesn't make the language requirement clear; flagged, not built).
-    <strong>Meta</strong>: per a third-party guide checked this run, Meta's first Summer 2027 intern req (a Data
-    Engineer Intern) went live Sept 29, 2026, but the main Software Engineer Intern req for Summer 2027 had still
-    not posted as of that check &mdash; worth watching, nothing to build yet. <strong>Databricks</strong>: unchanged
-    &mdash; the candidate US "Software Engineering Intern (2027 Start)" posting (SF Bay Area/Mountain View/Bellevue/
-    Vancouver) is corroborated by more third-party pay detail ($54&ndash;60/hr SF, $51.50&ndash;60/hr Bellevue) but
-    <code>databricks.com</code> itself remains unreachable to confirm directly; separately, the non-US Databricks
-    reqs (Belgrade, Winter) explicitly state a Fall2027&ndash;Summer2028 grad window, consistent with the standing
-    exclusion for those specific reqs. <strong>Capital One</strong>: unchanged &mdash; current open/closed status
-    for the Technology Internship Program (Summer 2027) still unknown; <code>capitalonecareers.com</code> not
-    re-tested directly this run but no reason to believe it has become reachable. <strong>Citadel</strong>: searched
-    again this run &mdash; still no public 2027 "Launch" JD found; a third-party guide says the Launch track is
-    still named on Citadel's referral page as of an August 2026 check. <strong>OpenAI</strong>: reconfirmed no
-    official Summer 2027 undergraduate SWE internship exists yet; only a non-engineering "Student Collective" and a
-    Research Scientist/Engineer "Early Career Cohort" (not an undergrad SWE internship). <strong>Oracle</strong>:
-    eligibility ambiguity unresolved; one guide says Oracle's Summer 2027 sales/finance reqs went live
-    Aug 31&ndash;Sep 18 but SWE-specific reqs were still "expected," not yet posted, as of that check; site still
-    returns 403. <strong>Apple</strong>: conflicting third-party claims about whether Summer 2027 SWE reqs are open;
-    no specific live req confirmed either way. <strong>Bloomberg</strong>: no specific US Summer 2027 SWE req found;
-    one guide reiterates engineering intake is typically filled by Thanksgiving (10 days away). All other watchlist
-    companies: no change from prior runs (see table below).
+    <strong>No new watchlist hit confirmed live today, but three leads are worth naming.</strong>
+    <strong>LinkedIn</strong>: WebSearch surfaced a "Software Engineer Intern, Undergraduate - Summer 2027"
+    (Mountain View, $45&ndash;55/hr + equity, 12-week program, requires graduation Dec 2027 or later &mdash;
+    compatible with her May 2029 grad) at a job ID distinct from both previously-seen LinkedIn reqs ("Systems &amp;
+    Infrastructure Engineer Intern" and "Software Engineer Intern &ndash; First Play"). May be a genuine third req
+    or a re-listing of one already seen under a different aggregator ID &mdash; can't tell without a live fetch,
+    linkedin.com/smartrecruiters.com unreachable. <strong>Google</strong>: confirmed via WebSearch that a
+    "Software Engineering Intern, BS, Summer 2027" US req exists at job ID <code>100648618540573382</code>
+    ($98k&ndash;131k/yr, Mountain View + other US sites, open to all academic years pursuing a CS-related
+    Bachelor's) &mdash; this is a <em>different</em> ID than the one permanently excluded on 2026-08-12 as dead, so
+    per the dedup rule it needs a fresh eval, not an automatic skip. A separate "Software Developer Intern, BS,
+    Summer 2027" Google title also surfaced; relationship to the SWE Intern req unclear. google.com unreachable to
+    confirm either live. <strong>Apple</strong>: two Undergrad-labeled titles surfaced via WebSearch &mdash;
+    "Machine Learning and Artificial Intelligence Undergrad Intern" and "Hardware Technologies Undergrad Engineering
+    Intern" &mdash; term, location, and live status all unconfirmed (jobs.apple.com unreachable); noted since the
+    explicit "Undergrad" framing is new, prior Apple checks only found ambiguous evergreen postings.
+    Google's Forward Deployed Engineer Intern (Sunnyvale/NYC, BS/MS, Summer 2027) remains unverified, deadline now
+    <strong>3 days away (Nov 20, 2026)</strong> if still live. <strong>Capital One</strong>: a third-party guide
+    dated mid-August 2026 said only 3 Summer 2027 reqs (Technology + 2 Data Science) remained open at that point;
+    that was 3 months ago, so the Technology Internship Program lead carried since 2026-11-13 may have since closed
+    &mdash; capitalonecareers.com unreachable to check. <strong>Databricks</strong>: unchanged, the candidate US
+    "Software Engineering Intern (2027 Start)" posting (SF/Mountain View/Bellevue/Vancouver) remains neither
+    confirmed nor retracted; databricks.com unreachable. <strong>Citadel</strong>: re-searched specifically for a
+    2027 "Launch" JD &mdash; still none found. <strong>NVIDIA</strong>: today's SimplifyJobs README read
+    reconfirms the Austin "AI Compiler and Kernel Intern" (Summer 2027) lead carried from prior runs, plus surfaces
+    two new reqs excluded outright this run (see Exclusions): "Math Libraries Intern (cuEST)" (CUDA-named, likely
+    CUDA-mandatory) and "Systems Research Intern &ndash; Observability" (🎓-marked, likely grad-only). All other
+    watchlist companies: no change from prior runs (see table below).
   </div>
 </section>
 
 <section class="block">
   <h2>Watchlist &mdash; Priority Companies</h2>
   <div class="caveat">
-    <strong>20 of 20 checked this run (2026-11-16)</strong>, via SimplifyJobs main README (chars 0&ndash;100K),
-    Off-Season README (chars 0&ndash;100K, read in more depth than usual this run for its Winter 2026/2027 section),
-    and speedyapply README (chars 0&ndash;100K) &mdash; all via <code>raw.githubusercontent.com</code>, which
-    remains reachable &mdash; plus 11 dedicated WebSearch queries covering Capital One, Databricks, Citadel, OpenAI,
-    Google (FDE deadline), Oracle, Meta, NVIDIA, Apple, Bloomberg, and a combined Uber/Infosys/Salesforce query.
-    Direct WebFetch of <code>anthropic.com/careers</code> succeeded (reconfirmed no internships).
+    <strong>20 of 20 checked this run (2026-11-17)</strong>, via SimplifyJobs main README (chars 0&ndash;100K),
+    Off-Season README (chars 0&ndash;100K), and speedyapply README (chars 0&ndash;100K) &mdash; all via
+    <code>raw.githubusercontent.com</code>, which remains reachable &mdash; plus WebSearch queries covering
+    Anthropic, OpenAI, Apple, Google, Bloomberg, Oracle, Citadel (Launch), Capital One, Databricks, and a combined
+    Uber/Infosys/LinkedIn query. Direct WebFetch of <code>anthropic.com/careers</code> succeeded (reconfirmed no
+    internships); 11 other ATS/career/startup domains attempted this run all failed ENOTFOUND (see summary above).
   </div>
   <div class="excl-table">
     <table>
       <thead><tr><th>Company</th><th>Status</th><th class="reason">Detail</th></tr></thead>
       <tbody>
-        <tr><td>Amazon</td><td>No change</td><td class="reason">Today's README re-scan shows the standing ML/Automated Reasoning Summer 2027 SDE Intern req plus several PhD-marked Applied Science Intern rows (Reinforcement Learning, Recommender Systems, Information &amp; Knowledge Management) &mdash; all PhD-gated, excluded. Prior 3 SDE reqs + Frontier AI &amp; Robotics Internship unchanged. amazon.jobs not re-tested, still presumed unreachable.</td></tr>
-        <tr><td>Google</td><td>No change</td><td class="reason">Forward Deployed Engineer Intern lead (Sunnyvale/NYC) deadline reconfirmed Nov 20, 2026 (4 days out) via WebSearch. The differently-numbered "Software Engineering Intern, BS, Summer 2027" req not re-searched today; last check was conflicting/unresolved.</td></tr>
-        <tr><td>Apple</td><td>No change</td><td class="reason">WebSearch today found conflicting third-party claims (one guide says several Summer 2027 titles are open, a Simplify FAQ says none of its tracked 25 titles are explicitly Summer-2027-labeled yet). No specific live req confirmed. jobs.apple.com still presumed unreachable.</td></tr>
-        <tr><td>Meta</td><td>No change</td><td class="reason">Today's Off-Season README re-read reconfirms the PhD-marked "Software Engineer Intern &ndash; Systems and Infrastructure" req (Winter2026&ndash;Fall2026 window), still excluded. WebSearch found a third-party claim that Meta's main (non-PhD) Summer 2027 SWE Intern req had not yet posted as of an early-October check &mdash; only a Data Engineer Intern req had gone live. Watching, nothing to build.</td></tr>
-        <tr><td>Microsoft</td><td>No change</td><td class="reason">General SWE Intern (Redmond) and a Research Intern &ndash; Machine Learning/Optimization cluster (Redmond, NYC, Cambridge MA) reconfirmed in today's README re-scan; research-titled rows likely PhD-leaning per past assessment, not pursued as distinct.</td></tr>
-        <tr><td>Bloomberg</td><td>No change</td><td class="reason">WebSearch today found no specific official US Summer 2027 SWE req; only general program guidance (10-week internship, engineering intake reportedly filled by Thanksgiving, now 10 days away).</td></tr>
-        <tr><td>LinkedIn</td><td>No change</td><td class="reason">Today's main README re-scan reconfirms the "Software Engineer Intern &ndash; First Play" req (Mountain View) seen yesterday; still unclear if distinct from the previously-flagged "Undergraduate, Summer 2027" req or the same one re-listed. Not pursued separately, linkedin.com unreachable.</td></tr>
-        <tr><td>TikTok/ByteDance</td><td>No change</td><td class="reason">speedyapply README shows a wide Machine Learning Engineer Intern wave (Seattle/San Jose, Summer 2027, e-commerce/search/ads/recommendation/MLOps teams) &mdash; all part of the standing covered cluster per dedup list, none individually verified or newly distinct.</td></tr>
-        <tr><td>Infosys</td><td>No change</td><td class="reason">Combined WebSearch (with Uber/Salesforce) again surfaced nothing for Infosys. No US SWE/ML internship posting found.</td></tr>
-        <tr><td>Citadel</td><td>No change</td><td class="reason">Re-searched specifically this run; still no public 2027 "Launch" JD. Third-party guide says the track is still named on Citadel's referral page as of an August 2026 check, but nothing more concrete.</td></tr>
-        <tr><td>Uber</td><td>No change</td><td class="reason">WebSearch reconfirms the standing Seattle "2027 Software Engineering Internship (Uber Career Prep)" lead, $52/hr, unverified &mdash; appears to be the same lead carried since 2026-11-12, not a new sighting. The grad-mismatched "2027 Software Engineer Intern, US" req remains excluded.</td></tr>
-        <tr><td>Adobe</td><td>No change</td><td class="reason">speedyapply sample reconfirms the "2027 Intern &ndash; Machine Learning Engineer" req (SF +4 locations), part of the standing cluster; not pursued as distinct.</td></tr>
-        <tr><td>Salesforce</td><td>No change</td><td class="reason">WebSearch surfaced a "Summer 2027 Intern - Software Engineer" req (job ID 9287543, multiple US cities) via a Built In mirror &mdash; this is the <em>exact same job ID</em> already verified dead/removed on 2026-08-12 and permanently excluded. Per the dedup rule, a repeat of the same ID without a fresh live confirmation is not a new lead; not re-flagged. builtin.com not independently re-tested for reachability.</td></tr>
-        <tr><td>Oracle</td><td>No change</td><td class="reason">WebSearch found a claim that Oracle's Summer 2027 sales/finance reqs went live Aug 31&ndash;Sep 18, 2026 but SWE-specific reqs were still "expected" as of that check (not yet posted). The standing "bachelor's degree or higher" eligibility ambiguity on the already-flagged Technology Internship Program lead remains unresolved; oracle.com itself still returns 403.</td></tr>
-        <tr><td>Pinterest</td><td>No change</td><td class="reason">speedyapply sample reconfirms PhD and Master's-gated Machine Learning Internship 2027 reqs (SF +3) &mdash; both explicitly grad-gated, excluded, consistent with standing status.</td></tr>
-        <tr><td>Capital One</td><td>No change</td><td class="reason">Technology Internship Program (Summer 2027) req (McLean/Plano/Richmond) unchanged; current open/closed status still unknown. capitalonecareers.com presumed still unreachable (not individually re-tested this run).</td></tr>
-        <tr><td>NVIDIA</td><td class="reason" style="color:var(--warn);font-weight:600;">New reqs, not built</td><td class="reason">Two new Summer 2027 reqs surfaced via WebSearch: "Compiler Software Engineering Intern" (Redmond, explicitly requires "strong coding skills with C++" &mdash; likely excluded per the C++-mandatory rule) and "AI Systems Software Engineering Intern" (Austin, BS/MS/PhD, AI-agents-for-compilers/dev-tools theme &mdash; good thematic fit, language requirement unclear). Neither live-verifiable this run (nvidia.com unreachable); see Flagged table.</td></tr>
-        <tr><td>Anthropic</td><td class="reason" style="color:var(--bad);font-weight:600;">No change &mdash; reconfirmed by direct fetch</td><td class="reason">anthropic.com/careers reachable again directly: "We don't currently offer internships," only the non-internship Fellows Program.</td></tr>
-        <tr><td>OpenAI</td><td class="reason" style="color:var(--bad);font-weight:600;">No change</td><td class="reason">WebSearch reconfirms no official Summer 2027 undergrad SWE internship posting exists &mdash; only the non-engineering "Student Collective" (applications closed Aug 10, 2026) and a Research Scientist/Engineer "Early Career Cohort" (not an undergrad SWE internship). openai.com itself not re-attempted (already known unreachable).</td></tr>
+        <tr><td>Amazon</td><td>No change</td><td class="reason">Today's README re-scan shows the standing ML/Automated Reasoning Summer 2027 SDE Intern req; several PhD-marked Applied Science Intern rows remain excluded. amazon.jobs not re-tested, presumed still unreachable.</td></tr>
+        <tr><td>Google</td><td style="font-weight:600;">Fresh req ID, not built</td><td class="reason">"Software Engineering Intern, BS, Summer 2027" (job ID 100648618540573382, Mountain View + other US sites, $98k&ndash;131k/yr) &mdash; distinct from the permanently-excluded dead ID. Forward Deployed Engineer Intern deadline now 3 days out (Nov 20). google.com unreachable &mdash; see Watchlist Alert.</td></tr>
+        <tr><td>Apple</td><td style="font-weight:600;">New leads, not built</td><td class="reason">Two Undergrad-titled reqs surfaced ("Machine Learning and Artificial Intelligence Undergrad Intern," "Hardware Technologies Undergrad Engineering Intern") &mdash; term/location/live status unconfirmed. jobs.apple.com unreachable &mdash; see Watchlist Alert.</td></tr>
+        <tr><td>Meta</td><td>No change</td><td class="reason">Today's Off-Season README re-read reconfirms the PhD-marked "Software Engineer Intern &ndash; Systems and Infrastructure" req, still excluded. No non-PhD SWE Intern req confirmed live yet.</td></tr>
+        <tr><td>Microsoft</td><td>No change</td><td class="reason">General SWE Intern (Redmond, job ID 1970393557037859 per today's README) and the MSR Research Intern cluster (Next-Gen AI Agents, ML &amp; Optimization, NYC) reconfirmed; apply.careers.microsoft.com attempted directly this run and failed ENOTFOUND.</td></tr>
+        <tr><td>Bloomberg</td><td>No change</td><td class="reason">No specific official US Summer 2027 SWE req found; engineering intake reportedly filled by Thanksgiving (9 days away).</td></tr>
+        <tr><td>LinkedIn</td><td style="font-weight:600;">Possible 3rd distinct req, not built</td><td class="reason">"Software Engineer Intern, Undergraduate - Summer 2027" (Mountain View, $45&ndash;55/hr, grad Dec 2027+) at a job ID distinct from the two previously-seen LinkedIn reqs. Could be a genuine third req or a re-listing &mdash; unverifiable this run, see Watchlist Alert.</td></tr>
+        <tr><td>TikTok/ByteDance</td><td>No change</td><td class="reason">speedyapply README shows a wide ML Engineer Intern wave (Seattle/San Jose, Summer 2027, e-commerce/search/ads/recommendation) &mdash; part of the standing covered cluster per dedup list.</td></tr>
+        <tr><td>Infosys</td><td>No change</td><td class="reason">Combined WebSearch again surfaced only a non-engineering neurodiversity program (deadline already passed, wrong grad window). No US SWE/ML internship posting found.</td></tr>
+        <tr><td>Citadel</td><td>No change</td><td class="reason">Re-searched specifically this run; still no public 2027 "Launch" JD. Citadel Securities' separate 2026-2027 SWE internship (non-Launch) remains outside this specific watch item.</td></tr>
+        <tr><td>Uber</td><td>No change</td><td class="reason">WebSearch reconfirms the standing Seattle "2027 Software Engineering Internship (Uber Career Prep)" lead, $52/hr, unverified &mdash; same lead carried since 2026-11-12.</td></tr>
+        <tr><td>Adobe</td><td>No change</td><td class="reason">speedyapply sample reconfirms the "2027 Intern &ndash; Machine Learning Engineer" cluster (SF +4 locations); not pursued as distinct.</td></tr>
+        <tr><td>Salesforce</td><td>No change</td><td class="reason">No new SWE-specific req found; standing AI Research/Applied AI Strategy cluster unchanged (not core SWE/ML, not pursued).</td></tr>
+        <tr><td>Oracle</td><td>No change</td><td class="reason">One guide reconfirms Oracle's Summer 2027 sales/finance reqs are live but SWE-specific reqs are still "expected," not yet posted. Standing Technology Internship Program eligibility ambiguity unresolved; oracle.com still returns 403.</td></tr>
+        <tr><td>Pinterest</td><td>No change</td><td class="reason">speedyapply sample reconfirms PhD and Master's-gated Machine Learning Internship 2027 reqs &mdash; both grad-gated, excluded.</td></tr>
+        <tr><td>Capital One</td><td style="font-weight:600;">Possibly closed, not re-verified</td><td class="reason">A mid-August 2026 third-party guide said only 3 Summer 2027 reqs remained open at that point; 3 months have passed. Technology Internship Program lead (McLean/Plano/Richmond) carried forward but status now doubtful. capitalonecareers.com unreachable.</td></tr>
+        <tr><td>NVIDIA</td><td class="reason" style="color:var(--warn);font-weight:600;">Reconfirmed + 2 new exclusions</td><td class="reason">Austin "AI Compiler and Kernel Intern" (Summer 2027) lead reconfirmed via today's README. Two new reqs excluded outright: "Math Libraries Intern (cuEST)" (CUDA-named) and "Systems Research Intern &ndash; Observability" (🎓-marked). nvidia.wd5.myworkdayjobs.com attempted directly this run, failed ENOTFOUND.</td></tr>
+        <tr><td>Anthropic</td><td class="reason" style="color:var(--bad);font-weight:600;">No change &mdash; reconfirmed by direct fetch</td><td class="reason">anthropic.com/careers reachable again directly: no internship program, only the non-internship Fellows Program (a paid 4-month research residency, not an internship) and a London rotational early-career role.</td></tr>
+        <tr><td>OpenAI</td><td class="reason" style="color:var(--bad);font-weight:600;">No change</td><td class="reason">WebSearch reconfirms no official Summer 2027 undergrad SWE internship posting exists yet. One aggregator mirrors a stale "Fall 2026 Applied Emerging Talent" req (already past, not a new lead per dedup scope). openai.com not re-attempted (already known unreachable).</td></tr>
         <tr><td>Databricks</td><td>No change</td><td class="reason">WebSearch reconfirms the candidate US "Software Engineering Intern (2027 Start)" posting (SF Bay Area/Mountain View/Bellevue/Vancouver) via third-party mirrors, with added pay detail ($54&ndash;60/hr SF, $51.50&ndash;60/hr Bellevue), still not independently confirmed via databricks.com (unreachable). Non-US reqs (Belgrade, Winter) explicitly state a Fall2027&ndash;Summer2028 grad window &mdash; those specific reqs remain excluded on that basis.</td></tr>
       </tbody>
     </table>
@@ -456,10 +457,11 @@
   <h2>New Matches</h2>
   <div class="caveat">
     <strong>None built this run.</strong> Per this task's verification rule, a posting only gets built into a CV
-    after a fresh, live fetch of the actual posting page confirms it's real, US-based, and term-specific. Every
-    career/ATS domain touched today was outside this session's allowed network (see summary above), including the
-    most promising standing leads (Google's Forward Deployed Engineer Intern, the candidate Databricks posting,
-    Capital One's Technology Internship Program, and NVIDIA's new Austin AI Systems SWE Intern req).
+    after a fresh, live fetch of the actual posting page confirms it's real, US-based, and term-specific. 11
+    distinct ATS/career/startup domains were attempted directly via WebFetch this run and all failed ENOTFOUND
+    (see summary above), including the most promising standing leads (Google's Forward Deployed Engineer Intern,
+    the candidate Databricks posting, Capital One's Technology Internship Program, and today's new LinkedIn/Google/
+    Apple leads).
   </div>
 </section>
 
@@ -469,64 +471,41 @@
     <table>
       <thead><tr><th>Company</th><th>Role</th><th class="reason">Notes</th></tr></thead>
       <tbody>
-        <tr><td>NVIDIA</td><td>AI Systems Software Engineering Intern, Summer 2027 (Austin, TX)</td><td class="reason"><strong>New today.</strong> Open to BS/MS/PhD. Applies AI agents, ML, and performance engineering to compilers and developer tools &mdash; strong thematic fit for her agentic-systems/eval work. Language requirement (C++ vs Python) not stated in the snippet seen; worth checking directly. nvidia.com unreachable &mdash; not live-verified.</td></tr>
-        <tr><td>NVIDIA</td><td>Compiler Software Engineering Intern, Summer 2027 (Redmond, WA)</td><td class="reason"><strong>New today.</strong> Explicitly asks for "strong coding skills with C++" &mdash; likely skills mismatch, no Python/Java alternative stated. Noted rather than silently dropped; not live-verified.</td></tr>
-        <tr><td>Capital One</td><td>Technology Internship Program, Summer 2027 (McLean VA / Plano TX / Richmond VA)</td><td class="reason">Carried forward, unchanged. $140k/yr McLean, $127k/yr Plano &amp; Richmond. Requires "continuing in the same course of study" after the internship ends &mdash; no PhD/grad-year gate seen. Strong skills match. Current open/closed status still unknown; capitalonecareers.com unreachable &mdash; not live-verified.</td></tr>
-        <tr><td>Amazon</td><td>Frontier AI & Robotics Internship (2027) (San Francisco CA)</td><td class="reason">Carried forward, unchanged. Aggregator lists eligibility as "Undergraduate." amazon.jobs unreachable &mdash; not live-verified.</td></tr>
-        <tr><td>Oracle</td><td>Technology Internship Program, Summer 2027 (McLean VA / Richmond VA)</td><td class="reason">Carried forward, unchanged. 10-week paid program, good skills match. "Bachelor's degree or higher" eligibility text remains ambiguous. oracle.com/careers/ still returns 403 &mdash; not live-verified.</td></tr>
+        <tr><td>LinkedIn</td><td>Software Engineer Intern, Undergraduate - Summer 2027 (Mountain View, CA)</td><td class="reason"><strong>New today.</strong> $45&ndash;55/hr + equity, 12-week program, requires grad Dec 2027 or later (compatible with May 2029). Job ID distinct from the two previously-seen LinkedIn reqs &mdash; may be a genuine third req or a re-listing. linkedin.com unreachable &mdash; not live-verified.</td></tr>
+        <tr><td>Google</td><td>Software Engineering Intern, BS, Summer 2027 (Mountain View CA + other US sites)</td><td class="reason"><strong>New today.</strong> Job ID 100648618540573382 &mdash; distinct from the ID permanently excluded on 2026-08-12 as dead. $98k&ndash;131k/yr, open to all academic years pursuing a CS-related Bachelor's. google.com unreachable &mdash; not live-verified.</td></tr>
+        <tr><td>Google</td><td>Software Developer Intern, BS, Summer 2027 (location unconfirmed)</td><td class="reason"><strong>New today.</strong> Distinct title from the SWE Intern req above; relationship unclear (may be the same role under a different title convention). Not live-verified.</td></tr>
+        <tr><td>Apple</td><td>Machine Learning and Artificial Intelligence Undergrad Intern (location/term unconfirmed)</td><td class="reason"><strong>New today.</strong> Explicit "Undergrad" framing, unlike prior ambiguous Apple postings. Thematic fit is strong on title alone. Not live-verified.</td></tr>
+        <tr><td>Apple</td><td>Hardware Technologies Undergrad Engineering Intern (location/term unconfirmed)</td><td class="reason"><strong>New today.</strong> Hardware-leaning; weaker fit than the MLAI req above given her software/ML background, but noted since it's explicitly Undergrad-labeled. Not live-verified.</td></tr>
+        <tr><td>NVIDIA</td><td>AI Compiler and Kernel Intern, Summer 2027 (Austin, TX)</td><td class="reason">Carried forward from 2026-11-16 (previously described as "AI Systems Software Engineering Intern"). Applies AI/ML to compiler and developer tooling &mdash; strong thematic fit. Language requirement (C++ vs Python) still unconfirmed. nvidia.com unreachable &mdash; not live-verified.</td></tr>
+        <tr><td>Capital One</td><td>Technology Internship Program, Summer 2027 (McLean VA / Plano TX / Richmond VA)</td><td class="reason">Carried forward, but status now doubtful &mdash; a mid-August 2026 guide said only 3 Summer 2027 reqs remained open at that point (3 months ago). $140k/yr McLean, $127k/yr Plano &amp; Richmond if still live. capitalonecareers.com unreachable &mdash; not live-verified.</td></tr>
+        <tr><td>Google</td><td>Forward Deployed Engineer Intern, BS/MS, Summer 2027 (Sunnyvale CA / New York NY)</td><td class="reason">Carried forward. $131k/yr, deadline now <strong>3 days away (Nov 20)</strong>. Strong RAG/vector-DB skills match. google.com unreachable &mdash; not live-verified.</td></tr>
+        <tr><td>Databricks</td><td>Software Engineering Intern (2027 Start) (SF Bay Area / Mountain View / Bellevue / Vancouver)</td><td class="reason">Carried forward, unchanged. $54&ndash;60/hr SF per third-party mirrors. databricks.com unreachable &mdash; not live-verified.</td></tr>
+        <tr><td>Oracle</td><td>Technology Internship Program, Summer 2027 (McLean VA / Richmond VA)</td><td class="reason">Carried forward, unchanged. oracle.com/careers/ still returns 403 &mdash; not live-verified.</td></tr>
         <tr><td>Uber</td><td>2027 Software Engineering Internship (Seattle, WA)</td><td class="reason">Carried forward, unchanged since 2026-11-12. Not live-verifiable this run.</td></tr>
-        <tr><td>Circleback</td><td>Software Engineering Intern, Summer 2027 (San Francisco, CA)</td><td class="reason">Carried forward from 2026-11-15. YC-backed startup; end-to-end features across web/desktop/mobile. Not live-verifiable (likely Ashby/Greenhouse-hosted).</td></tr>
-        <tr><td>Pylon</td><td>Software Engineer Intern (unspecified US location)</td><td class="reason">Carried forward from 2026-11-15. Thin detail, needs a direct read before it can be judged. Not live-verifiable.</td></tr>
-        <tr><td>Carnegie Mellon University (SEI)</td><td>Agentic Development Intern; Full-Stack Software Development Intern (Pittsburgh, PA, Fall 2026)</td><td class="reason">Carried forward from 2026-11-15. On-site, Fall 2026 &mdash; scheduling-conflict concern per task rules, noted not silently excluded. Good thematic match (agentic/LLM development). Not live-verified.</td></tr>
-        <tr><td>Oregon State University</td><td>Student Developer Intern &ndash; CASS Software Development Group (Remote in USA, Fall 2026)</td><td class="reason">Carried forward from 2026-11-15. <strong>Remote</strong>, especially valuable for Fall 2026 given no on-site conflict. Not live-verified.</td></tr>
-        <tr><td>Ramp</td><td>Software Engineer Intern &ndash; iOS / Android / Frontend / Backend (4 distinct reqs, NYC, Winter 2026)</td><td class="reason"><strong>New today</strong> from a deeper Off-Season README read. Fintech company, strong general skills match (Python/JS). Winter 2026 term &mdash; same scheduling-conflict consideration as other Winter/Fall roles applies. Not live-verifiable (Ashby-hosted).</td></tr>
-        <tr><td>DataRobot</td><td>MCP &amp; Memory Intern (Boston, MA, Winter 2026)</td><td class="reason"><strong>New today</strong> &mdash; a distinct req at an already-matched company (prior DataRobot req was the Agentic AI Intern, already covered). Per this task's own instructions, re-checking an already-matched company's full board for additional distinct reqs is expected. Good thematic fit (agent memory systems). Not live-verifiable.</td></tr>
-        <tr><td>Figure</td><td>Middleware Software Intern (San Jose, CA, Winter 2027)</td><td class="reason"><strong>New today.</strong> Humanoid-robotics startup, real and well-funded. Not live-verifiable.</td></tr>
-        <tr><td>HeyGen</td><td>Software Engineer Intern (SF / LA, Winter 2027)</td><td class="reason"><strong>New today.</strong> AI video-generation startup. Not live-verifiable.</td></tr>
-        <tr><td>Profluent</td><td>Software Engineer Intern (Emeryville, CA, Winter 2026)</td><td class="reason"><strong>New today.</strong> AI protein-design biotech startup. Not live-verifiable.</td></tr>
-        <tr><td>ShopBack</td><td>Software Engineer Intern (NYC / SF, Winter 2026)</td><td class="reason"><strong>New today.</strong> Not live-verifiable.</td></tr>
-        <tr><td>Bask</td><td>Machine Learning Engineering Intern; AI Engineering Intern (Remote, USA, term unstated)</td><td class="reason"><strong>New today</strong> from speedyapply README. Health-tech AI startup. Term unstated in posting &mdash; needs direct confirmation. Not live-verifiable.</td></tr>
-        <tr><td>HUB International</td><td>AI Engineering Intern (Chicago, IL, term unstated)</td><td class="reason"><strong>New today.</strong> Insurance brokerage, not previously seen. Not live-verifiable.</td></tr>
-        <tr><td>Samsung Semiconductor</td><td>Intern &ndash; ML Compiler, Kernel Auto-Tuning (San Jose, CA, term unstated)</td><td class="reason"><strong>New today.</strong> Distinct entity from Samsung Research America (whose Fall Intern &ndash; Digital Health Algorithms req is permanently excluded as PhD-only) &mdash; not covered by that exclusion. Not live-verifiable.</td></tr>
+        <tr><td>Carnegie Mellon University (SEI)</td><td>Agentic Development Intern; Full-Stack Software Development Intern (Pittsburgh, PA, Fall 2026)</td><td class="reason">Carried forward from 2026-11-15. On-site, Fall 2026 &mdash; scheduling-conflict concern per task rules. cmu.wd115.myworkdayjobs.com attempted directly this run, failed ENOTFOUND.</td></tr>
+        <tr><td>Oregon State University</td><td>Student Developer Intern &ndash; CASS Software Development Group (Remote in USA, Fall 2026)</td><td class="reason">Carried forward from 2026-11-15. <strong>Remote</strong>, valuable for Fall 2026. oregonstate.wd501.myworkdayjobs.com attempted directly this run, failed ENOTFOUND.</td></tr>
+        <tr><td>DataRobot</td><td>MCP &amp; Memory Intern (Boston, MA, Winter 2026)</td><td class="reason">Carried forward from 2026-11-16. datarobot.wd1.myworkdayjobs.com attempted directly this run, failed ENOTFOUND.</td></tr>
       </tbody>
     </table>
   </div>
-  <div class="bulk-note" style="margin-bottom:0.9rem;">
-    <strong>Smaller/thinner Winter 2026/2027 leads from today's deeper Off-Season README read, none live-verifiable,
-    not individually tabled above:</strong> Copart (Software Engineering Intern &ndash; AI/ML, Dallas TX, Winter 2026),
-    Keysight Technologies (5 distinct Software Developer/R&amp;D Software Engineer Intern reqs across Austin/Raleigh/
-    Pleasant Grove UT/Atlanta/Santa Rosa, Winter 2026/2027), Sun Life (Business Operations Software Engineer Co-op,
-    multiple Midwest/Northeast locations, Winter 2027), AgZen (Software Engineer Co-op, Somerville MA, Winter 2027),
-    GenScript (AI Intern &ndash; Enterprise Agent Development, Piscataway NJ, Winter 2026), Rhoda AI (Robot Software
-    Engineer Intern, Mountain View CA, Winter 2026), Reflect Orbital (Ground Software Systems Intern, Hawthorne CA,
-    Winter 2026), Notion (Mobile Software Engineer Intern, SF/NYC, Winter 2027 &mdash; distinct from the already-dead
-    Fall 2026 req noted in the dedup list), Garmin (Software Engineer Intern, Montgomery TX, Winter 2026), J&amp;J
-    (Software Engineering Co-op, Danvers MA, Winter 2026), Nordson (Software Engineer Intern, Minneapolis MN, Winter
-    2026), First Bank &amp; Trust (Software Development Intern, Sioux Falls/Brookings SD, Winter 2026), Plot
-    Technologies (Applied AI Co-op, NYC, Winter 2026), InComm Payments (Software Engineer Intern, Sandy UT, Winter
-    2026). Borderline/excluded on a quick read, not pursued further: Intel's "Software Engineering Intern" req
-    (Hillsboro OR) carries a title in its own URL reading "...PhD-Intern-New-2027..." despite the generic display
-    title &mdash; treated as likely PhD-gated and excluded pending clarification; X Development's PhD Resident req is
-    already permanently excluded; Point72's "Micro-Intern: Research Technology Developer" and HCSC's "Early Careers
-    Automation Programmer Intern" both read as borderline/non-core-SWE; Jabil's "IT Programmer Analyst Co-op" and
-    Resonetics' "HR AI Automation Co-op" are not clearly SWE/ML roles either. Tesla's 7-role Winter/Spring 2027
-    cluster (carried forward from 2026-11-15) is unchanged.
-  </div>
   <div class="bulk-note">
-    Carried forward, not re-verified today: Google's Forward Deployed Engineer Intern (deadline Nov 20, 4 days
-    left), the Databricks candidate US SWE Intern posting, LinkedIn's Mountain View req (ambiguous vs. today's
-    "First Play"-titled posting), Brain Co x3, Faire, Simbe Robotics, Field AI, Impulse Space, Skydio. Also carried
-    forward: Amazon's prior 3 reqs (general SDE, ML/Automated Reasoning, Database Engineer), Microsoft general SWE
-    Intern + MSR Research Intern cluster, TikTok's multi-title wave + 🎓-marked SWE/ML Engineer Intern rows, PayPal
-    ML Engineer Intern, NVIDIA content-dev intern, Docusign, Art of Problem Solving, NYT, Match Group, T-Mobile, SAS,
-    Biodesix x2, UiPath, Addepar x2, Apache Industrial, Rokt, Anduril, Atoms x2, Flagship Pioneering, Citadel Launch
-    (no 2027 posting found, see Watchlist table). Everything flagged in runs prior to 2026-11-09 (General Motors'
-    8-req expansion, ICF International, Copart's earlier-flagged variant, FHLBank Chicago, Waymo Planning/Prediction
-    ML Intern, Figma AI Applied Scientist Intern, Booz Allen, General Dynamics Mission Systems, Genius AI, Zus
-    Health, Western Magnetics, Genesis Molecular AI, United Launch Alliance, William Blair, Lunar Outpost, Lowe's,
-    CACI's remaining non-clearance reqs, Navy Federal Credit Union, plus the full 2026-10-27 through 2026-11-06
-    backlog of ~150 smaller leads) was not re-verified or re-searched this run; see git history for the full
-    per-row detail from each prior entry. None have changed status since last reported.
+    Carried forward, not re-verified today: Ramp (4 reqs, NYC, Winter 2026), Figure, HeyGen, Profluent, ShopBack,
+    Bask, HUB International, Samsung Semiconductor ML Compiler Intern, Circleback, Pylon, the &gt;20-item Winter
+    2026/2027 small-company batch from 2026-11-16's Off-Season README read (Copart, Keysight x5, Sun Life, AgZen,
+    GenScript, Rhoda AI, Reflect Orbital, Notion, Garmin, J&amp;J, Nordson, First Bank &amp; Trust, Plot
+    Technologies, InComm Payments), Brain Co x3, Faire, Simbe Robotics, Field AI, Impulse Space, Skydio. Also
+    carried forward: Amazon's prior 3 reqs (general SDE, ML/Automated Reasoning, Database Engineer) + Frontier AI &amp;
+    Robotics Internship, Microsoft general SWE Intern + MSR Research Intern cluster, TikTok's multi-title wave +
+    🎓-marked SWE/ML Engineer Intern rows, PayPal ML Engineer Intern, NVIDIA content-dev intern, Docusign, Art of
+    Problem Solving, NYT, Match Group, T-Mobile, SAS, Biodesix x2, UiPath, Addepar x2, Apache Industrial, Rokt,
+    Anduril, Atoms x2, Flagship Pioneering, Tesla's 7-role Winter/Spring 2027 cluster, Citadel Launch (no 2027
+    posting found, see Watchlist table). Everything flagged in runs prior to 2026-11-09 (General Motors' 8-req
+    expansion, ICF International, FHLBank Chicago, Waymo Planning/Prediction ML Intern, Figma AI Applied Scientist
+    Intern, Booz Allen, General Dynamics Mission Systems, Genius AI, Zus Health, Western Magnetics, Genesis
+    Molecular AI, United Launch Alliance, William Blair, Lunar Outpost, Lowe's, CACI's remaining non-clearance
+    reqs, Navy Federal Credit Union, plus the full 2026-10-27 through 2026-11-06 backlog of ~150 smaller leads) was
+    not re-verified or re-searched this run; see git history for the full per-row detail from each prior entry.
+    None have changed status since last reported.
   </div>
 </section>
 
@@ -537,13 +516,10 @@
       <table>
         <thead><tr><th>Company</th><th>Role</th><th class="reason">Reason</th></tr></thead>
         <tbody>
-          <tr><td>NVIDIA</td><td>Compiler Software Engineering Intern, Summer 2027 (Redmond, WA)</td><td class="reason">New today. Explicitly requires "strong coding skills with C++," no Python/Java alternative stated &mdash; likely skills mismatch per this task's C++-mandatory rule.</td></tr>
-          <tr><td>Intel</td><td>Software Engineering Intern (Hillsboro, OR, Winter 2026)</td><td class="reason">New today. Display title is generic but the posting's own URL slug reads "...PhD-Intern-New-2027..." &mdash; treated as likely PhD-gated pending clarification.</td></tr>
-          <tr><td>Databricks</td><td>Software Engineering Intern (2027 Start) &ndash; Belgrade, Winter (non-US reqs)</td><td class="reason">These specific non-US reqs explicitly state a Fall2027&ndash;Summer2028 grad window, a mismatch for her May 2029 grad. The separate US posting is not covered by this and remains in the Watchlist Alert as unresolved.</td></tr>
-          <tr><td>Amazon</td><td>~3 PhD-marked Applied Science Intern rows (Reinforcement Learning &amp; Optimization; Recommender Systems/IR; Information &amp; Knowledge Management &ndash; Machine Learning), Summer 2027, Seattle</td><td class="reason">New sighting today via speedyapply README; all explicitly PhD-student-targeted.</td></tr>
-          <tr><td>Pinterest</td><td>PhD and Master's Machine Learning Internship 2027 (both USA)</td><td class="reason">Reconfirmed today; both explicitly grad-gated, no undergrad track found.</td></tr>
-          <tr><td>Salesforce</td><td>"Summer 2027 Intern - Software Engineer" (job ID 9287543)</td><td class="reason">Resurfaced today via a Built In mirror, but this is the exact same job ID already verified dead/removed on 2026-08-12 and permanently excluded; not re-flagged without a fresh live confirmation, which the current egress block prevents.</td></tr>
-          <tr><td>(bulk)</td><td>~260+ prior-run leads and companies</td><td class="reason">See the standing exclusion/dedup list carried in this task's own instructions and in prior dashboard Run Log entries (CACI clearance-gated reqs, Rivian, Samsung Research America, Specter Aerospace, Modal, Amazon Dublin req, Google/Salesforce dead reqs, Oracle mislabeled role, Tesla AI Inference Co-Design, Cloudflare Fall 2026 Austin, NVIDIA JR2016805, DatologyAI, Xsolla, Databricks PM/PhD-only reqs, Rippling ML SWE Intern Winter 2027, etc.) &mdash; not repeated here in full to keep this section readable.</td></tr>
+          <tr><td>NVIDIA</td><td>Math Libraries Intern (cuEST), Summer 2027 (Santa Clara CA / Canada)</td><td class="reason">New today. "cuEST"/Math Libraries naming strongly implies CUDA-mandatory work with no stated Python/Java alternative &mdash; likely skills mismatch per this task's CUDA-mandatory rule.</td></tr>
+          <tr><td>NVIDIA</td><td>Systems Research Intern &ndash; Observability, Summer 2027 (Santa Clara CA / Canada)</td><td class="reason">New today. Marked with the aggregator's 🎓 (advanced-degree) flag, consistent with the pattern of excluding grad-only research-titled NVIDIA roles.</td></tr>
+          <tr><td>OpenAI</td><td>"Software Engineer Internship/Co-op - Applied Emerging Talent, Fall 2026"</td><td class="reason">Surfaced today via an aggregator mirror, but Fall 2026 is already nearly over (today is Nov 17) &mdash; this is a stale re-listing of an already-past recruiting cycle, not a new opening for application; not flagged as a fresh lead.</td></tr>
+          <tr><td>(bulk)</td><td>~270+ prior-run leads and companies</td><td class="reason">See the standing exclusion/dedup list carried in this task's own instructions and in prior dashboard Run Log entries (CACI clearance-gated reqs, Rivian, Samsung Research America, Specter Aerospace, Modal, Amazon Dublin req, Google/Salesforce dead reqs, Oracle mislabeled role, Tesla AI Inference Co-Design, Cloudflare Fall 2026 Austin, NVIDIA JR2016805/Redmond Compiler C++ req, DatologyAI, Xsolla, Databricks PM/PhD-only reqs, Rippling ML SWE Intern Winter 2027, Intel Hillsboro PhD-slug req, Amazon PhD-marked Applied Science cluster, Pinterest PhD/Master's ML Internship, Salesforce dead job ID 9287543, etc.) &mdash; not repeated here in full to keep this section readable.</td></tr>
         </tbody>
       </table>
     </div>
@@ -556,11 +532,11 @@
     <span class="dot"></span>
     No new CVs/cover letters built this run (nothing live-verified; job_scraper/*.md, cv/main_*.tex,
     cover_letters/*.tex stay gitignored as personal data regardless). Local <code>master</code> was again found
-    detached from a stale ref (one commit behind <code>origin/master</code>) at session start &mdash; investigated
-    rather than force-resetting, confirmed via <code>git fetch</code> that origin already held the commit (no data
-    at risk), then checked out and fast-forwarded local <code>master</code> to match <code>origin/master</code>.
-    This is the same recurring harmless quirk noted in every entry since 2026-11-11. This dashboard file is tracked
-    in git (not gitignored); committed and pushed this run alongside publishing via the Artifact tool.
+    detached, 4 commits behind the cached <code>origin/master</code> ref at session start &mdash; investigated
+    rather than force-resetting, confirmed via <code>git fetch</code> that origin already held all 4 commits (no
+    data at risk, same harmless clone-state quirk noted in every entry since 2026-11-11), then checked out and
+    fast-forwarded local <code>master</code> to match <code>origin/master</code>. This dashboard file is tracked in
+    git (not gitignored); committed and pushed this run alongside publishing via the Artifact tool.
   </div>
 </section>
 
@@ -568,24 +544,56 @@
   <h2>Sources checked this run</h2>
   <div class="caveat">
     Prior dashboard (fetched for dedup via Artifact read, full page) &middot; SimplifyJobs main README (chars
-    0&ndash;100K) &middot; SimplifyJobs Off-Season README (chars 0&ndash;100K, read with more attention to the
-    Winter 2026/2027 section than in recent runs) &middot; speedyapply 2027-AI-College-Jobs README (chars
-    0&ndash;100K) &mdash; all three via <code>raw.githubusercontent.com</code>, which remains reachable &middot;
-    direct WebFetch of <code>anthropic.com/careers</code> (succeeded, reconfirmed no internships) &middot; 11
-    dedicated WebSearch queries covering Capital One, Databricks, Citadel, OpenAI, Google (FDE deadline), Oracle,
-    Meta, NVIDIA, Apple, Bloomberg, and a combined Uber/Infosys/Salesforce query &middot; startup-source rotation 2
-    of 2 (VC portfolio boards via <code>jobs.generalcatalyst.com</code>; Wellfound) &mdash; both failed with
-    ENOTFOUND, so no results from either this run &middot; direct curl egress tests against the standing 20-domain
-    list &mdash; all failed (connection-level) except <code>anthropic.com</code>, <code>raw.githubusercontent.com</code>,
-    and <code>oracle.com</code> at the bare domain (<code>www.oracle.com</code> itself still 403).
-    <strong>Not re-checked individually this run</strong> (relying on standing status / today's README re-scans):
-    Amazon, Microsoft, TikTok, Adobe, Pinterest, LinkedIn beyond the aggregator passes above &mdash; none had open
-    questions that today's available sources could newly resolve.
+    0&ndash;100K) &middot; SimplifyJobs Off-Season README (chars 0&ndash;100K) &middot; speedyapply
+    2027-AI-College-Jobs README (chars 0&ndash;100K) &mdash; all three via <code>raw.githubusercontent.com</code>,
+    which remains reachable &middot; direct WebFetch of <code>anthropic.com/careers</code> (succeeded, reconfirmed
+    no internships) &middot; direct WebFetch attempts against 11 other domains &mdash; <code>apply.careers.microsoft.com</code>,
+    <code>nvidia.wd5.myworkdayjobs.com</code>, <code>datarobot.wd1.myworkdayjobs.com</code>,
+    <code>oregonstate.wd501.myworkdayjobs.com</code>, <code>cmu.wd115.myworkdayjobs.com</code>,
+    <code>jobs.ashbyhq.com</code>, <code>job-boards.greenhouse.io</code>, <code>www.databricks.com</code>,
+    <code>www.citadel.com</code>, <code>www.workatastartup.com</code>, <code>www.builtinsf.com</code> &mdash; all
+    failed ENOTFOUND (startup-source rotation this run: Work at a Startup + Built In SF, both blocked) &middot; 9
+    dedicated WebSearch queries covering Anthropic, OpenAI, Apple, Google (both the BS SWE Intern req and the FDE
+    Intern deadline), Bloomberg, Oracle, Citadel (Launch), Capital One, and a combined Uber/Infosys/LinkedIn query.
+    A <code>curl</code> call to the local proxy's diagnostic status endpoint was itself denied by this session's
+    permission layer, so no raw curl-based domain sweep was run this time (WebFetch's own ENOTFOUND errors served
+    as the evidence instead). <strong>Not re-checked individually this run</strong> (relying on standing status):
+    Amazon, Meta, Microsoft, Bloomberg, TikTok, Adobe, Salesforce, Pinterest beyond the aggregator passes above
+    &mdash; none had open questions that today's available sources could newly resolve.
   </div>
 </section>
 
 <section class="block">
   <h2>Run Log</h2>
+  <div class="log-entry">
+    <span class="log-date">2026-11-17</span>
+    <div class="log-body">0 new CVs (network still blocked, now 97 days straight; this run used direct WebFetch
+    rather than curl for diagnostics &mdash; a curl call to the proxy's status endpoint was itself denied by the
+    session's permission layer &mdash; and confirmed 11 ATS/career/startup domains still fail ENOTFOUND:
+    <code>apply.careers.microsoft.com</code>, <code>nvidia.wd5.myworkdayjobs.com</code>,
+    <code>datarobot.wd1.myworkdayjobs.com</code>, <code>oregonstate.wd501.myworkdayjobs.com</code>,
+    <code>cmu.wd115.myworkdayjobs.com</code>, <code>jobs.ashbyhq.com</code>, <code>job-boards.greenhouse.io</code>,
+    <code>www.databricks.com</code>, <code>www.citadel.com</code>, <code>www.workatastartup.com</code>,
+    <code>www.builtinsf.com</code>; <code>raw.githubusercontent.com</code> and <code>anthropic.com/careers</code>
+    remain the exceptions). 20/20 watchlist checked: no new confirmed hit, but 3 leads worth naming surfaced via
+    WebSearch &mdash; a possible third distinct <strong>LinkedIn</strong> "Software Engineer Intern, Undergraduate,
+    Summer 2027" req (Mountain View, grad-compatible), a <strong>Google</strong> "Software Engineering Intern, BS,
+    Summer 2027" US req at a fresh job ID (distinct from the one permanently excluded as dead on 2026-08-12, so
+    re-evaluated rather than auto-skipped) plus a separate "Software Developer Intern, BS" title, and two
+    explicitly <strong>Apple</strong> "Undergrad"-labeled reqs (Machine Learning and Artificial Intelligence;
+    Hardware Technologies) &mdash; all unverifiable this run, added to the Flagged table. Reconfirmed NVIDIA's
+    Austin "AI Compiler and Kernel Intern" lead from 2026-11-16 and excluded two new NVIDIA reqs outright (Math
+    Libraries Intern/cuEST &mdash; CUDA-named; Systems Research Intern &ndash; Observability &mdash; 🎓-marked).
+    Noted that Capital One's Technology Internship Program lead may have quietly closed (a mid-August 2026 guide
+    said only 3 reqs remained open at that point, 3 months ago) &mdash; flagged as doubtful rather than silently
+    dropped, pending a live check. Reconfirmed Anthropic (no internships, only the non-internship Fellows Program)
+    and OpenAI (no Summer 2027 undergrad SWE internship; a Fall 2026 "Applied Emerging Talent" req that resurfaced
+    via an aggregator is a stale re-listing of an already-past cycle, not a fresh lead). Google's FDE Intern
+    deadline is now 3 days out (Nov 20). Found local <code>master</code> detached, 4 commits behind
+    <code>origin/master</code> at session start (same recurring harmless clone-state quirk as every run since
+    2026-11-11) &mdash; investigated, confirmed via <code>git fetch</code> that origin already held all 4 commits,
+    fast-forwarded local ref to match; no data was at risk.</div>
+  </div>
   <div class="log-entry">
     <span class="log-date">2026-11-16</span>
     <div class="log-body">0 new CVs (network still blocked, now 96 days straight; re-tested the standing 20-domain
